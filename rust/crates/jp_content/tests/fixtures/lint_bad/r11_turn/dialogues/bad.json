@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "items": [
+    {
+      "id": "di.bad_r11",
+      "kind": "extra",
+      "lesson": "le.l01",
+      "style": "plain",
+      "scene_zh": "測試",
+      "goal_zh": "測試",
+      "roles": [
+        {
+          "id": "a",
+          "name_zh": "甲",
+          "voice": "a"
+        }
+      ],
+      "turns": [
+        {
+          "role": "a",
+          "t": "私|わたし|vo.watashi 学生|がくせい|vo.gakusei 先生|せんせい|vo.sensei はい|vo.hai ご飯|ごはん|vo.gohan お茶|おちゃ|vo.ocha 。",
+          "zh": "測試"
+        }
+      ],
+      "focus": [
+        "gr.desu"
+      ],
+      "quiz": []
+    }
+  ]
+}

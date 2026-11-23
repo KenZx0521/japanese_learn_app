@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "items": [
+    {"id": "dr.l02.sub.001", "type": "substitution", "lesson": "le.l02", "targets": ["gr.wo_obj", "gr.masu"], "frame": "私|わたし|vo.watashi は|gr.wa_topic {a} を|gr.wo_obj {b} 。", "rows": [{"a": "ご飯|ごはん|vo.gohan", "b": "食べ|たべ|vo.taberu+ます|gr.masu", "zh": "我吃飯。", "tts": "auto"}, {"a": "お茶|おちゃ|vo.ocha", "b": "飲み|のみ|vo.nomu+ます|gr.masu", "zh": "我喝茶。"}, {"a": "ご飯|ごはん|vo.gohan", "b": "飲み|のみ|vo.nomu+ます|gr.masu", "zh": "我喝飯。"}]},
+    {"id": "dr.l02.ord.001", "type": "reorder", "lesson": "le.l02", "targets": ["gr.wo_obj", "gr.masu"], "sentence": "se.l02.001", "accept_orders": [[0, 1, 2], [1, 0, 2]], "audio_first": true},
+    {"id": "dr.l02.par.001", "type": "particle_fill", "lesson": "le.l02", "targets": ["gr.wo_obj", "gr.masu"], "sentence": "se.l02.001", "blanks": [{"word_index": 3, "choices": ["を|gr.wo_obj", "は|gr.wa_topic"]}], "explain_zh": "受詞用 {ja:を}。"},
+    {"id": "dr.l02.z2j.001", "type": "zh_to_ja_choice", "lesson": "le.l02", "targets": ["gr.wo_obj", "gr.masu"], "prompt_zh": "我喝茶。", "answer": "se.l02.002", "distractors": [{"t": "私|わたし|vo.watashi は|gr.wa_topic ご飯|ごはん|vo.gohan を|gr.wo_obj 食べ|たべ|vo.taberu+ます|gr.masu 。", "why_zh": "這是吃飯。"}], "tts": "auto"},
+    {"id": "dr.l02.lsn.001", "type": "listen_meaning", "lesson": "le.l02", "targets": ["gr.wo_obj", "gr.masu"], "sentence": "se.l02.003", "choices_zh": ["老師喝茶。", "老師吃飯。", "學生喝茶。"], "answer_index": 0},
+    {"id": "dr.l02.cnj.001", "type": "conjugate", "lesson": "le.l02", "targets": ["gr.masu"], "form": "masu", "lemmas": ["vo.taberu", "vo.nomu"]},
+    {"id": "dr.l02.shd.001", "type": "shadowing", "lesson": "le.l02", "targets": ["gr.masu"], "sentence": "se.l02.005"}
+  ]
+}

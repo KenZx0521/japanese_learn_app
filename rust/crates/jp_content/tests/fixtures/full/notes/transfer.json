@@ -1,0 +1,6 @@
+{
+  "schema": 1,
+  "items": [
+    {"id": "no.tr.anata", "lesson": "le.l08", "title_zh": "別對長輩說 {ja:あなた}", "zh_pattern": "你", "wrong": "{ja:あなたは先生ですか|あなたはせんせいですか}", "right": "{ja:田中さんは先生ですか|たなかさんはせんせいですか}", "explain_zh": "用「姓氏＋{ja:さん}」。", "grammar": ["gr.desu"], "vocab": []}
+  ]
+}

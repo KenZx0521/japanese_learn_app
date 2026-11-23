@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "items": [
+    {"id": "gr.cycle_a", "lesson": "le.l01", "lesson_order": 3, "jlpt": "n5", "title_zh": "測試", "pattern": "N", "meaning_zh": "測試", "explain_zh": "測試", "compare_zh": "測試", "formation": [], "register": "neutral", "requires": ["gr.cycle_b"], "examples": [], "contrast": [], "terms": []},
+    {"id": "gr.cycle_b", "lesson": "le.l01", "lesson_order": 4, "jlpt": "n5", "title_zh": "測試", "pattern": "N", "meaning_zh": "測試", "explain_zh": "測試", "compare_zh": "測試", "formation": [], "register": "neutral", "requires": ["gr.cycle_a"], "examples": [], "contrast": [], "terms": []}
+  ]
+}

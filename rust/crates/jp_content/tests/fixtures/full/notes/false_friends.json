@@ -1,0 +1,6 @@
+{
+  "schema": 1,
+  "items": [
+    {"id": "no.ff.tegami", "surface": "手紙", "vocab": "vo.tegami", "ja_zh": "信（書信）", "misread_zh": "看起來像「衛生紙」", "lesson": "le.l08"}
+  ]
+}

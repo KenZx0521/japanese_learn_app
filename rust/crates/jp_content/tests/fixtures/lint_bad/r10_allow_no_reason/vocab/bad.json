@@ -1,0 +1,6 @@
+{
+  "schema": 1,
+  "items": [
+    {"id": "vo.neko", "lesson": "le.l01", "lesson_order": 9, "surface": "ねこ", "kana": "ねこ", "zh": ["測試"], "pos": "n", "accent": null, "jlpt": "n5", "topics": ["home"], "examples": ["se.bad.r10.1", "se.bad.r10.2"]}
+  ]
+}

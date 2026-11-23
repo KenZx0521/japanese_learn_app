@@ -1,0 +1,9 @@
+{
+  "schema": 1,
+  "items": [
+    {"id": "gr.desu", "lesson": "le.l01", "lesson_order": 1, "jlpt": "n5", "title_zh": "{ja:です}：是", "pattern": "N {ja:です}", "meaning_zh": "表示判斷", "explain_zh": "先看例句。", "compare_zh": "中文語序不同。", "trap_zh": null, "formation": [{"from": "N", "to": "N {ja:です}"}], "register": "polite", "requires": [], "examples": ["se.l01.002", "se.l01.003"], "contrast": [], "terms": []},
+    {"id": "gr.wa_topic", "lesson": "le.l01", "lesson_order": 2, "jlpt": "n5", "title_zh": "{ja:は}：主題", "pattern": "N {ja:は}", "meaning_zh": "標示主題", "explain_zh": "先看例句。", "compare_zh": "中文語序不同。", "trap_zh": null, "formation": [{"from": "N", "to": "N {ja:です}"}], "register": "neutral", "requires": [], "examples": ["se.l01.001", "se.l01.012"], "contrast": [], "terms": []},
+    {"id": "gr.wo_obj", "lesson": "le.l02", "lesson_order": 1, "jlpt": "n5", "title_zh": "{ja:を}：動作對象", "pattern": "N {ja:を} V", "meaning_zh": "標示受詞", "explain_zh": "先看例句。", "compare_zh": "中文語序不同。", "trap_zh": null, "formation": [{"from": "N", "to": "N {ja:です}"}], "register": "neutral", "requires": [], "examples": ["se.l02.001", "se.l02.002"], "contrast": ["gr.wa_topic"], "terms": []},
+    {"id": "gr.masu", "lesson": "le.l02", "lesson_order": 2, "jlpt": "n5", "title_zh": "{ja:ます}：敬體", "pattern": "V {ja:ます}", "meaning_zh": "禮貌動詞", "explain_zh": "先看例句。", "compare_zh": "中文語序不同。", "trap_zh": null, "formation": [{"from": "N", "to": "N {ja:です}"}], "register": "polite", "requires": [], "examples": ["se.l02.001", "se.l02.003"], "contrast": [], "terms": ["no.term.masu_stem"]}
+  ]
+}

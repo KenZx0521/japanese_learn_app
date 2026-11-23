@@ -1,0 +1,50 @@
+# 內容驗證的外部資料鎖定檔（reuse-and-verification.md §9.5）。資料下載到 gitignored 的 .verify-cache/。
+# fetch_data.sh 校驗 sha256；`fetched` 超過 90 天時 content_tool verify 發出警告。
+
+[jmdict]
+version = "3.6.2+20261102210542"
+url = "https://github.com/scriptin/jmdict-simplified/releases/download/3.6.2%2B20261102210542/jmdict-eng-3.6.2+20261102210542.json.tgz"
+sha256 = "bc1c5240dbdb755a00db488dc74ebfc6c33ffc014d261d64b605fd45cc1dbbb5"
+license = "CC-BY-SA-4.0 (EDRDG)"
+fetched = "2026-11-09"
+output = "jmdict-eng.json"
+
+[kanjidic2]
+version = "3.6.2+20261102210542"
+url = "https://github.com/scriptin/jmdict-simplified/releases/download/3.6.2%2B20261102210542/kanjidic2-en-3.6.2%2B20261102210542.json.tgz"
+sha256 = "6ee47e719401bee69fe6b853344383031b3644cef477a8c784bc4d49e7b9a082"
+license = "CC-BY-SA-4.0"
+output = "kanjidic2-en.json"
+
+[furigana]
+version = "2.3.1+2026-10-25"
+url = "https://github.com/Doublevil/JmdictFurigana/releases/download/2.3.1%2B2026-10-25/JmdictFurigana.json"
+sha256 = "57c2afa7d153d42df97811d4a44865d10fb9104f6a7bacbbe32a0bf0c38e5abc"
+license = "CC-BY-SA-4.0"
+output = "JmdictFurigana.json"
+
+[jlpt_n5]
+url = "https://raw.githubusercontent.com/stephenmk/yomitan-jlpt-vocab/b062d4e38c4bdd0950ae1d4ec55f04b176182e03/original_data/n5.csv"
+sha256 = "07dc6f197b51cc076c65c3c9f23218d10c2b67f76545f5c1c4d9e3750495533a"
+license = "CC-BY-SA-4.0"
+output = "jlpt_n5.csv"
+
+[jlpt_n4]
+url = "https://raw.githubusercontent.com/stephenmk/yomitan-jlpt-vocab/b062d4e38c4bdd0950ae1d4ec55f04b176182e03/original_data/n4.csv"
+sha256 = "a14dcc7fdc02259b22331a486c6ff66df74c16472c8aeb5a0ebe7e5fa8ee8eb4"
+license = "CC-BY-SA-4.0"
+output = "jlpt_n4.csv"
+
+[freq_subtitles]
+version = "jkindrix/japanese-language-data 04014e06019fc9d4af76e6dbb64ec709fe863c4d"
+url = "https://raw.githubusercontent.com/jkindrix/japanese-language-data/04014e06019fc9d4af76e6dbb64ec709fe863c4d/data/enrichment/frequency-subtitles.json"
+sha256 = "7aef89336af9ec00da408ded3e31f6be5811dd93fd3e9c4950968e40345dbc46"
+license = "CC-BY-SA-4.0"
+output = "frequency-subtitles.json"
+
+[kanjium]
+version = "mifunetoshiro/kanjium 9ebca4589565c696e7c39e089e2e928ad65f678c"
+url = "https://raw.githubusercontent.com/mifunetoshiro/kanjium/9ebca4589565c696e7c39e089e2e928ad65f678c/data/source_files/raw/accents.txt"
+sha256 = "8bd0dd127dab32ceec94cb03ab1ba6b68858ea73421dfa1731af2f373deb4f20"
+license = "CC-BY-SA-4.0"
+output = "accents.txt"

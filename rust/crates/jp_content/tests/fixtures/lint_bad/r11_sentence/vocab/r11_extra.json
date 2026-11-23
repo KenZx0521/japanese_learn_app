@@ -1,0 +1,8 @@
+{
+  "schema": 1,
+  "items": [
+    {"id": "vo.hon", "lesson": "le.l08", "lesson_order": 2, "surface": "本", "kana": "ほん", "zh": ["測試"], "pos": "n", "accent": null, "jlpt": "n5", "topics": ["home"]},
+    {"id": "vo.mizu", "lesson": "le.l08", "lesson_order": 3, "surface": "水", "kana": "みず", "zh": ["測試"], "pos": "n", "accent": null, "jlpt": "n5", "topics": ["home"]},
+    {"id": "vo.kuruma", "lesson": "le.l08", "lesson_order": 4, "surface": "車", "kana": "くるま", "zh": ["測試"], "pos": "n", "accent": null, "jlpt": "n5", "topics": ["home"]}
+  ]
+}

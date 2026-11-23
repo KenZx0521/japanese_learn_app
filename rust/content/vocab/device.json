@@ -1,0 +1,8 @@
+{ "schema": 1, "items": [
+  {"id": "vo.denwa", "lesson": "le.l02", "lesson_order": 25, "surface": "電話", "kana": "でんわ", "zh": ["電話"], "pos": "n", "accent": null, "jlpt": "n5", "topics": ["device"], "same_form_zh": true, "examples": ["se.l02.037", "se.l02.058", "se.l02.059"], "notes": ["no.rd.ian"]},
+  {"id": "vo.bangou", "lesson": "le.l16", "lesson_order": 3, "surface": "番号", "kana": "ばんごう", "zh": ["號碼"], "pos": "n", "accent": null, "jlpt": "n5", "topics": ["device", "number"], "examples": ["se.l16.021", "se.l16.013", "se.l16.039", "se.l18.034"], "notes": ["no.sj.gou"]},
+  {"id": "vo.keitai", "lesson": "le.l16", "lesson_order": 4, "surface": "携帯", "kana": "けいたい", "zh": ["手機"], "pos": "n", "accent": null, "jlpt": "beyond", "topics": ["device"], "same_form_zh": true, "examples": ["se.l16.021", "se.l16.022", "se.l19.021"], "trap_zh": "中文「攜帶」是帶著走；日文口語的 {ja:携帯|けいたい} 指手機。", "notes": ["no.sj.kei_carry", "no.sj.tai_belt"]},
+  {"id": "vo.sumaho", "lesson": "le.l16", "lesson_order": 5, "surface": "スマホ", "kana": "スマホ", "zh": ["智慧型手機"], "pos": "n", "accent": null, "jlpt": "beyond", "topics": ["device"], "examples": ["se.l16.060", "se.l16.023", "se.l18.056"], "notes": []},
+  {"id": "vo.meeru", "lesson": "le.l16", "lesson_order": 6, "surface": "メール", "kana": "メール", "zh": ["電子郵件", "手機訊息"], "pos": "n", "accent": null, "jlpt": "beyond", "topics": ["device"], "examples": ["se.l16.019", "se.l16.020", "se.l17.036"], "notes": []},
+  {"id": "vo.pasokon", "lesson": "le.l24", "lesson_order": 10, "surface": "パソコン", "kana": "パソコン", "zh": ["個人電腦"], "pos": "n", "accent": null, "jlpt": "n4", "topics": ["device"], "examples": ["se.l24.024", "se.l24.025", "se.l24.039", "se.l24.057"], "notes": []}
+] }

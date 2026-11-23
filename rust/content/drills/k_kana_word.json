@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "items": [
+    {"id": "dr.k01.kwd.001", "type": "kana_word", "lesson": "le.k01", "targets": ["ka.hira.i", "ka.hira.e"], "word": "いえ", "zh": "家", "mode": "choice", "choices_zh": ["家", "眼睛", "狗", "山"], "answer_index": 0},
+    {"id": "dr.k02.kwd.001", "type": "kana_word", "lesson": "le.k02", "targets": ["ka.hira.ka", "ka.hira.o"], "word": "かお", "zh": "臉", "mode": "choice", "choices_zh": ["手", "臉", "腳", "耳朵"], "answer_index": 1},
+    {"id": "dr.k03.kwd.001", "type": "kana_word", "lesson": "le.k03", "targets": ["ka.hira.su", "ka.hira.shi"], "word": "すし", "zh": "壽司", "mode": "choice", "choices_zh": ["拉麵", "便當", "壽司", "咖哩"], "answer_index": 2},
+    {"id": "dr.k04.kwd.001", "type": "kana_word", "lesson": "le.k04", "targets": ["ka.hira.u", "ka.hira.ta"], "word": "うた", "zh": "歌", "mode": "choice", "choices_zh": ["歌", "畫", "信", "字"], "answer_index": 0},
+    {"id": "dr.k05.kwd.001", "type": "kana_word", "lesson": "le.k05", "targets": ["ka.hira.i", "ka.hira.nu"], "word": "いぬ", "zh": "狗", "mode": "choice", "choices_zh": ["狗", "貓", "鳥", "魚"], "answer_index": 0},
+    {"id": "dr.k06.kwd.001", "type": "kana_word", "lesson": "le.k06", "targets": ["ka.hira.hi", "ka.hira.to"], "word": "ひと", "zh": "人", "mode": "choice", "choices_zh": ["鳥", "人", "魚", "馬"], "answer_index": 1},
+    {"id": "dr.k07.kwd.001", "type": "kana_word", "lesson": "le.k07", "targets": ["ka.hira.u", "ka.hira.mi"], "word": "うみ", "zh": "海", "mode": "choice", "choices_zh": ["河", "湖", "海", "池塘"], "answer_index": 2},
+    {"id": "dr.k08.kwd.001", "type": "kana_word", "lesson": "le.k08", "targets": ["ka.hira.ho", "ka.hira.n"], "word": "ほん", "zh": "書", "mode": "choice", "choices_zh": ["書", "筆", "桌子", "紙"], "answer_index": 0},
+    {"id": "dr.k09.kwd.001", "type": "kana_word", "lesson": "le.k09", "targets": ["ka.hira.sa", "ka.hira.ku", "ka.hira.ra"], "word": "さくら", "zh": "櫻花", "mode": "choice", "choices_zh": ["梅花", "櫻花", "牡丹", "菊花"], "answer_index": 1},
+    {"id": "dr.k10.kwd.001", "type": "kana_word", "lesson": "le.k10", "targets": ["ka.hira.ku", "ka.hira.ru", "ka.hira.ma"], "word": "くるま", "zh": "車子", "mode": "choice", "choices_zh": ["船", "飛機", "車子", "腳踏車"], "answer_index": 2},
+    {"id": "dr.k11.kwd.001", "type": "kana_word", "lesson": "le.k11", "targets": ["ka.hira.ka", "ka.hira.gi"], "word": "かぎ", "zh": "鑰匙", "mode": "typing"},
+    {"id": "dr.k12.kwd.001", "type": "kana_word", "lesson": "le.k12", "targets": ["ka.hira.de", "ka.hira.n", "ka.hira.wa"], "word": "でんわ", "zh": "電話", "mode": "typing"},
+    {"id": "dr.k13.kwd.001", "type": "kana_word", "lesson": "le.k13", "targets": ["ka.hira.sa", "ka.hira.n", "ka.hira.po"], "word": "さんぽ", "zh": "散步", "mode": "typing"},
+    {"id": "dr.k14.kwd.001", "type": "kana_word", "lesson": "le.k14", "targets": ["ka.hira.o", "ka.hira.cha"], "word": "おちゃ", "zh": "茶", "mode": "typing"},
+    {"id": "dr.k15.kwd.001", "type": "kana_word", "lesson": "le.k15", "targets": ["ka.hira.ju", "ka.hira.gyo"], "word": "じゅぎょう", "zh": "上課", "mode": "typing"},
+    {"id": "dr.k16.kwd.001", "type": "kana_word", "lesson": "le.k16", "targets": ["ka.hira.sokuon"], "word": "きって", "zh": "郵票", "mode": "typing"},
+    {"id": "dr.k17.kwd.001", "type": "kana_word", "lesson": "le.k17", "targets": ["ka.sg.length_vowel"], "word": "おばあさん", "zh": "奶奶", "mode": "typing"},
+    {"id": "dr.kk01.kwd.001", "type": "kana_word", "lesson": "le.kk01", "targets": ["ka.kata.ko", "ka.kata.a"], "word": "ココア", "zh": "可可", "mode": "choice", "choices_zh": ["可可", "咖啡", "紅茶", "牛奶"], "answer_index": 0},
+    {"id": "dr.kk03.kwd.001", "type": "kana_word", "lesson": "le.kk03", "targets": ["ka.kata.na", "ka.kata.i", "ka.kata.fu"], "word": "ナイフ", "zh": "刀子", "mode": "choice", "choices_zh": ["湯匙", "叉子", "刀子", "筷子"], "answer_index": 2},
+    {"id": "dr.kk07.kwd.001", "type": "kana_word", "lesson": "le.kk07", "targets": ["ka.kata.nyu"], "word": "ニュース", "zh": "新聞", "mode": "choice", "choices_zh": ["音樂", "新聞", "電影", "比賽"], "answer_index": 1}
+  ]
+}

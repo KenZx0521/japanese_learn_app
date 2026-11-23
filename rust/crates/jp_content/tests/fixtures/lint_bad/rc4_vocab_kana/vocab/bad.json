@@ -1,0 +1,6 @@
+{
+  "schema": 1,
+  "items": [
+    {"id": "vo.badfixed", "lesson": "le.l01", "lesson_order": 9, "surface": "こんにちは", "kana": "こんにちは", "zh": ["你好二"], "pos": "n", "accent": null, "jlpt": "n5", "topics": ["home"], "examples": ["se.l01.002"]}
+  ]
+}

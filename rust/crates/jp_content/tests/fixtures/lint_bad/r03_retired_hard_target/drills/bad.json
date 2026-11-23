@@ -1,0 +1,6 @@
+{
+  "schema": 1,
+  "items": [
+    {"id": "dr.bad.shd.r03", "type": "shadowing", "lesson": "le.l02", "targets": ["gr.old"], "sentence": "se.l02.005"}
+  ]
+}

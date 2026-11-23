@@ -1,0 +1,8 @@
+{
+  "schema": 1,
+  "items": [
+    {"id": "se.bad.r10k.1", "lesson": "le.l02", "t": "ねこ|vo.neko です|gr.desu 。", "zh": "是貓。", "style": "polite"},
+    {"id": "se.bad.r10k.2", "lesson": "le.l02", "t": "はい|vo.hai 、 ねこ|vo.neko です|gr.desu 。", "zh": "是的，是貓。", "style": "polite"},
+    {"id": "se.bad.r10k.3", "lesson": "le.l08", "t": "ねこ|vo.neko です|gr.desu 。", "zh": "是貓。", "style": "polite"}
+  ]
+}

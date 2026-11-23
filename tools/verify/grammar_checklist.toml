@@ -1,0 +1,854 @@
+# 文法涵蓋率清單（reuse-and-verification.md §3.3-4、C03）。
+# 由 curriculum.md §5 產生：S1／S2 計 n5，S3 計 n4，只列 gr.* ID。
+# 清單為語法事實的自建對應；p0 門檻啟用前請人工校對 N5／N4 的分界。
+
+# --- 5.1 79 項 ---
+[[item]]
+id = "gr.wa_topic"
+level = "n5"
+
+[[item]]
+id = "gr.desu"
+level = "n5"
+
+[[item]]
+id = "gr.ja_arimasen"
+level = "n5"
+
+[[item]]
+id = "gr.ka_q"
+level = "n5"
+
+[[item]]
+id = "gr.no_poss"
+level = "n5"
+
+[[item]]
+id = "gr.san_title"
+level = "n5"
+
+[[item]]
+id = "gr.kore_sore"
+level = "n5"
+
+[[item]]
+id = "gr.kono_sono"
+level = "n5"
+
+[[item]]
+id = "gr.mo_also"
+level = "n5"
+
+[[item]]
+id = "gr.nan_nani"
+level = "n5"
+
+[[item]]
+id = "gr.sou_desu"
+level = "n5"
+
+[[item]]
+id = "gr.ka_choice"
+level = "n5"
+
+[[item]]
+id = "gr.numbers"
+level = "n5"
+
+[[item]]
+id = "gr.ikura"
+level = "n5"
+
+[[item]]
+id = "gr.koko_soko"
+level = "n5"
+
+[[item]]
+id = "gr.n_kudasai"
+level = "n5"
+
+[[item]]
+id = "gr.onegai"
+level = "n5"
+
+[[item]]
+id = "gr.no_pron_own"
+level = "n5"
+
+[[item]]
+id = "gr.jikan"
+level = "n5"
+
+[[item]]
+id = "gr.kara_made"
+level = "n5"
+
+[[item]]
+id = "gr.desu_past"
+level = "n5"
+
+[[item]]
+id = "gr.to_and"
+level = "n5"
+
+[[item]]
+id = "gr.goro"
+level = "n5"
+
+[[item]]
+id = "gr.masu"
+level = "n5"
+
+[[item]]
+id = "gr.wo_obj"
+level = "n5"
+
+[[item]]
+id = "gr.de_place"
+level = "n5"
+
+[[item]]
+id = "gr.ni_time"
+level = "n5"
+
+[[item]]
+id = "gr.freq_adv"
+level = "n5"
+
+[[item]]
+id = "gr.ni_e_dir"
+level = "n5"
+
+[[item]]
+id = "gr.de_means"
+level = "n5"
+
+[[item]]
+id = "gr.to_with"
+level = "n5"
+
+[[item]]
+id = "gr.masu_past"
+level = "n5"
+
+[[item]]
+id = "gr.q_ka_mo"
+level = "n5"
+
+[[item]]
+id = "gr.masen_ka"
+level = "n5"
+
+[[item]]
+id = "gr.mashou"
+level = "n5"
+
+[[item]]
+id = "gr.mashou_ka"
+level = "n5"
+
+[[item]]
+id = "gr.sfp_ne"
+level = "n5"
+
+[[item]]
+id = "gr.sfp_yo"
+level = "n5"
+
+[[item]]
+id = "gr.ni_purpose"
+level = "n5"
+
+[[item]]
+id = "gr.aru_iru"
+level = "n5"
+
+[[item]]
+id = "gr.ni_exist"
+level = "n5"
+
+[[item]]
+id = "gr.ga_subject"
+level = "n5"
+
+[[item]]
+id = "gr.position"
+level = "n5"
+
+[[item]]
+id = "gr.ya_nado"
+level = "n5"
+
+[[item]]
+id = "gr.i_adj"
+level = "n5"
+
+[[item]]
+id = "gr.na_adj"
+level = "n5"
+
+[[item]]
+id = "gr.adj_mod"
+level = "n5"
+
+[[item]]
+id = "gr.totemo"
+level = "n5"
+
+[[item]]
+id = "gr.dou_donna"
+level = "n5"
+
+[[item]]
+id = "gr.adj_past"
+level = "n5"
+
+[[item]]
+id = "gr.suki"
+level = "n5"
+
+[[item]]
+id = "gr.jouzu"
+level = "n5"
+
+[[item]]
+id = "gr.wakaru"
+level = "n5"
+
+[[item]]
+id = "gr.ga_but"
+level = "n5"
+
+[[item]]
+id = "gr.wa_ga"
+level = "n5"
+
+[[item]]
+id = "gr.counters"
+level = "n5"
+
+[[item]]
+id = "gr.counter_pos"
+level = "n5"
+
+[[item]]
+id = "gr.dake"
+level = "n5"
+
+[[item]]
+id = "gr.shika"
+level = "n5"
+
+[[item]]
+id = "gr.gurai"
+level = "n5"
+
+[[item]]
+id = "gr.kai_freq"
+level = "n5"
+
+[[item]]
+id = "gr.hoshii"
+level = "n5"
+
+[[item]]
+id = "gr.tai"
+level = "n5"
+
+[[item]]
+id = "gr.kara_because"
+level = "n5"
+
+[[item]]
+id = "gr.doushite"
+level = "n5"
+
+[[item]]
+id = "gr.connectors"
+level = "n5"
+
+[[item]]
+id = "gr.ka_or"
+level = "n5"
+
+[[item]]
+id = "gr.yori"
+level = "n5"
+
+[[item]]
+id = "gr.hou_ga"
+level = "n5"
+
+[[item]]
+id = "gr.ichiban"
+level = "n5"
+
+[[item]]
+id = "gr.dochira"
+level = "n5"
+
+[[item]]
+id = "gr.onaji"
+level = "n5"
+
+[[item]]
+id = "gr.wa_contrast"
+level = "n5"
+
+[[item]]
+id = "gr.verb_groups"
+level = "n5"
+
+[[item]]
+id = "gr.dict_form"
+level = "n5"
+
+[[item]]
+id = "gr.ni_target"
+level = "n5"
+
+[[item]]
+id = "gr.ni_arrive"
+level = "n5"
+
+[[item]]
+id = "gr.wo_leave"
+level = "n5"
+
+[[item]]
+id = "gr.zutsu"
+level = "n5"
+
+# --- 5.2 59 項 ---
+[[item]]
+id = "gr.te_form"
+level = "n5"
+
+[[item]]
+id = "gr.te_kudasai"
+level = "n5"
+
+[[item]]
+id = "gr.te_kudasai_masen"
+level = "n5"
+
+[[item]]
+id = "gr.te_iru_prog"
+level = "n5"
+
+[[item]]
+id = "gr.te_iru_state"
+level = "n5"
+
+[[item]]
+id = "gr.shitte_iru"
+level = "n5"
+
+[[item]]
+id = "gr.te_seq"
+level = "n5"
+
+[[item]]
+id = "gr.te_kara"
+level = "n5"
+
+[[item]]
+id = "gr.adj_te"
+level = "n5"
+
+[[item]]
+id = "gr.adv_form"
+level = "n5"
+
+[[item]]
+id = "gr.nai_form"
+level = "n5"
+
+[[item]]
+id = "gr.naide_kudasai"
+level = "n5"
+
+[[item]]
+id = "gr.nai_de"
+level = "n5"
+
+[[item]]
+id = "gr.te_mo_ii"
+level = "n5"
+
+[[item]]
+id = "gr.te_wa_ikenai"
+level = "n5"
+
+[[item]]
+id = "gr.demo_example"
+level = "n5"
+
+[[item]]
+id = "gr.ta_form"
+level = "n5"
+
+[[item]]
+id = "gr.ta_koto"
+level = "n5"
+
+[[item]]
+id = "gr.tari"
+level = "n5"
+
+[[item]]
+id = "gr.plain_style"
+level = "n5"
+
+[[item]]
+id = "gr.da_copula"
+level = "n5"
+
+[[item]]
+id = "gr.casual_q"
+level = "n5"
+
+[[item]]
+id = "gr.particle_drop"
+level = "n5"
+
+[[item]]
+id = "gr.un_uun"
+level = "n5"
+
+[[item]]
+id = "gr.to_omou"
+level = "n5"
+
+[[item]]
+id = "gr.to_iu"
+level = "n5"
+
+[[item]]
+id = "gr.deshou"
+level = "n5"
+
+[[item]]
+id = "gr.sfp_kana"
+level = "n5"
+
+[[item]]
+id = "gr.rel_clause"
+level = "n5"
+
+[[item]]
+id = "gr.ga_in_rel"
+level = "n5"
+
+[[item]]
+id = "gr.no_one"
+level = "n5"
+
+[[item]]
+id = "gr.to_iu_n"
+level = "n5"
+
+[[item]]
+id = "gr.wa_vs_ga"
+level = "n5"
+
+[[item]]
+id = "gr.koto_nominal"
+level = "n5"
+
+[[item]]
+id = "gr.no_nominal"
+level = "n5"
+
+[[item]]
+id = "gr.koto_ga_dekiru"
+level = "n5"
+
+[[item]]
+id = "gr.dekiru_n"
+level = "n5"
+
+[[item]]
+id = "gr.kata"
+level = "n5"
+
+[[item]]
+id = "gr.nakereba"
+level = "n5"
+
+[[item]]
+id = "gr.nakute_mo_ii"
+level = "n5"
+
+[[item]]
+id = "gr.hou_ga_ii"
+level = "n5"
+
+[[item]]
+id = "gr.toki"
+level = "n5"
+
+[[item]]
+id = "gr.mae_ni"
+level = "n5"
+
+[[item]]
+id = "gr.ato_de"
+level = "n5"
+
+[[item]]
+id = "gr.nagara"
+level = "n5"
+
+[[item]]
+id = "gr.chu_juu"
+level = "n5"
+
+[[item]]
+id = "gr.naru"
+level = "n5"
+
+[[item]]
+id = "gr.suru_change"
+level = "n5"
+
+[[item]]
+id = "gr.mou_mada"
+level = "n5"
+
+[[item]]
+id = "gr.mada_te_inai"
+level = "n5"
+
+[[item]]
+id = "gr.ni_suru"
+level = "n5"
+
+[[item]]
+id = "gr.ageru"
+level = "n5"
+
+[[item]]
+id = "gr.kureru"
+level = "n5"
+
+[[item]]
+id = "gr.morau"
+level = "n5"
+
+[[item]]
+id = "gr.ni_kara_source"
+level = "n5"
+
+[[item]]
+id = "gr.n_desu"
+level = "n5"
+
+[[item]]
+id = "gr.ndesu_ga"
+level = "n5"
+
+[[item]]
+id = "gr.node"
+level = "n5"
+
+[[item]]
+id = "gr.kedo_soft"
+level = "n5"
+
+# --- 5.3 74 項 ---
+[[item]]
+id = "gr.potential"
+level = "n4"
+
+[[item]]
+id = "gr.mieru"
+level = "n4"
+
+[[item]]
+id = "gr.ga_potential"
+level = "n4"
+
+[[item]]
+id = "gr.ka_embed"
+level = "n4"
+
+[[item]]
+id = "gr.ka_douka"
+level = "n4"
+
+[[item]]
+id = "gr.volitional"
+level = "n4"
+
+[[item]]
+id = "gr.you_to_omou"
+level = "n4"
+
+[[item]]
+id = "gr.tsumori"
+level = "n4"
+
+[[item]]
+id = "gr.yotei"
+level = "n4"
+
+[[item]]
+id = "gr.tara"
+level = "n4"
+
+[[item]]
+id = "gr.tara_ii"
+level = "n4"
+
+[[item]]
+id = "gr.tara_dou"
+level = "n4"
+
+[[item]]
+id = "gr.to_natural"
+level = "n4"
+
+[[item]]
+id = "gr.ba"
+level = "n4"
+
+[[item]]
+id = "gr.nara"
+level = "n4"
+
+[[item]]
+id = "gr.ba_ii"
+level = "n4"
+
+[[item]]
+id = "gr.te_shimau"
+level = "n4"
+
+[[item]]
+id = "gr.te_oku"
+level = "n4"
+
+[[item]]
+id = "gr.te_miru"
+level = "n4"
+
+[[item]]
+id = "gr.jita"
+level = "n4"
+
+[[item]]
+id = "gr.te_aru"
+level = "n4"
+
+[[item]]
+id = "gr.te_iku"
+level = "n4"
+
+[[item]]
+id = "gr.te_kuru"
+level = "n4"
+
+[[item]]
+id = "gr.te_ageru"
+level = "n4"
+
+[[item]]
+id = "gr.te_kureru"
+level = "n4"
+
+[[item]]
+id = "gr.te_morau"
+level = "n4"
+
+[[item]]
+id = "gr.te_hoshii"
+level = "n4"
+
+[[item]]
+id = "gr.te_moraemasu"
+level = "n4"
+
+[[item]]
+id = "gr.sou_look"
+level = "n4"
+
+[[item]]
+id = "gr.sou_hear"
+level = "n4"
+
+[[item]]
+id = "gr.kamo"
+level = "n4"
+
+[[item]]
+id = "gr.hazu"
+level = "n4"
+
+[[item]]
+id = "gr.ni_yoru"
+level = "n4"
+
+[[item]]
+id = "gr.you_da"
+level = "n4"
+
+[[item]]
+id = "gr.mitai"
+level = "n4"
+
+[[item]]
+id = "gr.rashii"
+level = "n4"
+
+[[item]]
+id = "gr.garu"
+level = "n4"
+
+[[item]]
+id = "gr.te_mo"
+level = "n4"
+
+[[item]]
+id = "gr.noni"
+level = "n4"
+
+[[item]]
+id = "gr.shi"
+level = "n4"
+
+[[item]]
+id = "gr.ba_hodo"
+level = "n4"
+
+[[item]]
+id = "gr.passive"
+level = "n4"
+
+[[item]]
+id = "gr.passive_trouble"
+level = "n4"
+
+[[item]]
+id = "gr.passive_social"
+level = "n4"
+
+[[item]]
+id = "gr.causative"
+level = "n4"
+
+[[item]]
+id = "gr.sasete"
+level = "n4"
+
+[[item]]
+id = "gr.causative_passive"
+level = "n4"
+
+[[item]]
+id = "gr.imperative"
+level = "n4"
+
+[[item]]
+id = "gr.prohibit"
+level = "n4"
+
+[[item]]
+id = "gr.nasai"
+level = "n4"
+
+[[item]]
+id = "gr.te_kure"
+level = "n4"
+
+[[item]]
+id = "gr.sugiru"
+level = "n4"
+
+[[item]]
+id = "gr.yasui_nikui"
+level = "n4"
+
+[[item]]
+id = "gr.hajimeru_owaru"
+level = "n4"
+
+[[item]]
+id = "gr.tsuzukeru"
+level = "n4"
+
+[[item]]
+id = "gr.sa_noun"
+level = "n4"
+
+[[item]]
+id = "gr.you_ni_naru"
+level = "n4"
+
+[[item]]
+id = "gr.you_ni_suru"
+level = "n4"
+
+[[item]]
+id = "gr.koto_ni_naru"
+level = "n4"
+
+[[item]]
+id = "gr.koto_ni_suru"
+level = "n4"
+
+[[item]]
+id = "gr.tokoro"
+level = "n4"
+
+[[item]]
+id = "gr.ta_bakari"
+level = "n4"
+
+[[item]]
+id = "gr.aida"
+level = "n4"
+
+[[item]]
+id = "gr.uchi_ni"
+level = "n4"
+
+[[item]]
+id = "gr.made_ni"
+level = "n4"
+
+[[item]]
+id = "gr.mama"
+level = "n4"
+
+[[item]]
+id = "gr.keigo_map"
+level = "n4"
+
+[[item]]
+id = "gr.sonkei"
+level = "n4"
+
+[[item]]
+id = "gr.o_ni_naru"
+level = "n4"
+
+[[item]]
+id = "gr.o_kudasai"
+level = "n4"
+
+[[item]]
+id = "gr.kenjou"
+level = "n4"
+
+[[item]]
+id = "gr.o_suru"
+level = "n4"
+
+[[item]]
+id = "gr.gozaimasu"
+level = "n4"
+
+[[item]]
+id = "gr.ni_tsuite"
+level = "n4"

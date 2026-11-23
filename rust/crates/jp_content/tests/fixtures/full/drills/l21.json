@@ -1,0 +1,9 @@
+{
+  "schema": 1,
+  "items": [
+    {"id": "dr.l21.reg.001", "type": "register_convert", "lesson": "le.l21", "targets": ["gr.plain_style"], "from": "se.l02.001", "to": "se.l21.001"},
+    {"id": "dr.l21.lsn.001", "type": "listen_meaning", "lesson": "le.l21", "targets": ["gr.plain_style"], "sentence": "se.l21.002", "choices_zh": ["不吃飯。", "吃飯。", "喝茶。"], "answer_index": 0},
+    {"id": "dr.l21.par.001", "type": "particle_fill", "lesson": "le.l21", "targets": ["gr.plain_style"], "sentence": "se.l21.001", "blanks": [{"word_index": 1, "choices": ["を|gr.wo_obj", "は|gr.wa_topic"]}]},
+    {"id": "dr.l21.ord.001", "type": "reorder", "lesson": "le.l21", "targets": ["gr.plain_style"], "sentence": "se.l21.004", "accept_orders": [[0, 1, 2]], "audio_first": false}
+  ]
+}

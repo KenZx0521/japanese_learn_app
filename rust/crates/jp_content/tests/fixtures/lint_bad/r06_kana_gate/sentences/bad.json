@@ -1,0 +1,6 @@
+{
+  "schema": 1,
+  "items": [
+    {"id": "se.bad.r06", "lesson": "le.l01", "t": "ア|@name 。", "zh": "錯誤測試。", "style": "neutral", "tts": "kana"}
+  ]
+}

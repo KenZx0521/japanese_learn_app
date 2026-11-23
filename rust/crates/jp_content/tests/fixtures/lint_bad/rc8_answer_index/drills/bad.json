@@ -1,0 +1,6 @@
+{
+  "schema": 1,
+  "items": [
+    {"id": "dr.bad.lsn.rc8", "type": "listen_meaning", "lesson": "le.l01", "targets": ["gr.desu"], "sentence": "se.l01.002", "choices_zh": ["甲", "乙"], "answer_index": 9}
+  ]
+}

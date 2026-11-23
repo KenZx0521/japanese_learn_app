@@ -1,0 +1,6 @@
+{ "schema": 1, "items": [
+  {"id": "vo.inu", "lesson": "le.l08", "lesson_order": 23, "surface": "犬", "kana": "いぬ", "zh": ["狗"], "pos": "n", "accent": null, "jlpt": "n5", "topics": ["animal"], "same_form_zh": true, "examples": ["se.l08.055", "se.l08.056", "se.l09.019", "se.l11.020"], "notes": []},
+  {"id": "vo.neko", "lesson": "le.l08", "lesson_order": 24, "surface": "猫", "kana": "ねこ", "zh": ["貓"], "pos": "n", "accent": null, "jlpt": "n5", "topics": ["animal"], "same_form_zh": true, "examples": ["se.l08.057", "se.l08.058", "se.l10.003", "se.l11.021"], "notes": ["no.sj.byou"]},
+  {"id": "vo.doubutsu", "lesson": "le.l19", "lesson_order": 10, "surface": "動物", "kana": "どうぶつ", "zh": ["動物"], "pos": "n", "accent": null, "jlpt": "n5", "topics": ["animal"], "same_form_zh": true, "examples": ["se.l19.040", "se.l19.012"], "notes": ["no.rd.ng_ong"]},
+  {"id": "vo.tori", "lesson": "le.l19", "lesson_order": 11, "surface": "鳥", "kana": "とり", "zh": ["鳥"], "pos": "n", "accent": null, "jlpt": "n5", "topics": ["animal"], "same_form_zh": true, "examples": ["se.l19.042", "se.l19.041"], "notes": []}
+] }

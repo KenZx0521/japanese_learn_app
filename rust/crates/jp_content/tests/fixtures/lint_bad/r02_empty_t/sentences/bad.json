@@ -1,0 +1,6 @@
+{
+  "schema": 1,
+  "items": [
+    {"id": "se.bad.empty", "lesson": "le.l01", "t": "", "zh": "空。", "style": "neutral"}
+  ]
+}

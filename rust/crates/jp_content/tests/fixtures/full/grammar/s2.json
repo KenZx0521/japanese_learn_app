@@ -1,0 +1,6 @@
+{
+  "schema": 1,
+  "items": [
+    {"id": "gr.plain_style", "lesson": "le.l21", "lesson_order": 1, "jlpt": "n5", "title_zh": "常體", "pattern": "V（常體）", "meaning_zh": "朋友之間的說法", "explain_zh": "先看例句。", "compare_zh": "中文語序不同。", "trap_zh": null, "formation": [{"from": "N", "to": "N {ja:です}"}], "register": "plain", "requires": ["gr.masu"], "examples": ["se.l21.001", "se.l21.002"], "contrast": [], "terms": []}
+  ]
+}

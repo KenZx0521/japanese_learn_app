@@ -1,0 +1,6 @@
+{
+  "schema": 1,
+  "items": [
+    {"id": "se.BAD.001", "lesson": "le.l01", "t": "はい|vo.hai 。", "zh": "錯誤測試。", "style": "neutral"}
+  ]
+}

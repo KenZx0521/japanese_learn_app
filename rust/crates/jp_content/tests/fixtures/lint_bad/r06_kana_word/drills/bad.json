@@ -1,0 +1,6 @@
+{
+  "schema": 1,
+  "items": [
+    {"id": "dr.bad.kwd.r06", "type": "kana_word", "lesson": "le.k01", "targets": ["ka.hira.a"], "word": "いぬ", "zh": "狗", "mode": "typing"}
+  ]
+}

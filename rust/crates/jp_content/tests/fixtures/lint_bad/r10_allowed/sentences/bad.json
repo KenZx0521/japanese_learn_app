@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "items": [
+    {"id": "se.bad.r10.1", "lesson": "le.l01", "t": "ねこ|vo.neko 。", "zh": "錯誤測試。", "style": "neutral"},
+    {"id": "se.bad.r10.2", "lesson": "le.l01", "t": "ねこ|vo.neko 。", "zh": "錯誤測試。", "style": "neutral"}
+  ]
+}

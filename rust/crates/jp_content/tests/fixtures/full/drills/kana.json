@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "items": [
+    {"id": "dr.k11.mpr.001", "type": "minimal_pair", "lesson": "le.k11", "targets": ["ka.hira.ka", "ka.hira.ga"], "a": "か", "a_zh": "清音", "b": "が", "b_zh": "濁音", "a_tts_text": "か", "b_tts_text": "が"},
+    {"id": "dr.k16.mpr.001", "type": "minimal_pair", "lesson": "le.k16", "targets": ["ka.hira.sokuon"], "a": "きて", "a_zh": "來", "b": "きって", "b_zh": "郵票"},
+    {"id": "dr.k17.mpr.001", "type": "minimal_pair", "lesson": "le.k17", "targets": ["ka.hira.ba"], "a": "おばさん", "a_zh": "阿姨", "b": "おばあさん", "b_zh": "奶奶"},
+    {"id": "dr.k19.mpr.001", "type": "minimal_pair", "lesson": "le.k19", "targets": ["ka.sg.accent_ame"], "a": "雨", "a_kana": "あめ", "a_zh": "雨", "b": "飴", "b_kana": "あめ", "b_zh": "糖果", "listen_disabled": true},
+    {"id": "dr.k05.kwd.001", "type": "kana_word", "lesson": "le.k05", "targets": ["ka.hira.i", "ka.hira.nu"], "word": "いぬ", "zh": "狗", "mode": "choice", "choices_zh": ["狗", "貓", "鳥", "魚"], "answer_index": 0},
+    {"id": "dr.k11.kwd.002", "type": "kana_word", "lesson": "le.k11", "targets": ["ka.hira.ka", "ka.hira.gi"], "word": "かぎ", "zh": "鑰匙", "mode": "typing"}
+  ]
+}

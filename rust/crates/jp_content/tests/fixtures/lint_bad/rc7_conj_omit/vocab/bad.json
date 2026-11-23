@@ -1,0 +1,6 @@
+{
+  "schema": 1,
+  "items": [
+    {"id": "vo.wakaru", "lesson": "le.l02", "lesson_order": 9, "surface": "分かる", "kana": "わかる", "zh": ["懂"], "pos": "v5", "trans": "in", "accent": null, "jlpt": "n5", "topics": ["verb"], "examples": [], "conj_omit": ["potential", "passive", "imperative"]}
+  ]
+}

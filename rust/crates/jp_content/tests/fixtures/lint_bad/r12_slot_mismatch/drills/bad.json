@@ -1,0 +1,6 @@
+{
+  "schema": 1,
+  "items": [
+    {"id": "dr.bad.sub.slot", "type": "substitution", "lesson": "le.l02", "targets": ["gr.masu"], "frame": "{a} を|gr.wo_obj {b} 。", "rows": [{"a": "ご飯|ごはん|vo.gohan", "b": "食べ|たべ|vo.taberu+ます|gr.masu", "c": "額外", "zh": "吃。"}, {"a": "お茶|おちゃ|vo.ocha", "b": "飲み|のみ|vo.nomu+ます|gr.masu", "zh": "喝。"}, {"a": "ご飯|ごはん|vo.gohan", "b": "飲み|のみ|vo.nomu+ます|gr.masu", "zh": "喝飯。"}]}
+  ]
+}

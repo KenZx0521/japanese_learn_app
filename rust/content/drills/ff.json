@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "items": [
+    {"id": "dr.l01.ffr.001", "type": "false_friend", "lesson": "le.l01", "targets": ["vo.sensei"], "note": "no.ff.sensei", "prompt_zh": "「{ja:先生|せんせい}」是什麼意思？", "choices_zh": ["對男士的稱呼", "前輩、學長", "老師（也尊稱醫師等）"], "answer_index": 2},
+    {"id": "dr.l02.ffr.001", "type": "false_friend", "lesson": "le.l02", "targets": ["vo.shinbun"], "note": "no.ff.shinbun", "prompt_zh": "「{ja:新聞|しんぶん}」是什麼意思？", "choices_zh": ["電視新聞", "報紙", "新鮮事"], "answer_index": 1},
+    {"id": "dr.l02.ffr.002", "type": "false_friend", "lesson": "le.l02", "targets": ["vo.tokei"], "note": "no.ff.tokei", "prompt_zh": "「{ja:時計|とけい}」是什麼意思？", "choices_zh": ["時間計畫、行程表", "計算機", "時鐘、手錶"], "answer_index": 2},
+    {"id": "dr.l05.ffr.001", "type": "false_friend", "lesson": "le.l05", "targets": ["vo.benkyou"], "note": "no.ff.benkyou", "prompt_zh": "「{ja:勉強|べんきょう}」是什麼意思？", "choices_zh": ["勉強、不情願", "鼓勵別人", "念書、學習"], "answer_index": 2},
+    {"id": "dr.l06.ffr.001", "type": "false_friend", "lesson": "le.l06", "targets": ["vo.densha"], "note": "no.ff.densha", "prompt_zh": "「{ja:電車|でんしゃ}」是什麼意思？", "choices_zh": ["電動機車", "電車、列車", "纜車"], "answer_index": 1},
+    {"id": "dr.l06.ffr.002", "type": "false_friend", "lesson": "le.l06", "targets": ["vo.jitensha"], "note": "no.ff.jitensha", "prompt_zh": "「{ja:自転車|じてんしゃ}」是什麼意思？", "choices_zh": ["腳踏車", "會自己轉動的車", "機車"], "answer_index": 0},
+    {"id": "dr.l07.ffr.001", "type": "false_friend", "lesson": "le.l07", "targets": ["vo.eiga"], "note": "no.ff.eiga", "prompt_zh": "「{ja:映画|えいが}」是什麼意思？", "choices_zh": ["電影", "投影片", "畫展"], "answer_index": 0},
+    {"id": "dr.l07.ffr.002", "type": "false_friend", "lesson": "le.l07", "targets": ["vo.yasai"], "note": "no.ff.yasai", "prompt_zh": "「{ja:野菜|やさい}」是什麼意思？", "choices_zh": ["野生的菜", "蔬菜", "野餐"], "answer_index": 1},
+    {"id": "dr.l08.ffr.001", "type": "false_friend", "lesson": "le.l08", "targets": ["vo.tsukue"], "note": "no.ff.tsukue", "prompt_zh": "「{ja:机|つくえ}」是什麼意思？", "choices_zh": ["機器", "椅子", "書桌"], "answer_index": 2},
+    {"id": "dr.l09.ffr.001", "type": "false_friend", "lesson": "le.l09", "targets": ["vo.daijoubu"], "note": "no.ff.daijoubu", "prompt_zh": "「{ja:大丈夫|だいじょうぶ}」是什麼意思？", "choices_zh": ["男子漢", "沒問題、不要緊", "老公"], "answer_index": 1},
+    {"id": "dr.l09.ffr.002", "type": "false_friend", "lesson": "le.l09", "targets": ["vo.genki"], "note": "no.ff.genki", "prompt_zh": "「{ja:お元気ですか|おげんきですか}」是什麼意思？", "choices_zh": ["你還有體力嗎？", "你好嗎？", "你生氣了嗎？"], "answer_index": 1},
+    {"id": "dr.l09.ffr.003", "type": "false_friend", "lesson": "le.l09", "targets": ["vo.yasui"], "note": "no.ff.yasui", "prompt_zh": "「{ja:安い|やすい}」是什麼意思？", "choices_zh": ["安全", "安靜", "便宜"], "answer_index": 2},
+    {"id": "dr.l10.ffr.001", "type": "false_friend", "lesson": "le.l10", "targets": ["vo.heta"], "note": "no.ff.heta", "prompt_zh": "「{ja:下手|へた}」是什麼意思？", "choices_zh": ["動手、著手", "手下、部下", "不擅長、笨拙"], "answer_index": 2},
+    {"id": "dr.l10.ffr.002", "type": "false_friend", "lesson": "le.l10", "targets": ["vo.jouzu"], "note": "no.ff.jouzu", "prompt_zh": "「{ja:上手|じょうず}」是什麼意思？", "choices_zh": ["剛學會、容易上手", "擅長、很厲害", "長官、上司"], "answer_index": 1},
+    {"id": "dr.l10.ffr.003", "type": "false_friend", "lesson": "le.l10", "targets": ["vo.omoshiroi"], "note": "no.ff.omoshiroi", "prompt_zh": "「{ja:面白い|おもしろい}」是什麼意思？", "choices_zh": ["有趣", "臉色發白", "皮膚很白"], "answer_index": 0},
+    {"id": "dr.l12.ffr.001", "type": "false_friend", "lesson": "le.l12", "targets": ["vo.tegami"], "note": "no.ff.tegami", "prompt_zh": "「{ja:手紙|てがみ}」是什麼意思？", "choices_zh": ["信", "衛生紙", "手帕"], "answer_index": 0},
+    {"id": "dr.l14.ffr.001", "type": "false_friend", "lesson": "le.l14", "targets": ["vo.hashiru"], "note": "no.ff.hashiru", "prompt_zh": "「{ja:走る|はしる}」是什麼意思？", "choices_zh": ["走路", "離開", "跑"], "answer_index": 2},
+    {"id": "dr.l17.ffr.001", "type": "false_friend", "lesson": "le.l17", "targets": ["vo.shinsetsu"], "note": "no.ff.shinsetsu", "prompt_zh": "「{ja:親切|しんせつ}」是什麼意思？", "choices_zh": ["感覺熟悉、親近", "好心、熱心幫忙", "親戚"], "answer_index": 1},
+    {"id": "dr.l18.ffr.001", "type": "false_friend", "lesson": "le.l18", "targets": ["vo.muri"], "note": "no.ff.muri", "prompt_zh": "「{ja:無理です|むりです}」通常是什麼意思？", "choices_zh": ["辦不到、沒辦法", "你在無理取鬧", "沒有理由"], "answer_index": 0},
+    {"id": "dr.l18.ffr.002", "type": "false_friend", "lesson": "le.l18", "targets": ["vo.shitsumon"], "note": "no.ff.shitsumon", "prompt_zh": "「{ja:質問|しつもん}」是什麼意思？", "choices_zh": ["提問、發問", "責問、逼問", "品質問題"], "answer_index": 0},
+    {"id": "dr.l22.ffr.001", "type": "false_friend", "lesson": "le.l22", "targets": ["vo.taihen"], "note": "no.ff.taihen", "prompt_zh": "「{ja:大変|たいへん}」是什麼意思？", "choices_zh": ["辛苦、糟糕（也可當「非常」）", "發生巨大的變化", "變得很大"], "answer_index": 0},
+    {"id": "dr.l24.ffr.001", "type": "false_friend", "lesson": "le.l24", "targets": ["vo.kitte"], "note": "no.ff.kitte", "prompt_zh": "「{ja:切手|きって}」是什麼意思？", "choices_zh": ["郵票", "剁手、切斷手", "菜刀"], "answer_index": 0},
+    {"id": "dr.l25.ffr.001", "type": "false_friend", "lesson": "le.l25", "targets": ["vo.joubu"], "note": "no.ff.joubu", "prompt_zh": "「{ja:丈夫|じょうぶ}」是什麼意思？", "choices_zh": ["堅固耐用、身體健壯", "老公", "長輩"], "answer_index": 0},
+    {"id": "dr.l25.ffr.002", "type": "false_friend", "lesson": "le.l25", "targets": ["vo.kega"], "note": "no.ff.kega", "prompt_zh": "「{ja:怪我|けが}」是什麼意思？", "choices_zh": ["怪罪我", "受傷", "很奇怪"], "answer_index": 1},
+    {"id": "dr.l26.ffr.001", "type": "false_friend", "lesson": "le.l26", "targets": ["vo.jidousha"], "note": "no.ff.jidousha", "prompt_zh": "「{ja:自動車|じどうしゃ}」是什麼意思？", "choices_zh": ["自動駕駛的車", "自排車", "汽車"], "answer_index": 2},
+    {"id": "dr.l29.ffr.001", "type": "false_friend", "lesson": "le.l29", "targets": ["vo.kekkou"], "note": "no.ff.kekkou", "prompt_zh": "「{ja:結構|けっこう}」在日常會話裡通常是什麼意思？", "choices_zh": ["構造、架構", "結果", "相當、很好（也可用來婉拒）"], "answer_index": 2},
+    {"id": "dr.l30.ffr.001", "type": "false_friend", "lesson": "le.l30", "targets": ["vo.kaidan"], "note": "no.ff.kaidan", "prompt_zh": "「{ja:階段|かいだん}」是什麼意思？", "choices_zh": ["樓梯", "時期、步驟", "等級"], "answer_index": 0}
+  ]
+}

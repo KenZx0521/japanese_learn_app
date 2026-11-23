@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "items": [
+    {"id": "dr.bad.cnj.omit", "type": "conjugate", "lesson": "le.l02", "targets": ["gr.masu"], "form": "potential", "lemmas": ["vo.wakaru"]},
+    {"id": "dr.ok.cnj.omit", "type": "conjugate", "lesson": "le.l02", "targets": ["gr.masu"], "form": "te", "lemmas": ["vo.wakaru"]}
+  ]
+}

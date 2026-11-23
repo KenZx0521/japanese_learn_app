@@ -1,0 +1,76 @@
+# rust/ 同時是 workspace 根與 jp_core package（rust-core.md §1.2）。
+# FRB 只掃描 src/api/；領域邏輯都在 crates/，由 crate 邊界強制依賴方向。
+[workspace]
+members = [
+    "crates/jp_lang",
+    "crates/jp_content",
+    "crates/jp_store",
+    "crates/jp_srs",
+    "crates/jp_plan",
+    "crates/jp_quiz",
+    "tools/content_tool",
+]
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[workspace.dependencies]
+# App 相依，版本鎖定 rust-core.md §0.1
+flutter_rust_bridge = { version = "=2.13.0", features = ["chrono"] }
+rusqlite = { version = "=0.41.1", features = ["bundled"] }
+rs-fsrs = "=1.2.1"
+chrono = { version = "=0.4.45", features = ["serde"] }
+serde = { version = "=1.0.229", features = ["derive"] }
+serde_json = "=1.0.154"
+thiserror = "=2.0.21"
+rand_chacha = "=0.9.0"
+
+# 內部 crate
+jp_lang = { path = "crates/jp_lang" }
+jp_content = { path = "crates/jp_content" }
+jp_store = { path = "crates/jp_store" }
+jp_srs = { path = "crates/jp_srs" }
+jp_plan = { path = "crates/jp_plan" }
+jp_quiz = { path = "crates/jp_quiz" }
+
+# 僅測試
+tempfile = "3"
+proptest = "1"
+
+# 僅 content_tool（reuse-and-verification.md §9.4），不進 App，由 L03 把關
+clap = { version = "4", features = ["derive"] }
+sha2 = "0.10"
+toml = "0.9"
+ttf-parser = "0.25"
+wana_kana = "=5.0.0"
+encoding_rs = "0.8"
+
+[package]
+name = "jp_core"
+version.workspace = true
+edition.workspace = true
+publish.workspace = true
+
+[lib]
+crate-type = ["cdylib", "staticlib", "rlib"]
+
+[dependencies]
+flutter_rust_bridge.workspace = true
+chrono.workspace = true
+thiserror.workspace = true
+jp_lang.workspace = true
+jp_content.workspace = true
+jp_store.workspace = true
+jp_srs.workspace = true
+jp_plan.workspace = true
+jp_quiz.workspace = true
+
+[dev-dependencies]
+jp_content = { workspace = true, features = ["test-support"] }
+tempfile.workspace = true
+
+[lints.rust]
+unexpected_cfgs = { level = "warn", check-cfg = ['cfg(frb_expand)'] }

@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "items": [
+    {"id": "se.l02.001", "lesson": "le.l02", "t": "私|わたし|vo.watashi は|gr.wa_topic ご飯|ごはん|vo.gohan を|gr.wo_obj 食べ|たべ|vo.taberu+ます|gr.masu 。", "zh": "我吃飯。", "style": "polite"},
+    {"id": "se.l02.002", "lesson": "le.l02", "t": "私|わたし|vo.watashi は|gr.wa_topic お茶|おちゃ|vo.ocha を|gr.wo_obj 飲み|のみ|vo.nomu+ます|gr.masu 。", "zh": "我喝茶。", "style": "polite"},
+    {"id": "se.l02.003", "lesson": "le.l02", "t": "先生|せんせい|vo.sensei は|gr.wa_topic お茶|おちゃ|vo.ocha を|gr.wo_obj 飲み|のみ|vo.nomu+ます|gr.masu 。", "zh": "老師喝茶。", "style": "polite"},
+    {"id": "se.l02.004", "lesson": "le.l02", "t": "学生|がくせい|vo.gakusei は|gr.wa_topic ご飯|ごはん|vo.gohan を|gr.wo_obj 食べ|たべ|vo.taberu+ます|gr.masu 。", "zh": "學生吃飯。", "style": "polite"},
+    {"id": "se.l02.005", "lesson": "le.l02", "t": "はい|vo.hai 、 ご飯|ごはん|vo.gohan を|gr.wo_obj 食べ|たべ|vo.taberu+ます|gr.masu 。", "zh": "好，吃飯。", "style": "polite"},
+    {"id": "se.l02.006", "lesson": "le.l02", "t": "はい|vo.hai 、 お茶|おちゃ|vo.ocha を|gr.wo_obj 飲み|のみ|vo.nomu+ます|gr.masu 。", "zh": "好，喝茶。", "style": "polite"},
+    {"id": "se.l02.007", "lesson": "le.l02", "t": "先生|せんせい|vo.sensei は|gr.wa_topic ご飯|ごはん|vo.gohan を|gr.wo_obj 食べ|たべ|vo.taberu+ます|gr.masu 。", "zh": "老師吃飯。", "style": "polite"}
+  ]
+}

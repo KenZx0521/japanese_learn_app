@@ -1,0 +1,2 @@
+# 時間一律經 Clock 注入（rust-core.md §1.2、§2）；SystemClock 以 #[allow] 例外。
+disallowed-methods = ["chrono::Utc::now", "chrono::Local::now", "rs_fsrs::Card::new"]

@@ -1,0 +1,39 @@
+# 夾具的 verify 覆寫清單（reuse-and-verification.md §9.6、§9.11）。
+# 只放 lib/ 介面圖示字的覆寫，與 rust/content/lint/verify_allow.toml 的 lib 條目相同：
+# 這三字經 JaText 以 Klee One 渲染，Noto TC 上游沒有字形。夾具的 verify 也會掃 lib/，所以要一起登錄。
+
+[[allow]]
+rule = "F03"
+item = "lib"
+token = "暦"
+reason = "底部導覽列「計畫」的圖示字：經 JaText 以 Klee One 渲染（Klee 子集含此字），Noto Sans TC 上游無此字形，走不到 Noto"
+
+[[allow]]
+rule = "F04"
+item = "lib"
+token = "暦"
+reason = "底部導覽列「計畫」的圖示字：經 JaText 以 Klee One 渲染（Klee 子集含此字），Noto Serif TC 上游無此字形，走不到 Noto"
+
+[[allow]]
+rule = "F03"
+item = "lib"
+token = "済"
+reason = "朱印（HankoBadge、StampOverlay）的「已完成」圖示字：經 JaText 以 Klee One 渲染（Klee 子集含此字），Noto Sans TC 上游無此字形，走不到 Noto"
+
+[[allow]]
+rule = "F04"
+item = "lib"
+token = "済"
+reason = "朱印（HankoBadge、StampOverlay）的「已完成」圖示字：經 JaText 以 Klee One 渲染（Klee 子集含此字），Noto Serif TC 上游無此字形，走不到 Noto"
+
+[[allow]]
+rule = "F03"
+item = "lib"
+token = "聴"
+reason = "底部導覽列「聽說」與聽力頁直書標題的圖示字：經 JaText 以 Klee One 渲染（Klee 子集含此字），Noto Sans TC 上游無此字形，走不到 Noto"
+
+[[allow]]
+rule = "F04"
+item = "lib"
+token = "聴"
+reason = "底部導覽列「聽說」與聽力頁直書標題的圖示字：經 JaText 以 Klee One 渲染（Klee 子集含此字），Noto Serif TC 上游無此字形，走不到 Noto"

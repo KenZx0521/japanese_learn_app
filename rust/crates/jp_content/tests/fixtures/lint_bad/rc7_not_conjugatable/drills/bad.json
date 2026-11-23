@@ -1,0 +1,6 @@
+{
+  "schema": 1,
+  "items": [
+    {"id": "dr.bad.cnj.rc7", "type": "conjugate", "lesson": "le.l02", "targets": ["gr.masu"], "form": "te", "lemmas": ["vo.sensei"]}
+  ]
+}

@@ -1,0 +1,246 @@
+{
+ "schema": 1,
+ "items": [
+  {
+   "id": "ka.kata.a",
+   "lesson": "le.kk01",
+   "script": "kata",
+   "kind": "basic",
+   "char": "ア",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:ア} 的字形",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.kata.i",
+   "lesson": "le.kk01",
+   "script": "kata",
+   "kind": "basic",
+   "char": "イ",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:イ} 的字形",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.kata.u",
+   "lesson": "le.kk01",
+   "script": "kata",
+   "kind": "basic",
+   "char": "ウ",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:ウ} 的字形",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.kata.e",
+   "lesson": "le.kk01",
+   "script": "kata",
+   "kind": "basic",
+   "char": "エ",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:エ} 的字形",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.kata.o",
+   "lesson": "le.kk01",
+   "script": "kata",
+   "kind": "basic",
+   "char": "オ",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:オ} 的字形",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.kata.ka",
+   "lesson": "le.kk01",
+   "script": "kata",
+   "kind": "basic",
+   "char": "カ",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:カ} 的字形",
+   "confusable": [
+    "ka.cf.ka_kata",
+    "ka.cf.ka_chikara"
+   ],
+   "example_words": []
+  },
+  {
+   "id": "ka.kata.ki",
+   "lesson": "le.kk01",
+   "script": "kata",
+   "kind": "basic",
+   "char": "キ",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:キ} 的字形",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.kata.ku",
+   "lesson": "le.kk01",
+   "script": "kata",
+   "kind": "basic",
+   "char": "ク",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:ク} 的字形",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.kata.ke",
+   "lesson": "le.kk01",
+   "script": "kata",
+   "kind": "basic",
+   "char": "ケ",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:ケ} 的字形",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.kata.ko",
+   "lesson": "le.kk01",
+   "script": "kata",
+   "kind": "basic",
+   "char": "コ",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:コ} 的字形",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.kata.kya",
+   "lesson": "le.kk07",
+   "script": "kata",
+   "kind": "yoon",
+   "char": "キャ",
+   "origin_kanji": null,
+   "hint_zh": "念成一拍",
+   "confusable": [],
+   "example_words": [],
+   "row": "kya"
+  },
+  {
+   "id": "ka.kata.kyu",
+   "lesson": "le.kk07",
+   "script": "kata",
+   "kind": "yoon",
+   "char": "キュ",
+   "origin_kanji": null,
+   "hint_zh": "念成一拍",
+   "confusable": [],
+   "example_words": [],
+   "row": "kya"
+  },
+  {
+   "id": "ka.kata.kyo",
+   "lesson": "le.kk07",
+   "script": "kata",
+   "kind": "yoon",
+   "char": "キョ",
+   "origin_kanji": null,
+   "hint_zh": "念成一拍",
+   "confusable": [],
+   "example_words": [],
+   "row": "kya"
+  },
+  {
+   "id": "ka.kata.small_ya",
+   "lesson": "le.kk07",
+   "script": "kata",
+   "kind": "mark",
+   "char": "ャ",
+   "origin_kanji": null,
+   "hint_zh": "片假名符號",
+   "confusable": [],
+   "example_words": [],
+   "listen_disabled": true
+  },
+  {
+   "id": "ka.kata.small_yu",
+   "lesson": "le.kk07",
+   "script": "kata",
+   "kind": "mark",
+   "char": "ュ",
+   "origin_kanji": null,
+   "hint_zh": "片假名符號",
+   "confusable": [],
+   "example_words": [],
+   "listen_disabled": true
+  },
+  {
+   "id": "ka.kata.small_yo",
+   "lesson": "le.kk07",
+   "script": "kata",
+   "kind": "mark",
+   "char": "ョ",
+   "origin_kanji": null,
+   "hint_zh": "片假名符號",
+   "confusable": [],
+   "example_words": [],
+   "listen_disabled": true
+  },
+  {
+   "id": "ka.kata.sokuon",
+   "lesson": "le.kk07",
+   "script": "kata",
+   "kind": "mark",
+   "char": "ッ",
+   "origin_kanji": null,
+   "hint_zh": "片假名符號",
+   "confusable": [],
+   "example_words": [],
+   "listen_disabled": true,
+   "rule": "ka.rule.sokuon"
+  },
+  {
+   "id": "ka.kata.chouon",
+   "lesson": "le.kk07",
+   "script": "kata",
+   "kind": "mark",
+   "char": "ー",
+   "origin_kanji": null,
+   "hint_zh": "片假名符號",
+   "confusable": [],
+   "example_words": [],
+   "listen_disabled": true,
+   "rule": "ka.rule.chouon_kata"
+  },
+  {
+   "id": "ka.kata.x_ti",
+   "lesson": "le.kk08",
+   "script": "kata",
+   "kind": "extended",
+   "char": "ティ",
+   "origin_kanji": null,
+   "hint_zh": "外來語拼法",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.kata.x_fa",
+   "lesson": "le.kk08",
+   "script": "kata",
+   "kind": "extended",
+   "char": "ファ",
+   "origin_kanji": null,
+   "hint_zh": "外來語拼法",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.kata.bad_char",
+   "lesson": "le.kk08",
+   "script": "kata",
+   "kind": "extended",
+   "char": "Q",
+   "hint_zh": "測試"
+  }
+ ]
+}

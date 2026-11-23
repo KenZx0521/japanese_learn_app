@@ -1,0 +1,120 @@
+{
+ "schema": 1,
+ "items": [
+  {
+   "id": "ka.sg.voicing_k",
+   "lesson": "le.k11",
+   "kind": "voicing",
+   "title_zh": "清濁：{ja:か}／{ja:が}",
+   "body_zh": "清濁不是送氣與否。",
+   "test_drills": [
+    "dr.k11.mpr.001"
+   ],
+   "pairs": [
+    {
+     "a": "か",
+     "a_zh": "清音",
+     "a_tts_text": "か",
+     "b": "が",
+     "b_zh": "濁音",
+     "b_tts_text": "が"
+    },
+    {
+     "a": "かき",
+     "a_zh": "柿子",
+     "b": "かぎ",
+     "b_zh": "鑰匙"
+    }
+   ]
+  },
+  {
+   "id": "ka.sg.sokuon_basic",
+   "lesson": "le.k16",
+   "kind": "sokuon",
+   "title_zh": "促音對比",
+   "body_zh": "停一拍。",
+   "test_drills": [
+    "dr.k16.mpr.001"
+   ],
+   "pairs": [
+    {
+     "a": "きて",
+     "a_zh": "來",
+     "b": "きって",
+     "b_zh": "郵票"
+    }
+   ]
+  },
+  {
+   "id": "ka.sg.length_vowel",
+   "lesson": "le.k17",
+   "kind": "length",
+   "title_zh": "長音對比",
+   "body_zh": "多一拍。",
+   "test_drills": [
+    "dr.k17.mpr.001"
+   ],
+   "pairs": [
+    {
+     "a": "おばさん",
+     "a_zh": "阿姨",
+     "b": "おばあさん",
+     "b_zh": "奶奶"
+    }
+   ]
+  },
+  {
+   "id": "ka.sg.yoon_shu_su",
+   "lesson": "le.k14",
+   "kind": "yoon",
+   "title_zh": "拗音對比",
+   "body_zh": "一拍。",
+   "test_drills": [],
+   "pairs": [
+    {
+     "a": "しゅ",
+     "a_zh": "拗音",
+     "b": "す",
+     "b_zh": "直音"
+    }
+   ]
+  },
+  {
+   "id": "ka.sg.accent_ame",
+   "lesson": "le.k19",
+   "kind": "accent",
+   "title_zh": "{ja:雨|あめ}／{ja:飴|あめ}",
+   "body_zh": "高低不同。",
+   "test_drills": [
+    "dr.k19.mpr.001"
+   ],
+   "pairs": [
+    {
+     "a": "雨",
+     "a_kana": "あめ",
+     "a_zh": "雨",
+     "b": "飴",
+     "b_kana": "あめ",
+     "b_zh": "糖果",
+     "listen_disabled": true
+    }
+   ]
+  },
+  {
+   "id": "ka.sg.bad_r06",
+   "lesson": "le.k02",
+   "kind": "sokuon",
+   "title_zh": "測試",
+   "body_zh": "測試",
+   "test_drills": [],
+   "pairs": [
+    {
+     "a": "たき",
+     "a_zh": "測試",
+     "b": "かき",
+     "b_zh": "測試"
+    }
+   ]
+  }
+ ]
+}

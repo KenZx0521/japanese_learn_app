@@ -1,0 +1,108 @@
+# verify 覆寫清單（reuse-and-verification.md §9.6）：機器誤報時登錄於此，理由必填。
+# 可加 token 只放行單一違規字串；省略時放行該項目在此規則下的全部 Finding。
+# item 為 lib 時 token 必填，不可整個 lib 放行。
+
+[[allow]]
+rule = "J02"
+item = "ka.cf.to_boku"
+reason = "卜 為 curriculum.md 指定的 kana_kanji 易混字組（ト／卜）字面，非繁中字形混入"
+
+[[allow]]
+rule = "J02"
+item = "ka.rule.accent_intro"
+reason = "飴 為常用漢字外的標準日文用字；curriculum.md 指定以 雨／飴 示範音調"
+
+[[allow]]
+rule = "J02"
+item = "ka.sg.accent_ame"
+reason = "飴 為常用漢字外的標準日文用字；curriculum.md 指定 ka.sg.accent_ame 為 雨／飴"
+
+[[allow]]
+rule = "F03"
+item = "lib"
+token = "暦"
+reason = "底部導覽列「計畫」的圖示字：經 JaText 以 Klee One 渲染（Klee 子集含此字），Noto Sans TC 上游無此字形，走不到 Noto"
+
+[[allow]]
+rule = "F04"
+item = "lib"
+token = "暦"
+reason = "底部導覽列「計畫」的圖示字：經 JaText 以 Klee One 渲染（Klee 子集含此字），Noto Serif TC 上游無此字形，走不到 Noto"
+
+[[allow]]
+rule = "F03"
+item = "lib"
+token = "済"
+reason = "朱印（HankoBadge、StampOverlay）的「已完成」圖示字：經 JaText 以 Klee One 渲染（Klee 子集含此字），Noto Sans TC 上游無此字形，走不到 Noto"
+
+[[allow]]
+rule = "F04"
+item = "lib"
+token = "済"
+reason = "朱印（HankoBadge、StampOverlay）的「已完成」圖示字：經 JaText 以 Klee One 渲染（Klee 子集含此字），Noto Serif TC 上游無此字形，走不到 Noto"
+
+[[allow]]
+rule = "F03"
+item = "lib"
+token = "聴"
+reason = "底部導覽列「聽說」與聽力頁直書標題的圖示字：經 JaText 以 Klee One 渲染（Klee 子集含此字），Noto Sans TC 上游無此字形，走不到 Noto"
+
+[[allow]]
+rule = "F04"
+item = "lib"
+token = "聴"
+reason = "底部導覽列「聽說」與聽力頁直書標題的圖示字：經 JaText 以 Klee One 渲染（Klee 子集含此字），Noto Serif TC 上游無此字形，走不到 Noto"
+
+[[allow]]
+rule = "J01"
+item = "vo.ii_desu_ne"
+token = "いいですね/いいですね"
+reason = "L07 的固定應答語塊（いい＋です＋ね，kana 已分詞），pos 為 phrase；JMdict 不收句子層級的組合"
+
+[[allow]]
+rule = "J03b"
+item = "vo.megane"
+token = "眼鏡"
+reason = "常用漢字表付表語（眼鏡／めがね），JLPT N5 基準清單亦以 眼鏡 收錄；與中文同形（same_form_zh），對台灣學習者是記憶錨點"
+
+[[allow]]
+rule = "J03b"
+item = "vo.wakaru"
+token = "分かる"
+reason = "常用漢字表收 分（わ-かる），公用文與 NHK 用字寫 分かる；改寫假名會牽動 L10 起大量例句，維持漢字表記"
+
+[[allow]]
+rule = "J03b"
+item = "vo.yasashii_easy"
+token = "易しい"
+reason = "常用漢字表收 易（やさ-しい）；本項的 trap_zh 要和 優しい（溫柔）區分，寫成假名就看不出差別"
+
+[[allow]]
+rule = "J08"
+item = "vo.haha"
+token = "はは"
+reason = "母 讀 はは，結尾的 は 是名詞本身的音節而非助詞，ha 才是正確讀音；規則只能從字形猜，屬誤報"
+
+[[allow]]
+rule = "J10"
+item = "ka.sg.accent_hana"
+token = "花が"
+reason = "curriculum.md §3.4 的音調示範：花／鼻 單念同調，要接助詞 が 才聽得出 が 是否下降，所以配對刻意帶 が；名詞＋助詞不是 JMdict 詞條"
+
+[[allow]]
+rule = "J10"
+item = "ka.sg.accent_hana"
+token = "鼻が"
+reason = "curriculum.md §3.4 的音調示範：花／鼻 單念同調，要接助詞 が 才聽得出 が 是否下降，所以配對刻意帶 が；名詞＋助詞不是 JMdict 詞條"
+
+[[allow]]
+rule = "J10"
+item = "ka.sg.accent_hashi"
+token = "橋が"
+reason = "curriculum.md §3.4 的音調示範：橋／端 單念同調，要接助詞 が 才聽得出差別（body_zh 已說明），所以第二組配對刻意帶 が；名詞＋助詞不是 JMdict 詞條"
+
+[[allow]]
+rule = "J10"
+item = "ka.sg.accent_hashi"
+token = "端が"
+reason = "curriculum.md §3.4 的音調示範：橋／端 單念同調，要接助詞 が 才聽得出差別（body_zh 已說明），所以第二組配對刻意帶 が；名詞＋助詞不是 JMdict 詞條"

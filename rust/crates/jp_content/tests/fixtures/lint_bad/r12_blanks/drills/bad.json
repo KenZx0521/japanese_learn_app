@@ -1,0 +1,6 @@
+{
+  "schema": 1,
+  "items": [
+    {"id": "dr.bad.par.r12", "type": "particle_fill", "lesson": "le.l01", "targets": ["gr.desu"], "sentence": "se.l01.002", "blanks": [{"word_index": 0, "choices": ["は|gr.wa_topic", "です|gr.desu"]}, {"word_index": 1, "choices": ["は|gr.wa_topic", "です|gr.desu"]}]}
+  ]
+}

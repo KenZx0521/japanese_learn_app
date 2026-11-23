@@ -1,0 +1,9 @@
+{
+  "schema": 1,
+  "items": [
+    {"id": "pl.min10", "minutes": 10, "new_words_per_day": 3, "kana_chars_per_day": 3, "split": {"new": 2, "review": 6, "drill": 1, "listen": 1}},
+    {"id": "pl.min20", "minutes": 20, "new_words_per_day": 5, "kana_chars_per_day": 5, "split": {"new": 4, "review": 9, "drill": 4, "listen": 3}},
+    {"id": "pl.min30", "minutes": 30, "new_words_per_day": 8, "kana_chars_per_day": 8, "split": {"new": 6, "review": 14, "drill": 6, "listen": 4}},
+    {"id": "pl.min45", "minutes": 45, "new_words_per_day": 12, "kana_chars_per_day": 10, "split": {"new": 9, "review": 20, "drill": 9, "listen": 7}}
+  ]
+}

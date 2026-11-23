@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "items": [
+    {"id": "di.self_intro", "kind": "lesson", "lesson": "le.l01", "style": "polite", "scene_zh": "語言交換。", "goal_zh": "自我介紹", "roles": [{"id": "a", "name_zh": "林", "voice": "a"}, {"id": "b", "name_zh": "田中", "voice": "b"}], "turns": [{"role": "a", "t": "はじめまして|vo.hajimemashite 。", "zh": "初次見面。"}, {"role": "a", "t": "林|はやし|@name です|gr.desu 。", "zh": "我姓林。", "tts": "kana"}, {"role": "b", "t": "こんにち|vo.konnichiwa は|vo.konnichiwa 、 先生|せんせい|vo.sensei 。", "zh": "老師好。"}], "focus": ["gr.desu"], "quiz": ["dr.l01.lsn.001"]},
+    {"id": "di.meal", "kind": "lesson", "lesson": "le.l02", "style": "polite", "scene_zh": "吃飯。", "goal_zh": "說吃什麼", "roles": [{"id": "a", "name_zh": "林", "voice": "a"}, {"id": "b", "name_zh": "田中", "voice": "b"}], "turns": [{"role": "a", "t": "私|わたし|vo.watashi は|gr.wa_topic ご飯|ごはん|vo.gohan を|gr.wo_obj 食べ|たべ|vo.taberu+ます|gr.masu 。", "zh": "我吃飯。"}, {"role": "b", "t": "はい|vo.hai 、 お茶|おちゃ|vo.ocha を|gr.wo_obj 飲み|のみ|vo.nomu+ます|gr.masu 。", "zh": "好，喝茶。"}], "focus": ["gr.masu"], "quiz": []}
+  ]
+}

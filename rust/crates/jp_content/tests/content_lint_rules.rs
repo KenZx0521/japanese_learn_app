@@ -1,0 +1,329 @@
+//! curriculum.md §13 的 R13 之後，負面案例同 `content_lint.rs`。
+
+#[macro_use]
+mod lint_support;
+
+use lint_support::*;
+
+negative!(
+    r15_rejects_simplified,
+    "r15_simplified",
+    "R15",
+    "se.bad.r15",
+    "发"
+);
+negative!(
+    r15_rejects_mainland_term,
+    "r15_denylist",
+    "R15",
+    "se.bad.r15d",
+    "視頻"
+);
+negative!(
+    r16_rejects_risky_auto,
+    "r16_risky_auto",
+    "R16",
+    "se.bad.r16",
+    "今日"
+);
+negative!(
+    r16_rejects_name_without_kana_tts,
+    "r16_name_auto",
+    "R16",
+    "se.bad.r16n",
+    "@name"
+);
+negative!(
+    r18_rejects_day_without_usable_sentence,
+    "r18_no_usable_day",
+    "R18",
+    "le.l08",
+    "day1"
+);
+negative!(
+    r19_rejects_kana_outside_markup,
+    "r19_kana_outside_markup",
+    "R19",
+    "vo.neko",
+    "ねこ"
+);
+negative!(
+    r19_rejects_malformed_markup,
+    "r19_bad_markup",
+    "R19",
+    "vo.neko",
+    "hook_zh"
+);
+negative!(
+    r19_rejects_markup_in_plain_zh,
+    "r19_markup_in_plain_zh",
+    "R19",
+    "se.bad.r19",
+    "zh"
+);
+negative!(
+    r19_rejects_kana_in_plain_zh,
+    "r19_kana_in_plain_zh",
+    "R19",
+    "se.bad.r19k",
+    "はい"
+);
+// 讀音與底字對不齊（讀音缺了 ？）時執行期會退回整段 ruby，？ 又跑到振假名底下（review_rust R2-L5）。
+negative!(
+    r19_rejects_markup_whose_reading_does_not_align,
+    "r19_reading_mismatch",
+    "R19",
+    "vo.neko",
+    "元気？"
+);
+// 讀音有多種對齊（音楽 可對 おん、好 可對 くがす）時執行期退回整段 ruby，
+// 假名也被讀音蓋住；要拆成逐詞標記（第三輪裁決 C1）。
+negative_warning!(
+    r19_warns_markup_whose_reading_has_several_alignments,
+    "r19_reading_ambiguous",
+    "R19",
+    "vo.neko",
+    "私は音楽が好きです"
+);
+
+#[test]
+fn r19_split_markup_has_single_alignment() {
+    let report = lint_case("r19_reading_split");
+    let found: Vec<_> = report
+        .of_rule("R19")
+        .filter(|f| f.item == "vo.neko")
+        .collect();
+    assert!(found.is_empty(), "{found:?}");
+}
+
+negative_warning!(
+    r19_warns_markup_without_reading,
+    "r19_reading_warning",
+    "R19",
+    "vo.neko",
+    "猫"
+);
+negative!(r20_rejects_gap, "r20_gap", "R20", "vo.neko", "20");
+negative!(
+    r20_rejects_seq_key,
+    "r20_seq_key",
+    "R20",
+    "se.bad.r20",
+    "seq"
+);
+negative!(
+    r24_rejects_new_kana_in_rule_lesson,
+    "r24_new_kana_in_rule_lesson",
+    "R24",
+    "ka.hira.bad_r24",
+    "ゐ"
+);
+negative!(
+    r24_rejects_yoon_without_row,
+    "r24_yoon_without_row",
+    "R24",
+    "ka.kata.bad_yoon",
+    "シャ"
+);
+negative_warning!(
+    r24_warns_mark_without_listen_disabled,
+    "r24_mark_listen",
+    "R24",
+    "ka.kata.bad_mark",
+    "ヮ"
+);
+negative_warning!(
+    r25_warns_same_form_word,
+    "r25_same_form",
+    "R25",
+    "vo.denwa",
+    "電話"
+);
+negative!(
+    rc1_rejects_bad_reading,
+    "rc1_bad_reading",
+    "RC1",
+    "vo.badkana",
+    "ha"
+);
+negative!(
+    rc1_rejects_unromanizable_kana_char,
+    "rc1_bad_kana_char",
+    "RC1",
+    "ka.kata.bad_char",
+    "Q"
+);
+negative!(
+    rc2_rejects_alignment_failure,
+    "rc2_alignment",
+    "RC2",
+    "se.bad.rc2",
+    "食べ|ちち"
+);
+negative!(
+    rc3_rejects_wo_joined_to_word,
+    "rc3_wo_not_alone",
+    "RC3",
+    "se.bad.rc3",
+    "ごはんを"
+);
+negative!(
+    rc3_rejects_wo_inside_vocab_kana,
+    "rc3_vocab_kana",
+    "RC3",
+    "vo.badwo",
+    "はをこ"
+);
+negative!(
+    rc4_rejects_unsplit_fixed_word,
+    "rc4_unsplit_fixed",
+    "RC4",
+    "se.bad.rc4",
+    "こんにちは"
+);
+negative!(
+    rc4_rejects_unsplit_vocab_kana,
+    "rc4_vocab_kana",
+    "RC4",
+    "vo.badfixed",
+    "こんにちは"
+);
+negative!(
+    rc5_rejects_unsplit_particle,
+    "rc5_unsplit_particle",
+    "RC5",
+    "se.bad.rc5",
+    "わたしは"
+);
+negative!(
+    rc6_rejects_lone_ha_vocab_ref,
+    "rc6_lone_ha_vocab",
+    "RC6",
+    "se.bad.rc6",
+    "vo.ha_tooth"
+);
+negative!(
+    rc7_rejects_unconjugatable_lemma,
+    "rc7_not_conjugatable",
+    "RC7",
+    "dr.bad.cnj.rc7",
+    "vo.sensei"
+);
+negative!(
+    rc7_rejects_form_listed_in_conj_omit,
+    "rc7_conj_omit",
+    "RC7",
+    "dr.bad.cnj.omit",
+    "vo.wakaru"
+);
+
+/// `conj_omit` 只擋列出的形，其他形照常可考。
+#[test]
+fn rc7_allows_forms_not_in_conj_omit() {
+    let report = lint_case("rc7_conj_omit");
+    let flagged: Vec<&Finding> = report
+        .of_rule("RC7")
+        .filter(|f| f.item == "dr.ok.cnj.omit")
+        .collect();
+    assert!(flagged.is_empty(), "{flagged:?}");
+    let finding = assert_finding(
+        "rc7_conj_omit",
+        "RC7",
+        Level::Error,
+        "dr.bad.cnj.omit",
+        "vo.wakaru",
+    );
+    assert!(finding.message.contains("conj_omit"), "{}", finding.message);
+}
+
+negative!(
+    rc8_rejects_duplicate_choices,
+    "rc8_duplicate_choices",
+    "RC8",
+    "dr.bad.par.rc8",
+    ""
+);
+negative!(
+    rc8_rejects_answer_out_of_range,
+    "rc8_answer_index",
+    "RC8",
+    "dr.bad.lsn.rc8",
+    ""
+);
+negative!(
+    rc8_rejects_bad_accept_orders,
+    "rc8_reorder_indexes",
+    "RC8",
+    "dr.bad.ord.rc8",
+    ""
+);
+negative!(
+    rc8_rejects_word_index_out_of_range,
+    "rc8_word_index",
+    "RC8",
+    "dr.bad.par.rc8w",
+    ""
+);
+negative!(
+    rc9_rejects_grammar_without_use_drill,
+    "rc9_no_use_drill",
+    "RC9",
+    "gr.shadow_only",
+    ""
+);
+negative!(
+    rc10_rejects_empty_targets,
+    "rc10_empty_targets",
+    "RC10",
+    "dr.bad.shd.rc10",
+    "targets"
+);
+negative!(
+    rc10_rejects_empty_zh,
+    "rc10_empty_zh",
+    "RC10",
+    "vo.nozh",
+    "zh"
+);
+negative!(
+    r03_rejects_retired_id_target,
+    "r03_retired_hard_target",
+    "R03",
+    "dr.bad.shd.r03",
+    "gr.old"
+);
+negative!(
+    r03_rejects_lesson_missing_from_order,
+    "r03_lesson_not_in_order",
+    "R03",
+    "le.l31",
+    "le.l31"
+);
+negative!(
+    r01_rejects_duplicate_lesson_in_order,
+    "r01_duplicate_order",
+    "R01",
+    "le.k01",
+    "le.k01"
+);
+negative!(
+    r02_rejects_empty_t,
+    "r02_empty_t",
+    "R02",
+    "se.bad.empty",
+    ""
+);
+negative!(
+    r02_rejects_unromanizable_reading,
+    "r02_romaji_error",
+    "R02",
+    "se.bad.romaji",
+    ""
+);
+negative!(
+    r24_rejects_rule_on_non_mark,
+    "r24_rule_on_non_mark",
+    "R24",
+    "ka.hira.bad_rule",
+    "ゑ"
+);

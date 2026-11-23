@@ -1,0 +1,6 @@
+{
+  "schema": 1,
+  "items": [
+    {"id": "vo.retired_word", "lesson": "le.l01", "lesson_order": 9, "surface": "ねこ", "kana": "ねこ", "zh": ["貓"], "pos": "n", "accent": null, "jlpt": "n5", "topics": ["animal"], "examples": [], "retired": true, "replaced_by": "vo.gohan"}
+  ]
+}

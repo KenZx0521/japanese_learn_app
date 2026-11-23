@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "items": [
+    {"id": "se.l21.001", "lesson": "le.l21", "t": "ご飯|ごはん|vo.gohan を|gr.wo_obj 食べ|たべ|vo.taberu+る|gr.plain_style 。", "zh": "吃飯。", "style": "plain"},
+    {"id": "se.l21.002", "lesson": "le.l21", "t": "ご飯|ごはん|vo.gohan を|gr.wo_obj 食べ|たべ|vo.taberu+ない|gr.plain_style 。", "zh": "不吃飯。", "style": "plain"},
+    {"id": "se.l21.003", "lesson": "le.l21", "t": "お茶|おちゃ|vo.ocha を|gr.wo_obj 飲ま|のま|vo.nomu+ない|gr.plain_style 。", "zh": "不喝茶。", "style": "plain"},
+    {"id": "se.l21.004", "lesson": "le.l21", "t": "先生|せんせい|vo.sensei は|gr.wa_topic ご飯|ごはん|vo.gohan を|gr.wo_obj 食べ|たべ|vo.taberu+る|gr.plain_style 。", "zh": "老師吃飯。", "style": "plain"},
+    {"id": "se.l21.005", "lesson": "le.l21", "t": "学生|がくせい|vo.gakusei は|gr.wa_topic お茶|おちゃ|vo.ocha を|gr.wo_obj 飲ま|のま|vo.nomu+ない|gr.plain_style 。", "zh": "學生不喝茶。", "style": "plain"},
+    {"id": "se.l21.006", "lesson": "le.l21", "t": "私|わたし|vo.watashi は|gr.wa_topic ご飯|ごはん|vo.gohan を|gr.wo_obj 食べ|たべ|vo.taberu+ない|gr.plain_style 。", "zh": "我不吃飯。", "style": "plain"},
+    {"id": "se.l21.007", "lesson": "le.l21", "t": "何|なに|vo.nani を|gr.wo_obj 食べ|たべ|vo.taberu+る|gr.plain_style 。", "zh": "吃什麼？", "style": "plain"},
+    {"id": "se.l21.008", "lesson": "le.l21", "t": "何|なに|vo.nani を|gr.wo_obj 飲ま|のま|vo.nomu+ない|gr.plain_style 。", "zh": "不喝什麼？", "style": "plain"},
+    {"id": "se.l21.009", "lesson": "le.l21", "t": "何|なに|vo.nani を|gr.wo_obj し|vo.suru+ない|gr.plain_style 。", "zh": "不做什麼？", "style": "plain"},
+    {"id": "se.l21.010", "lesson": "le.l21", "t": "何|なに|vo.nani を|gr.wo_obj する|vo.suru 。", "zh": "做什麼？", "style": "plain", "tts": "kana"},
+    {"id": "se.l21.011", "lesson": "le.l21", "t": "私|わたし|vo.watashi は|gr.wa_topic 猫|ねこ|@new:貓 を|gr.wo_obj 食べ|たべ|vo.taberu+ない|gr.plain_style 。", "zh": "我不吃貓。", "style": "plain"}
+  ]
+}

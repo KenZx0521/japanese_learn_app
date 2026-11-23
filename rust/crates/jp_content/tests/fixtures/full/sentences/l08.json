@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "items": [
+    {"id": "se.l08.001", "lesson": "le.l08", "t": "手紙|てがみ|vo.tegami です|gr.desu 。", "zh": "是信。", "style": "polite"},
+    {"id": "se.l08.002", "lesson": "le.l08", "t": "はい|vo.hai 、 手紙|てがみ|vo.tegami です|gr.desu 。", "zh": "是的，是信。", "style": "polite"}
+  ]
+}

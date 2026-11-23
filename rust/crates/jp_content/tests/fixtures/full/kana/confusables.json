@@ -1,0 +1,9 @@
+{
+  "schema": 1,
+  "items": [
+    {"id": "ka.cf.nu_me", "lesson": "le.k10", "kind": "shape", "members": ["ka.hira.nu", "ka.hira.me"], "diff_zh": "{ja:ぬ} 收尾有圈，{ja:め} 沒有"},
+    {"id": "ka.cf.ka_kata", "lesson": "le.kk01", "kind": "cross_script", "members": ["ka.hira.ka", "ka.kata.ka"], "diff_zh": "{ja:か} 與 {ja:カ} 字形相近"},
+    {"id": "ka.cf.ka_chikara", "lesson": "le.kk01", "kind": "kana_kanji", "members": ["ka.kata.ka"], "literals": [{"text": "力", "zh": "漢字「力」"}], "diff_zh": "{ja:カ} 是片假名"},
+    {"id": "ka.cf.obasan_obaasan", "lesson": "le.k17", "kind": "listen", "members": [], "literals": [{"text": "おばさん", "zh": "阿姨"}, {"text": "おばあさん", "zh": "奶奶"}], "diff_zh": "長音多一拍"}
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "items": [
+    {"id": "se.l01.001", "lesson": "le.l01", "t": "私|わたし|vo.watashi は|gr.wa_topic 学生|がくせい|vo.gakusei 。", "zh": "我是學生。", "style": "plain"},
+    {"id": "se.l01.002", "lesson": "le.l01", "t": "先生|せんせい|vo.sensei です|gr.desu 。", "zh": "是老師。", "style": "polite"},
+    {"id": "se.l01.003", "lesson": "le.l01", "t": "はい|vo.hai 、 学生|がくせい|vo.gakusei です|gr.desu 。", "zh": "是的，是學生。", "style": "polite"},
+    {"id": "se.l01.004", "lesson": "le.l01", "t": "ご飯|ごはん|vo.gohan です|gr.desu 。", "zh": "是飯。", "style": "polite"},
+    {"id": "se.l01.005", "lesson": "le.l01", "t": "お茶|おちゃ|vo.ocha です|gr.desu 。", "zh": "是茶。", "style": "polite"},
+    {"id": "se.l01.006", "lesson": "le.l01", "t": "私|わたし|vo.watashi です|gr.desu 。", "zh": "是我。", "style": "polite"},
+    {"id": "se.l01.007", "lesson": "le.l01", "t": "こんにち|vo.konnichiwa は|vo.konnichiwa 。", "zh": "你好。", "style": "neutral"},
+    {"id": "se.l01.008", "lesson": "le.l01", "t": "こんにち|vo.konnichiwa は|vo.konnichiwa 、 先生|せんせい|vo.sensei 。", "zh": "老師好。", "style": "neutral"},
+    {"id": "se.l01.009", "lesson": "le.l01", "t": "はじめまして|vo.hajimemashite 。", "zh": "初次見面。", "style": "polite"},
+    {"id": "se.l01.010", "lesson": "le.l01", "t": "はじめまして|vo.hajimemashite 、 学生|がくせい|vo.gakusei です|gr.desu 。", "zh": "初次見面，我是學生。", "style": "polite"},
+    {"id": "se.l01.011", "lesson": "le.l01", "t": "はい|vo.hai 、 お茶|おちゃ|vo.ocha 。", "zh": "好，茶。", "style": "neutral"},
+    {"id": "se.l01.012", "lesson": "le.l01", "t": "私|わたし|vo.watashi は|gr.wa_topic 先生|せんせい|vo.sensei 。", "zh": "我是老師。", "style": "plain"}
+  ]
+}

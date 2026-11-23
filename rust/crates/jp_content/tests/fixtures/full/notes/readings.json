@@ -1,0 +1,6 @@
+{
+  "schema": 1,
+  "items": [
+    {"id": "no.rd.ru_k", "lesson": "le.l08", "title_zh": "入聲 -k 常對應 {ja:く}", "body_zh": "台語尾音 -k 的字，日語音讀常收 {ja:く}。", "examples": [{"hanzi": "學", "tai": "hak8", "ja": "{ja:学|がく}"}], "vocab": ["vo.gakusei"], "caveat_zh": "這是記憶鉤。"}
+  ]
+}

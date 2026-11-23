@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "items": [
+    {"id": "dr.l01.par.001", "type": "particle_fill", "lesson": "le.l01", "targets": ["gr.wa_topic", "gr.desu"], "sentence": "se.l01.001", "blanks": [{"word_index": 1, "choices": ["は|gr.wa_topic", "です|gr.desu"]}], "explain_zh": "主題用 {ja:は}。"},
+    {"id": "dr.l01.z2j.001", "type": "zh_to_ja_choice", "lesson": "le.l01", "targets": ["gr.wa_topic", "gr.desu"], "prompt_zh": "我是老師。", "answer": "se.l01.012", "distractors": [{"t": "私|わたし|vo.watashi は|gr.wa_topic 学生|がくせい|vo.gakusei 。", "why_zh": "這是說自己是學生。"}]},
+    {"id": "dr.l01.lsn.001", "type": "listen_meaning", "lesson": "le.l01", "targets": ["gr.wa_topic", "gr.desu"], "sentence": "se.l01.003", "choices_zh": ["是的，是學生。", "不，是老師。", "是茶。"], "answer_index": 0},
+    {"id": "dr.l01.sit.001", "type": "situation_response", "lesson": "le.l01", "targets": ["gr.wa_topic", "gr.desu"], "situation_zh": "第一次見面打招呼。", "style": "polite", "answer": "はじめまして|vo.hajimemashite 。", "distractors": [{"t": "こんにち|vo.konnichiwa は|vo.konnichiwa 。", "why_zh": "這是白天的招呼。"}]},
+    {"id": "dr.l01.ord.001", "type": "reorder", "lesson": "le.l01", "targets": ["gr.wa_topic", "gr.desu"], "sentence": "se.l01.003", "accept_orders": [[0, 1, 2]], "audio_first": false},
+    {"id": "dr.l01.shd.001", "type": "shadowing", "lesson": "le.l01", "targets": ["gr.desu"], "sentence": "se.l01.002"},
+    {"id": "dr.l01.ffr.001", "type": "false_friend", "lesson": "le.l01", "targets": ["vo.sensei"], "note": "no.ff.tegami", "prompt_zh": "「{ja:先生|せんせい}」是什麼意思？", "choices_zh": ["老師", "男士", "醫生"], "answer_index": 0}
+  ]
+}

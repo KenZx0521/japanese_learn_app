@@ -1,0 +1,6 @@
+{
+  "schema": 1,
+  "items": [
+    {"id": "dr.bad.ord.rc8", "type": "reorder", "lesson": "le.l01", "targets": ["gr.desu"], "sentence": "se.l01.002", "accept_orders": [[0]]}
+  ]
+}

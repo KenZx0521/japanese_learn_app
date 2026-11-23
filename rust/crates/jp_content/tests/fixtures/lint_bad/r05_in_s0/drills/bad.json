@@ -1,0 +1,6 @@
+{
+  "schema": 1,
+  "items": [
+    {"id": "dr.bad.z2j.s0", "type": "zh_to_ja_choice", "lesson": "le.k19", "targets": ["ka.hira.a"], "prompt_zh": "測試", "answer": "猫|ねこ|@new:貓 。", "distractors": [{"t": "はい|vo.hai 。", "why_zh": "測試"}]}
+  ]
+}

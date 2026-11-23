@@ -1,0 +1,6 @@
+{
+  "schema": 1,
+  "items": [
+    {"id": "vo.typo", "lesson": "le.l99", "lesson_order": 1, "surface": "ねこ", "kana": "ねこ", "zh": ["貓"], "pos": "n", "accent": null, "jlpt": "n5", "topics": ["animal"], "examples": ["se.l01.002", "se.l01.003"]}
+  ]
+}

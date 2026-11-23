@@ -1,0 +1,6 @@
+{
+  "schema": 1,
+  "items": [
+    {"id": "dr.bad.mpr.r06", "type": "minimal_pair", "lesson": "le.k13", "targets": ["ka.hira.a"], "a": "ちゃ", "a_zh": "拗音", "b": "つ", "b_zh": "直音"}
+  ]
+}

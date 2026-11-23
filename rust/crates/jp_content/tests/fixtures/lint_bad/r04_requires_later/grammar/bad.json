@@ -1,0 +1,6 @@
+{
+  "schema": 1,
+  "items": [
+    {"id": "gr.needs_later", "lesson": "le.l01", "lesson_order": 3, "jlpt": "n5", "title_zh": "測試", "pattern": "N", "meaning_zh": "測試", "explain_zh": "測試", "compare_zh": "測試", "formation": [], "register": "neutral", "requires": ["gr.plain_style"], "examples": [], "contrast": [], "terms": []}
+  ]
+}

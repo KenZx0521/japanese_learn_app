@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "items": [
+    {"id": "ms.hira", "lesson": "le.k19", "title_zh": "平假名畢業考", "pass_ratio": 0.9, "questions": 20},
+    {"id": "ms.kata", "lesson": "le.kk08", "title_zh": "片假名畢業考", "pass_ratio": 0.9, "questions": 20},
+    {"id": "ms.survive", "lesson": "le.l07", "title_zh": "我能自我介紹與約人", "pass_ratio": 0.8, "questions": 20},
+    {"id": "ms.a1_half", "lesson": "le.l14", "title_zh": "敬體基礎完成", "pass_ratio": 0.8, "questions": 20},
+    {"id": "ms.casual", "lesson": "le.l21", "title_zh": "聽懂朋友說話的第一步", "pass_ratio": 0.8, "questions": 20},
+    {"id": "ms.n5", "lesson": "le.l30", "title_zh": "學完參考 N5 範圍", "pass_ratio": 0.8, "questions": 20},
+    {"id": "ms.n4_mid", "lesson": "le.l40", "title_zh": "參考 N4 範圍過半", "pass_ratio": 0.8, "questions": 20},
+    {"id": "ms.n4", "lesson": "le.l48", "title_zh": "學完參考 N4 口語核心", "pass_ratio": 0.8, "questions": 20}
+  ]
+}

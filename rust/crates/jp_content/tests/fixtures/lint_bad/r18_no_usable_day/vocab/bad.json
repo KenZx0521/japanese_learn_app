@@ -1,0 +1,8 @@
+{
+  "schema": 1,
+  "items": [
+    {"id": "vo.a_one", "lesson": "le.l08", "lesson_order": 2, "surface": "あ", "kana": "あ", "zh": ["測試"], "pos": "n", "accent": null, "jlpt": "n5", "topics": ["home"], "examples": []},
+    {"id": "vo.a_two", "lesson": "le.l08", "lesson_order": 3, "surface": "い", "kana": "い", "zh": ["測試"], "pos": "n", "accent": null, "jlpt": "n5", "topics": ["home"], "examples": []},
+    {"id": "vo.a_three", "lesson": "le.l08", "lesson_order": 4, "surface": "う", "kana": "う", "zh": ["測試"], "pos": "n", "accent": null, "jlpt": "n5", "topics": ["home"], "examples": []}
+  ]
+}

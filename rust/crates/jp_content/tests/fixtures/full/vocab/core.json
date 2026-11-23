@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "items": [
+    {"id": "vo.watashi", "lesson": "le.l01", "lesson_order": 1, "surface": "私", "kana": "わたし", "zh": ["我"], "pos": "pron", "accent": null, "jlpt": "n5", "topics": ["people"], "examples": ["se.l01.001", "se.l01.006"]},
+    {"id": "vo.sensei", "lesson": "le.l01", "lesson_order": 2, "surface": "先生", "kana": "せんせい", "zh": ["老師"], "pos": "n", "accent": null, "jlpt": "n5", "topics": ["job"], "examples": ["se.l01.002", "se.l01.012"], "same_form_zh": true},
+    {"id": "vo.gakusei", "lesson": "le.l01", "lesson_order": 3, "surface": "学生", "kana": "がくせい", "zh": ["學生"], "pos": "n", "accent": null, "jlpt": "n5", "topics": ["school"], "examples": ["se.l01.003", "se.l01.010"]},
+    {"id": "vo.hai", "lesson": "le.l01", "lesson_order": 4, "surface": "はい", "kana": "はい", "zh": ["是", "好"], "pos": "interj", "accent": null, "jlpt": "n5", "topics": ["greet"], "examples": ["se.l01.003", "se.l01.011"]},
+    {"id": "vo.konnichiwa", "lesson": "le.l01", "lesson_order": 5, "surface": "こんにちは", "kana": "こんにち は", "zh": ["你好（白天）"], "pos": "phrase", "accent": null, "jlpt": "n5", "topics": ["greet"], "examples": ["se.l01.007", "se.l01.008"]},
+    {"id": "vo.gohan", "lesson": "le.l01", "lesson_order": 6, "surface": "ご飯", "kana": "ごはん", "zh": ["飯"], "pos": "n", "accent": null, "jlpt": "n5", "topics": ["food"], "examples": ["se.l01.004", "se.l02.001"]},
+    {"id": "vo.ocha", "lesson": "le.l01", "lesson_order": 7, "surface": "お茶", "kana": "おちゃ", "zh": ["茶"], "pos": "n", "accent": null, "jlpt": "n5", "topics": ["food"], "examples": ["se.l01.005", "se.l01.011"]},
+    {"id": "vo.hajimemashite", "lesson": "le.l01", "lesson_order": 8, "surface": "はじめまして", "kana": "はじめまして", "zh": ["初次見面"], "pos": "phrase", "accent": null, "jlpt": "n5", "topics": ["greet"], "examples": ["se.l01.009", "se.l01.010"]},
+    {"id": "vo.taberu", "lesson": "le.l02", "lesson_order": 1, "surface": "食べる", "kana": "たべる", "zh": ["吃"], "pos": "v1", "accent": null, "jlpt": "n5", "topics": ["verb", "food"], "examples": ["se.l02.001", "se.l02.004"], "trans": "tr"},
+    {"id": "vo.nomu", "lesson": "le.l02", "lesson_order": 2, "surface": "飲む", "kana": "のむ", "zh": ["喝"], "pos": "v5", "accent": null, "jlpt": "n5", "topics": ["verb", "food"], "examples": ["se.l02.002", "se.l02.003"], "trans": "tr"},
+    {"id": "vo.maiasa", "lesson": "le.l03", "lesson_order": 1, "surface": "毎朝", "kana": "まいあさ", "zh": ["每天早上"], "pos": "n", "accent": null, "jlpt": "n5", "topics": ["time"], "examples": ["se.l03.001", "se.l03.002"]},
+    {"id": "vo.ii_desu_ne", "lesson": "le.l03", "lesson_order": 2, "surface": "いいですね", "kana": "いいですね", "zh": ["不錯耶"], "pos": "phrase", "accent": null, "jlpt": "n5", "topics": ["greet"], "examples": ["se.l03.003", "se.l03.004"]},
+    {"id": "vo.tegami", "lesson": "le.l08", "lesson_order": 1, "surface": "手紙", "kana": "てがみ", "zh": ["信"], "pos": "n", "accent": null, "jlpt": "n5", "topics": ["home"], "examples": ["se.l08.001", "se.l08.002"], "same_form_zh": true, "notes": ["no.ff.tegami"]},
+    {"id": "vo.nani", "lesson": "le.l21", "lesson_order": 1, "surface": "何", "kana": "なに", "zh": ["什麼"], "pos": "pron", "accent": null, "jlpt": "n5", "topics": ["question"], "examples": ["se.l21.007", "se.l21.008"]},
+    {"id": "vo.suru", "lesson": "le.l21", "lesson_order": 2, "surface": "する", "kana": "する", "zh": ["做"], "pos": "vs", "accent": null, "jlpt": "n5", "topics": ["verb"], "examples": ["se.l21.009", "se.l21.010"], "trans": "tr"},
+    {"id": "vo.miru", "lesson": "le.l31", "lesson_order": 1, "surface": "見る", "kana": "みる", "zh": ["看"], "pos": "v1", "accent": null, "jlpt": "n5", "topics": ["verb"], "examples": ["se.l31.001", "se.l31.002"], "trans": "tr"}
+  ]
+}

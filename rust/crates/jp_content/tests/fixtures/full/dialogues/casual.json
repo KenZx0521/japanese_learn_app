@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "items": [
+    {"id": "di.casual_talk", "kind": "lesson", "lesson": "le.l21", "style": "plain", "scene_zh": "下課。", "goal_zh": "聽懂常體", "roles": [{"id": "a", "name_zh": "林", "voice": "a"}, {"id": "b", "name_zh": "田中", "voice": "b"}], "turns": [{"role": "a", "t": "ご飯|ごはん|vo.gohan を|gr.wo_obj 食べ|たべ|vo.taberu+る|gr.plain_style 。", "zh": "吃飯。"}, {"role": "b", "t": "お茶|おちゃ|vo.ocha を|gr.wo_obj 飲ま|のま|vo.nomu+ない|gr.plain_style 。", "zh": "不喝茶。"}], "focus": ["gr.plain_style"], "quiz": []},
+    {"id": "di.meal.casual", "kind": "casual", "lesson": "le.l21", "style": "plain", "scene_zh": "吃飯（朋友）。", "goal_zh": "常體版", "roles": [{"id": "a", "name_zh": "林", "voice": "a"}, {"id": "b", "name_zh": "田中", "voice": "b"}], "turns": [{"role": "a", "t": "私|わたし|vo.watashi は|gr.wa_topic ご飯|ごはん|vo.gohan を|gr.wo_obj 食べ|たべ|vo.taberu+る|gr.plain_style 。", "zh": "我吃飯。"}, {"role": "b", "t": "はい|vo.hai 、 お茶|おちゃ|vo.ocha を|gr.wo_obj 飲ま|のま|vo.nomu+ない|gr.plain_style 。", "zh": "好，不喝茶。"}], "focus": ["gr.plain_style"], "quiz": []}
+  ]
+}

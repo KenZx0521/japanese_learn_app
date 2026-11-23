@@ -1,0 +1,9 @@
+{
+  "schema": 1,
+  "items": [
+    {"id": "se.l03.001", "lesson": "le.l03", "t": "毎朝|まいあさ|vo.maiasa ご飯|ごはん|vo.gohan を|gr.wo_obj 食べ|たべ|vo.taberu+ます|gr.masu 。", "zh": "每天早上吃飯。", "style": "polite"},
+    {"id": "se.l03.002", "lesson": "le.l03", "t": "毎朝|まいあさ|vo.maiasa お茶|おちゃ|vo.ocha を|gr.wo_obj 飲み|のみ|vo.nomu+ます|gr.masu 。", "zh": "每天早上喝茶。", "style": "polite"},
+    {"id": "se.l03.003", "lesson": "le.l03", "t": "いいですね|vo.ii_desu_ne 。", "zh": "不錯耶。", "style": "neutral"},
+    {"id": "se.l03.004", "lesson": "le.l03", "t": "お茶|おちゃ|vo.ocha 、 いいですね|vo.ii_desu_ne 。", "zh": "茶不錯耶。", "style": "neutral"}
+  ]
+}

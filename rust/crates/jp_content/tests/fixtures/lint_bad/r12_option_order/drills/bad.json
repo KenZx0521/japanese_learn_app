@@ -1,0 +1,6 @@
+{
+  "schema": 1,
+  "items": [
+    {"id": "dr.bad.z2j.r12", "type": "zh_to_ja_choice", "lesson": "le.l01", "targets": ["gr.desu"], "prompt_zh": "測試", "answer": "se.l01.002", "distractors": [{"t": "食べ|たべ|vo.taberu+ます|gr.masu 。", "why_zh": "測試"}]}
+  ]
+}

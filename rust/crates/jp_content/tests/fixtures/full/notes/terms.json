@@ -1,0 +1,6 @@
+{
+  "schema": 1,
+  "items": [
+    {"id": "no.term.masu_stem", "lesson": "le.l21", "term": "{ja:ます}幹", "aka_zh": "連用形", "body_zh": "把 {ja:ます} 拿掉：{ja:食べます|たべます}→{ja:食べ|たべ}。", "grammar": ["gr.masu"]}
+  ]
+}

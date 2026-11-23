@@ -1,0 +1,6 @@
+{
+  "schema": 1,
+  "items": [
+    {"id": "dr.l08.ffr.001", "type": "false_friend", "lesson": "le.l08", "targets": ["vo.tegami"], "note": "no.ff.tegami", "prompt_zh": "「{ja:手紙|てがみ}」是什麼意思？", "choices_zh": ["信", "衛生紙", "手帕"], "answer_index": 0}
+  ]
+}

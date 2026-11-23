@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "items": [
+    {"id": "ka.rule.sokuon", "lesson": "le.k16", "title_zh": "促音 {ja:っ}：停一拍", "body_zh": "{ja:っ} 不發音，佔一拍的時間。", "sound_groups": ["ka.sg.sokuon_basic"], "drills": ["dr.k16.mpr.001"], "examples": [{"text": "きて", "zh": "來（連接形）", "beats": ["き", "て"]}, {"text": "きって", "zh": "郵票", "beats": ["き", "っ", "て"]}]},
+    {"id": "ka.rule.chouon_hira", "lesson": "le.k17", "title_zh": "長音", "body_zh": "多一拍。", "sound_groups": ["ka.sg.length_vowel"], "drills": ["dr.k17.mpr.001"], "examples": [{"text": "おばあさん", "zh": "奶奶", "beats": ["お", "ば", "あ", "さ", "ん"]}]},
+    {"id": "ka.rule.particle_read", "lesson": "le.k18", "title_zh": "助詞 {ja:は}", "body_zh": "助詞 {ja:は} 讀作 wa。", "sound_groups": [], "drills": [], "examples": [{"text": "は", "zh": "助詞", "beats": []}]},
+    {"id": "ka.rule.accent_intro", "lesson": "le.k19", "title_zh": "音調入門", "body_zh": "日語的音調是高低。", "sound_groups": ["ka.sg.accent_ame"], "drills": ["dr.k19.mpr.001"], "examples": [{"text": "あめ", "zh": "雨", "beats": ["あ", "め"]}]},
+    {"id": "ka.rule.chouon_kata", "lesson": "le.kk07", "title_zh": "片假名長音 {ja:ー}", "body_zh": "用 {ja:ー} 表示長音。", "sound_groups": [], "drills": [], "examples": [{"text": "キー", "zh": "鑰匙", "beats": ["キ", "ー"]}]}
+  ]
+}

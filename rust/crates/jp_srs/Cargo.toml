@@ -1,0 +1,17 @@
+[package]
+name = "jp_srs"
+version.workspace = true
+edition.workspace = true
+publish.workspace = true
+
+[dependencies]
+jp_lang.workspace = true
+jp_content.workspace = true
+jp_store.workspace = true
+rs-fsrs.workspace = true
+chrono.workspace = true
+thiserror.workspace = true
+
+[dev-dependencies]
+jp_content = { workspace = true, features = ["test-support"] }
+proptest.workspace = true

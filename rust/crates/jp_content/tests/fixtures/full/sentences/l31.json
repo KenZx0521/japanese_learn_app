@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "items": [
+    {"id": "se.l31.001", "lesson": "le.l31", "t": "学生|がくせい|vo.gakusei は|gr.wa_topic ご飯|ごはん|vo.gohan を|gr.wo_obj 見|み|vo.miru+ます|gr.masu 。", "zh": "學生看飯。", "style": "polite"},
+    {"id": "se.l31.002", "lesson": "le.l31", "t": "先生|せんせい|vo.sensei は|gr.wa_topic お茶|おちゃ|vo.ocha を|gr.wo_obj 見|み|vo.miru+ます|gr.masu 。", "zh": "老師看茶。", "style": "polite"}
+  ]
+}

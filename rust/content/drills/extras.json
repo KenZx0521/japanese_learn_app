@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "items": [
+    {"id": "dr.l19.lsx.001", "type": "listen_meaning", "lesson": "le.l19", "targets": ["gr.te_wa_ikenai"], "sentence": "se.x_onsen.01", "choices_zh": ["不可以把毛巾放進浴池裡。", "可以把毛巾放進浴池裡。", "不可以把肥皂放進浴池裡。", "不可以把毛巾帶回房間。"], "answer_index": 0},
+    {"id": "dr.l19.lsx.002", "type": "listen_meaning", "lesson": "le.l19", "targets": ["gr.te_kara"], "sentence": "se.x_onsen.02", "choices_zh": ["請先進浴池，再洗身體。", "請先把身體洗乾淨，再進浴池。", "請洗完澡之後回房間。", "請在房間裡洗身體。"], "answer_index": 1},
+    {"id": "dr.l19.lsx.003", "type": "listen_meaning", "lesson": "le.l19", "targets": ["gr.naide_kudasai"], "sentence": "se.x_onsen.03", "choices_zh": ["喝了酒之後可以馬上去泡。", "泡完溫泉之後，請不要馬上喝酒。", "喝了酒請不要馬上去泡，因為很危險。", "請不要在浴池裡喝酒，因為很危險。"], "answer_index": 2},
+    {"id": "dr.l21.lsx.001", "type": "listen_meaning", "lesson": "le.l21", "targets": ["gr.ta_form"], "sentence": "se.x_lost_way.01", "choices_zh": ["我從車站東邊的出口出來，然後一直直走。", "我從車站西邊的出口出來，然後一直直走。", "我從車站東邊的出口出來，然後右轉了。", "我在車站東邊的出口等你。"], "answer_index": 0},
+    {"id": "dr.l21.lsx.002", "type": "listen_meaning", "lesson": "le.l21", "targets": ["gr.da_copula"], "sentence": "se.x_lost_way.02", "choices_zh": ["東邊？店在東邊出口附近啦。", "東邊？店離西邊出口很遠啦。", "東邊？西邊出口附近沒有店啦。", "東邊？店在西邊出口附近啦。"], "answer_index": 3},
+    {"id": "dr.l21.lsx.003", "type": "listen_meaning", "lesson": "le.l21", "targets": ["gr.plain_style"], "sentence": "se.x_lost_way.03", "choices_zh": ["有點遠喔，走路大概五分鐘。", "沒問題，很近啦。走路大概五分鐘。", "沒問題，很近啦。走路大概十五分鐘。", "沒問題，很近啦。搭車大概五分鐘。"], "answer_index": 1},
+    {"id": "dr.l24.lsx.001", "type": "listen_meaning", "lesson": "le.l24", "targets": ["vo.kuni"], "sentence": "se.x_post_office.01", "choices_zh": ["國家的名字請用日文寫。", "你的名字請用英文寫。", "國家的名字請用英文寫。", "地址請用英文寫。"], "answer_index": 2},
+    {"id": "dr.l24.lsx.002", "type": "listen_meaning", "lesson": "le.l24", "targets": ["gr.te_iru_state"], "sentence": "se.x_post_office.02", "choices_zh": ["不，裡面還有兩張照片。", "不，裡面只有信。", "不，裡面還有三張照片。", "不，我還要拍兩張照片。"], "answer_index": 0},
+    {"id": "dr.l24.lsx.003", "type": "listen_meaning", "lesson": "le.l24", "targets": ["gr.koto_ga_dekiru"], "sentence": "se.x_post_office.03", "choices_zh": ["可以請您幫我投進郵筒嗎？", "郵筒在外面嗎？", "我可以自己投進郵筒嗎？", "可以在這裡買郵票嗎？"], "answer_index": 2},
+    {"id": "dr.l25.lsx.001", "type": "listen_meaning", "lesson": "le.l25", "targets": ["vo.ashi"], "sentence": "se.x_emergency.01", "choices_zh": ["我從腳踏車上摔下來，頭很痛。", "我從腳踏車上摔下來，腳很痛。", "我的腳踏車壞了，腳很痛。", "我從腳踏車上摔下來，但是不痛。"], "answer_index": 1},
+    {"id": "dr.l25.lsx.002", "type": "listen_meaning", "lesson": "le.l25", "targets": ["gr.nakute_mo_ii"], "sentence": "se.x_emergency.02", "choices_zh": ["好，請幫我叫。我先休息一下。", "一定要叫。我沒辦法休息。", "不用，不必叫。我休息一下就好。", "不用，不必叫。我自己走去醫院。"], "answer_index": 2},
+    {"id": "dr.l25.lsx.003", "type": "listen_meaning", "lesson": "le.l25", "targets": ["gr.hou_ga_ii"], "sentence": "se.x_emergency.03", "choices_zh": ["可是您站不起來，最好還是叫救護車喔。", "您站得起來，所以不用叫喔。", "可是您站不起來，最好先不要動喔。", "可是您站不起來，我扶您去醫院吧。"], "answer_index": 0},
+    {"id": "dr.l26.lsx.001", "type": "listen_meaning", "lesson": "le.l26", "targets": ["vo.dochira"], "sentence": "se.x_taxi.01", "choices_zh": ["請問您從哪裡來？", "請問您要到哪裡？", "請問大概要多久？", "請問要付多少錢？"], "answer_index": 1},
+    {"id": "dr.l26.lsx.002", "type": "listen_meaning", "lesson": "le.l26", "targets": ["gr.nagara"], "sentence": "se.x_taxi.02", "choices_zh": ["請一邊看地圖，一邊慢慢走過去。", "請一邊看看街景，一邊快點走過去。", "請一邊看看街景，一邊慢慢走過去。", "請在街上慢慢等。"], "answer_index": 2},
+    {"id": "dr.l26.lsx.003", "type": "listen_meaning", "lesson": "le.l26", "targets": ["gr.toki"], "sentence": "se.x_taxi.03", "choices_zh": ["下車的時候，請不要忘了手機喔。", "上車的時候，請不要忘了手機喔。", "下車的時候，請不要忘了行李喔。", "下車之後，請打手機給我喔。"], "answer_index": 0},
+    {"id": "dr.l29.lsx.001", "type": "listen_meaning", "lesson": "le.l29", "targets": ["gr.n_desu"], "sentence": "se.x_pharmacy.01", "choices_zh": ["沒有發燒，但是喉嚨痛，也會咳嗽。", "有一點發燒，而且頭痛，也會咳嗽。", "有一點發燒，而且喉嚨痛，但是不咳嗽。", "有一點發燒，而且喉嚨痛，也會咳嗽。"], "answer_index": 3},
+    {"id": "dr.l29.lsx.002", "type": "listen_meaning", "lesson": "le.l29", "targets": ["gr.kai_freq"], "sentence": "se.x_pharmacy.02", "choices_zh": ["一天三次，請在飯後吃。", "一天三次，請在飯前吃。", "一天兩次，請在飯後吃。", "三天一次，請在飯後吃。"], "answer_index": 0},
+    {"id": "dr.l29.lsx.003", "type": "listen_meaning", "lesson": "le.l29", "targets": ["gr.node"], "sentence": "se.x_pharmacy.03", "choices_zh": ["不會想睡，所以可以開車喔。", "會，會有點想睡，所以請不要開車喔。", "會，會有點想睡，所以請不要喝酒喔。", "會，會有點想睡，所以請睡前再吃喔。"], "answer_index": 1}
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "items": [
+    {"id": "se.ok.r11_l01", "lesson": "le.l01", "t": "私|わたし|vo.watashi は|gr.wa_topic 学生|がくせい|vo.gakusei 先生|せんせい|vo.sensei です|gr.desu 。", "zh": "L01 的例句上限是 5，這句剛好 5 個。", "style": "neutral"},
+    {"id": "se.ok.r11_l03", "lesson": "le.l03", "t": "毎朝|まいあさ|vo.maiasa いいですね|vo.ii_desu_ne 本|ほん|vo.hon 水|みず|vo.mizu 車|くるま|vo.kuruma 。", "zh": "L03 的例句上限也是 5，這句剛好 5 個。", "style": "neutral"}
+  ]
+}

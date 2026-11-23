@@ -1,0 +1,6 @@
+{
+  "schema": 1,
+  "items": [
+    {"id": "di.orphan", "kind": "lesson", "lesson": "le.l02", "style": "polite", "scene_zh": "沒有課引用。", "goal_zh": "測試", "roles": [{"id": "a", "name_zh": "林", "voice": "a"}], "turns": [{"role": "a", "t": "はじめまして|vo.hajimemashite 。", "zh": "初次見面。"}]}
+  ]
+}

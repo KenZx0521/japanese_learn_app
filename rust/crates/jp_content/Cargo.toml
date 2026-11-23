@@ -1,0 +1,23 @@
+[package]
+name = "jp_content"
+version.workspace = true
+edition.workspace = true
+publish.workspace = true
+
+[dependencies]
+jp_lang.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+
+[features]
+# 內容工具與 lint：讀磁碟、規則檢查，不進 App。
+tooling = []
+# 共用測試夾具（下游 crate 的 dev-dependencies 開啟）。
+test-support = ["tooling"]
+
+[dev-dependencies]
+# 自我 dev-dependency：讓 `cargo test -p jp_content` 自動開啟 test-support。
+jp_content = { path = ".", features = ["test-support"] }
+tempfile.workspace = true
+proptest.workspace = true

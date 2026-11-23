@@ -1,0 +1,1049 @@
+{
+ "schema": 1,
+ "items": [
+  {
+   "id": "ka.hira.a",
+   "lesson": "le.k01",
+   "script": "hira",
+   "kind": "basic",
+   "char": "あ",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:あ} 的字形",
+   "confusable": [],
+   "example_words": [
+    {
+     "surface": "あい",
+     "zh": "愛"
+    }
+   ]
+  },
+  {
+   "id": "ka.hira.i",
+   "lesson": "le.k01",
+   "script": "hira",
+   "kind": "basic",
+   "char": "い",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:い} 的字形",
+   "confusable": [],
+   "example_words": [
+    {
+     "surface": "いえ",
+     "zh": "家"
+    }
+   ]
+  },
+  {
+   "id": "ka.hira.u",
+   "lesson": "le.k01",
+   "script": "hira",
+   "kind": "basic",
+   "char": "う",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:う} 的字形",
+   "confusable": [],
+   "example_words": [
+    {
+     "surface": "うえ",
+     "zh": "上面"
+    }
+   ]
+  },
+  {
+   "id": "ka.hira.e",
+   "lesson": "le.k01",
+   "script": "hira",
+   "kind": "basic",
+   "char": "え",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:え} 的字形",
+   "confusable": [],
+   "example_words": [
+    {
+     "surface": "え",
+     "zh": "圖畫"
+    }
+   ]
+  },
+  {
+   "id": "ka.hira.o",
+   "lesson": "le.k01",
+   "script": "hira",
+   "kind": "basic",
+   "char": "お",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:お} 的字形",
+   "confusable": [],
+   "example_words": [
+    {
+     "surface": "あお",
+     "zh": "藍色"
+    }
+   ]
+  },
+  {
+   "id": "ka.hira.ka",
+   "lesson": "le.k02",
+   "script": "hira",
+   "kind": "basic",
+   "char": "か",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:か} 的字形",
+   "confusable": [
+    "ka.cf.ka_kata"
+   ],
+   "example_words": [
+    {
+     "surface": "かき",
+     "zh": "柿子"
+    }
+   ]
+  },
+  {
+   "id": "ka.hira.ki",
+   "lesson": "le.k02",
+   "script": "hira",
+   "kind": "basic",
+   "char": "き",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:き} 的字形",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.hira.ku",
+   "lesson": "le.k02",
+   "script": "hira",
+   "kind": "basic",
+   "char": "く",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:く} 的字形",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.hira.ke",
+   "lesson": "le.k02",
+   "script": "hira",
+   "kind": "basic",
+   "char": "け",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:け} 的字形",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.hira.ko",
+   "lesson": "le.k02",
+   "script": "hira",
+   "kind": "basic",
+   "char": "こ",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:こ} 的字形",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.hira.sa",
+   "lesson": "le.k03",
+   "script": "hira",
+   "kind": "basic",
+   "char": "さ",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:さ} 的字形",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.hira.shi",
+   "lesson": "le.k03",
+   "script": "hira",
+   "kind": "basic",
+   "char": "し",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:し} 的字形",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.hira.su",
+   "lesson": "le.k03",
+   "script": "hira",
+   "kind": "basic",
+   "char": "す",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:す} 的字形",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.hira.se",
+   "lesson": "le.k03",
+   "script": "hira",
+   "kind": "basic",
+   "char": "せ",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:せ} 的字形",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.hira.so",
+   "lesson": "le.k03",
+   "script": "hira",
+   "kind": "basic",
+   "char": "そ",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:そ} 的字形",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.hira.ta",
+   "lesson": "le.k04",
+   "script": "hira",
+   "kind": "basic",
+   "char": "た",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:た} 的字形",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.hira.chi",
+   "lesson": "le.k04",
+   "script": "hira",
+   "kind": "basic",
+   "char": "ち",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:ち} 的字形",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.hira.tsu",
+   "lesson": "le.k04",
+   "script": "hira",
+   "kind": "basic",
+   "char": "つ",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:つ} 的字形",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.hira.te",
+   "lesson": "le.k04",
+   "script": "hira",
+   "kind": "basic",
+   "char": "て",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:て} 的字形",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.hira.to",
+   "lesson": "le.k04",
+   "script": "hira",
+   "kind": "basic",
+   "char": "と",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:と} 的字形",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.hira.na",
+   "lesson": "le.k05",
+   "script": "hira",
+   "kind": "basic",
+   "char": "な",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:な} 的字形",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.hira.ni",
+   "lesson": "le.k05",
+   "script": "hira",
+   "kind": "basic",
+   "char": "に",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:に} 的字形",
+   "confusable": [],
+   "example_words": [
+    {
+     "surface": "にく",
+     "zh": "肉"
+    }
+   ]
+  },
+  {
+   "id": "ka.hira.nu",
+   "lesson": "le.k05",
+   "script": "hira",
+   "kind": "basic",
+   "char": "ぬ",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:ぬ} 的字形",
+   "confusable": [
+    "ka.cf.nu_me"
+   ],
+   "example_words": [
+    {
+     "surface": "いぬ",
+     "zh": "狗"
+    }
+   ]
+  },
+  {
+   "id": "ka.hira.ne",
+   "lesson": "le.k05",
+   "script": "hira",
+   "kind": "basic",
+   "char": "ね",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:ね} 的字形",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.hira.no",
+   "lesson": "le.k05",
+   "script": "hira",
+   "kind": "basic",
+   "char": "の",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:の} 的字形",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.hira.ha",
+   "lesson": "le.k06",
+   "script": "hira",
+   "kind": "basic",
+   "char": "は",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:は} 的字形",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.hira.hi",
+   "lesson": "le.k06",
+   "script": "hira",
+   "kind": "basic",
+   "char": "ひ",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:ひ} 的字形",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.hira.fu",
+   "lesson": "le.k06",
+   "script": "hira",
+   "kind": "basic",
+   "char": "ふ",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:ふ} 的字形",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.hira.he",
+   "lesson": "le.k06",
+   "script": "hira",
+   "kind": "basic",
+   "char": "へ",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:へ} 的字形",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.hira.ho",
+   "lesson": "le.k06",
+   "script": "hira",
+   "kind": "basic",
+   "char": "ほ",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:ほ} 的字形",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.hira.ma",
+   "lesson": "le.k07",
+   "script": "hira",
+   "kind": "basic",
+   "char": "ま",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:ま} 的字形",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.hira.mi",
+   "lesson": "le.k07",
+   "script": "hira",
+   "kind": "basic",
+   "char": "み",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:み} 的字形",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.hira.mu",
+   "lesson": "le.k07",
+   "script": "hira",
+   "kind": "basic",
+   "char": "む",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:む} 的字形",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.hira.me",
+   "lesson": "le.k07",
+   "script": "hira",
+   "kind": "basic",
+   "char": "め",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:め} 的字形",
+   "confusable": [
+    "ka.cf.nu_me"
+   ],
+   "example_words": []
+  },
+  {
+   "id": "ka.hira.mo",
+   "lesson": "le.k07",
+   "script": "hira",
+   "kind": "basic",
+   "char": "も",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:も} 的字形",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.hira.ya",
+   "lesson": "le.k08",
+   "script": "hira",
+   "kind": "basic",
+   "char": "や",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:や} 的字形",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.hira.yu",
+   "lesson": "le.k08",
+   "script": "hira",
+   "kind": "basic",
+   "char": "ゆ",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:ゆ} 的字形",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.hira.yo",
+   "lesson": "le.k08",
+   "script": "hira",
+   "kind": "basic",
+   "char": "よ",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:よ} 的字形",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.hira.wa",
+   "lesson": "le.k08",
+   "script": "hira",
+   "kind": "basic",
+   "char": "わ",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:わ} 的字形",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.hira.wo",
+   "lesson": "le.k08",
+   "script": "hira",
+   "kind": "basic",
+   "char": "を",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:を} 的字形",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.hira.n",
+   "lesson": "le.k08",
+   "script": "hira",
+   "kind": "basic",
+   "char": "ん",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:ん} 的字形",
+   "confusable": [],
+   "example_words": [
+    {
+     "surface": "ほん",
+     "zh": "書"
+    }
+   ],
+   "tts_text": "ん"
+  },
+  {
+   "id": "ka.hira.ra",
+   "lesson": "le.k09",
+   "script": "hira",
+   "kind": "basic",
+   "char": "ら",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:ら} 的字形",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.hira.ri",
+   "lesson": "le.k09",
+   "script": "hira",
+   "kind": "basic",
+   "char": "り",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:り} 的字形",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.hira.ru",
+   "lesson": "le.k09",
+   "script": "hira",
+   "kind": "basic",
+   "char": "る",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:る} 的字形",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.hira.re",
+   "lesson": "le.k09",
+   "script": "hira",
+   "kind": "basic",
+   "char": "れ",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:れ} 的字形",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.hira.ro",
+   "lesson": "le.k09",
+   "script": "hira",
+   "kind": "basic",
+   "char": "ろ",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:ろ} 的字形",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.hira.ga",
+   "lesson": "le.k11",
+   "script": "hira",
+   "kind": "dakuten",
+   "char": "が",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:が} 是濁音",
+   "confusable": [],
+   "example_words": [
+    {
+     "surface": "かぎ",
+     "zh": "鑰匙"
+    }
+   ]
+  },
+  {
+   "id": "ka.hira.gi",
+   "lesson": "le.k11",
+   "script": "hira",
+   "kind": "dakuten",
+   "char": "ぎ",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:ぎ} 是濁音",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.hira.gu",
+   "lesson": "le.k11",
+   "script": "hira",
+   "kind": "dakuten",
+   "char": "ぐ",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:ぐ} 是濁音",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.hira.ge",
+   "lesson": "le.k11",
+   "script": "hira",
+   "kind": "dakuten",
+   "char": "げ",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:げ} 是濁音",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.hira.go",
+   "lesson": "le.k11",
+   "script": "hira",
+   "kind": "dakuten",
+   "char": "ご",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:ご} 是濁音",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.hira.za",
+   "lesson": "le.k11",
+   "script": "hira",
+   "kind": "dakuten",
+   "char": "ざ",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:ざ} 是濁音",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.hira.ji",
+   "lesson": "le.k11",
+   "script": "hira",
+   "kind": "dakuten",
+   "char": "じ",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:じ} 是濁音",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.hira.zu",
+   "lesson": "le.k11",
+   "script": "hira",
+   "kind": "dakuten",
+   "char": "ず",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:ず} 是濁音",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.hira.ze",
+   "lesson": "le.k11",
+   "script": "hira",
+   "kind": "dakuten",
+   "char": "ぜ",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:ぜ} 是濁音",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.hira.zo",
+   "lesson": "le.k11",
+   "script": "hira",
+   "kind": "dakuten",
+   "char": "ぞ",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:ぞ} 是濁音",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.hira.da",
+   "lesson": "le.k12",
+   "script": "hira",
+   "kind": "dakuten",
+   "char": "だ",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:だ} 是濁音",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.hira.di",
+   "lesson": "le.k12",
+   "script": "hira",
+   "kind": "dakuten",
+   "char": "ぢ",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:ぢ} 是濁音",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.hira.du",
+   "lesson": "le.k12",
+   "script": "hira",
+   "kind": "dakuten",
+   "char": "づ",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:づ} 是濁音",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.hira.de",
+   "lesson": "le.k12",
+   "script": "hira",
+   "kind": "dakuten",
+   "char": "で",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:で} 是濁音",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.hira.do",
+   "lesson": "le.k12",
+   "script": "hira",
+   "kind": "dakuten",
+   "char": "ど",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:ど} 是濁音",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.hira.ba",
+   "lesson": "le.k12",
+   "script": "hira",
+   "kind": "dakuten",
+   "char": "ば",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:ば} 是濁音",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.hira.bi",
+   "lesson": "le.k12",
+   "script": "hira",
+   "kind": "dakuten",
+   "char": "び",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:び} 是濁音",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.hira.bu",
+   "lesson": "le.k12",
+   "script": "hira",
+   "kind": "dakuten",
+   "char": "ぶ",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:ぶ} 是濁音",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.hira.be",
+   "lesson": "le.k12",
+   "script": "hira",
+   "kind": "dakuten",
+   "char": "べ",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:べ} 是濁音",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.hira.bo",
+   "lesson": "le.k12",
+   "script": "hira",
+   "kind": "dakuten",
+   "char": "ぼ",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:ぼ} 是濁音",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.hira.pa",
+   "lesson": "le.k13",
+   "script": "hira",
+   "kind": "dakuten",
+   "char": "ぱ",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:ぱ} 是濁音",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.hira.pi",
+   "lesson": "le.k13",
+   "script": "hira",
+   "kind": "dakuten",
+   "char": "ぴ",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:ぴ} 是濁音",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.hira.pu",
+   "lesson": "le.k13",
+   "script": "hira",
+   "kind": "dakuten",
+   "char": "ぷ",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:ぷ} 是濁音",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.hira.pe",
+   "lesson": "le.k13",
+   "script": "hira",
+   "kind": "dakuten",
+   "char": "ぺ",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:ぺ} 是濁音",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.hira.po",
+   "lesson": "le.k13",
+   "script": "hira",
+   "kind": "dakuten",
+   "char": "ぽ",
+   "origin_kanji": null,
+   "hint_zh": "記住 {ja:ぽ} 是濁音",
+   "confusable": [],
+   "example_words": []
+  },
+  {
+   "id": "ka.hira.kya",
+   "lesson": "le.k14",
+   "script": "hira",
+   "kind": "yoon",
+   "char": "きゃ",
+   "origin_kanji": null,
+   "hint_zh": "念成一拍",
+   "confusable": [],
+   "example_words": [],
+   "row": "kya"
+  },
+  {
+   "id": "ka.hira.kyu",
+   "lesson": "le.k14",
+   "script": "hira",
+   "kind": "yoon",
+   "char": "きゅ",
+   "origin_kanji": null,
+   "hint_zh": "念成一拍",
+   "confusable": [],
+   "example_words": [],
+   "row": "kya"
+  },
+  {
+   "id": "ka.hira.kyo",
+   "lesson": "le.k14",
+   "script": "hira",
+   "kind": "yoon",
+   "char": "きょ",
+   "origin_kanji": null,
+   "hint_zh": "念成一拍",
+   "confusable": [],
+   "example_words": [],
+   "row": "kya"
+  },
+  {
+   "id": "ka.hira.sha",
+   "lesson": "le.k14",
+   "script": "hira",
+   "kind": "yoon",
+   "char": "しゃ",
+   "origin_kanji": null,
+   "hint_zh": "念成一拍",
+   "confusable": [],
+   "example_words": [],
+   "row": "sha"
+  },
+  {
+   "id": "ka.hira.shu",
+   "lesson": "le.k14",
+   "script": "hira",
+   "kind": "yoon",
+   "char": "しゅ",
+   "origin_kanji": null,
+   "hint_zh": "念成一拍",
+   "confusable": [],
+   "example_words": [],
+   "row": "sha"
+  },
+  {
+   "id": "ka.hira.sho",
+   "lesson": "le.k14",
+   "script": "hira",
+   "kind": "yoon",
+   "char": "しょ",
+   "origin_kanji": null,
+   "hint_zh": "念成一拍",
+   "confusable": [],
+   "example_words": [],
+   "row": "sha"
+  },
+  {
+   "id": "ka.hira.cha",
+   "lesson": "le.k14",
+   "script": "hira",
+   "kind": "yoon",
+   "char": "ちゃ",
+   "origin_kanji": null,
+   "hint_zh": "念成一拍",
+   "confusable": [],
+   "example_words": [],
+   "row": "cha"
+  },
+  {
+   "id": "ka.hira.chu",
+   "lesson": "le.k14",
+   "script": "hira",
+   "kind": "yoon",
+   "char": "ちゅ",
+   "origin_kanji": null,
+   "hint_zh": "念成一拍",
+   "confusable": [],
+   "example_words": [],
+   "row": "cha"
+  },
+  {
+   "id": "ka.hira.cho",
+   "lesson": "le.k14",
+   "script": "hira",
+   "kind": "yoon",
+   "char": "ちょ",
+   "origin_kanji": null,
+   "hint_zh": "念成一拍",
+   "confusable": [],
+   "example_words": [],
+   "row": "cha"
+  },
+  {
+   "id": "ka.hira.gya",
+   "lesson": "le.k15",
+   "script": "hira",
+   "kind": "yoon",
+   "char": "ぎゃ",
+   "origin_kanji": null,
+   "hint_zh": "念成一拍",
+   "confusable": [],
+   "example_words": [],
+   "row": "gya"
+  },
+  {
+   "id": "ka.hira.gyu",
+   "lesson": "le.k15",
+   "script": "hira",
+   "kind": "yoon",
+   "char": "ぎゅ",
+   "origin_kanji": null,
+   "hint_zh": "念成一拍",
+   "confusable": [],
+   "example_words": [],
+   "row": "gya"
+  },
+  {
+   "id": "ka.hira.gyo",
+   "lesson": "le.k15",
+   "script": "hira",
+   "kind": "yoon",
+   "char": "ぎょ",
+   "origin_kanji": null,
+   "hint_zh": "念成一拍",
+   "confusable": [],
+   "example_words": [],
+   "row": "gya"
+  },
+  {
+   "id": "ka.hira.small_ya",
+   "lesson": "le.k14",
+   "script": "hira",
+   "kind": "mark",
+   "char": "ゃ",
+   "origin_kanji": null,
+   "hint_zh": "拗音的小字",
+   "confusable": [],
+   "example_words": [],
+   "listen_disabled": true
+  },
+  {
+   "id": "ka.hira.small_yu",
+   "lesson": "le.k14",
+   "script": "hira",
+   "kind": "mark",
+   "char": "ゅ",
+   "origin_kanji": null,
+   "hint_zh": "拗音的小字",
+   "confusable": [],
+   "example_words": [],
+   "listen_disabled": true
+  },
+  {
+   "id": "ka.hira.small_yo",
+   "lesson": "le.k14",
+   "script": "hira",
+   "kind": "mark",
+   "char": "ょ",
+   "origin_kanji": null,
+   "hint_zh": "拗音的小字",
+   "confusable": [],
+   "example_words": [],
+   "listen_disabled": true
+  },
+  {
+   "id": "ka.hira.sokuon",
+   "lesson": "le.k16",
+   "script": "hira",
+   "kind": "mark",
+   "char": "っ",
+   "origin_kanji": null,
+   "hint_zh": "不發音，停一拍",
+   "confusable": [],
+   "example_words": [
+    {
+     "surface": "きって",
+     "zh": "郵票"
+    }
+   ],
+   "rule": "ka.rule.sokuon",
+   "listen_disabled": true
+  },
+  {
+   "id": "ka.hira.bad_r24",
+   "lesson": "le.k16",
+   "script": "hira",
+   "kind": "basic",
+   "char": "ゐ",
+   "hint_zh": "測試"
+  }
+ ]
+}

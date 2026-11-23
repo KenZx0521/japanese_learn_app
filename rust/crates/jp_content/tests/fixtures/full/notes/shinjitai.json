@@ -1,0 +1,6 @@
+{
+  "schema": 1,
+  "items": [
+    {"id": "no.sj.gaku", "ja": "学", "zh_tw": "學", "kind": "simplified_differently", "vocab": ["vo.gakusei"]}
+  ]
+}

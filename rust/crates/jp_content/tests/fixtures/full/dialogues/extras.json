@@ -1,0 +1,6 @@
+{
+  "schema": 1,
+  "items": [
+    {"id": "di.tea_shop", "kind": "extra", "lesson": "le.l03", "style": "polite", "scene_zh": "茶店。", "goal_zh": "點茶", "roles": [{"id": "a", "name_zh": "林", "voice": "a"}, {"id": "b", "name_zh": "田中", "voice": "b"}], "turns": [{"role": "a", "t": "お茶|おちゃ|vo.ocha 、 いいですね|vo.ii_desu_ne 。", "zh": "茶不錯耶。"}, {"role": "b", "t": "はい|vo.hai 。", "zh": "是的。"}], "focus": ["gr.wo_obj"], "quiz": []}
+  ]
+}

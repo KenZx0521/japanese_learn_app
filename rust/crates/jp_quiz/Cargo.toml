@@ -1,0 +1,17 @@
+[package]
+name = "jp_quiz"
+version.workspace = true
+edition.workspace = true
+publish.workspace = true
+
+[dependencies]
+jp_lang.workspace = true
+jp_content.workspace = true
+jp_store.workspace = true
+jp_srs.workspace = true
+thiserror.workspace = true
+
+[dev-dependencies]
+jp_content = { workspace = true, features = ["test-support"] }
+chrono.workspace = true
+proptest.workspace = true

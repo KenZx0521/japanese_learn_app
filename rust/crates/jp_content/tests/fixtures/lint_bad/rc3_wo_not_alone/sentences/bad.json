@@ -1,0 +1,6 @@
+{
+  "schema": 1,
+  "items": [
+    {"id": "se.bad.rc3", "lesson": "le.l02", "t": "ごはんを|gr.wo_obj 。", "zh": "錯誤測試。", "style": "neutral"}
+  ]
+}

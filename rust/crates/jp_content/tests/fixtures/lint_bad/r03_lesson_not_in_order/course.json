@@ -1,0 +1,276 @@
+{
+ "schema": 1,
+ "stages": [
+  {
+   "id": "st.s0",
+   "title_zh": "假名與發音"
+  },
+  {
+   "id": "st.s1",
+   "title_zh": "敬體基礎"
+  },
+  {
+   "id": "st.s2",
+   "title_zh": "常體與變化"
+  },
+  {
+   "id": "st.s3",
+   "title_zh": "N4 口語"
+  }
+ ],
+ "order": [
+  "le.k01",
+  "le.k02",
+  "le.k03",
+  "le.k04",
+  "le.k05",
+  "le.k06",
+  "le.k07",
+  "le.k08",
+  "le.k09",
+  "le.k10",
+  "le.k11",
+  "le.k12",
+  "le.k13",
+  "le.k14",
+  "le.k15",
+  "le.k16",
+  "le.k17",
+  "le.k18",
+  "le.k19",
+  "le.l01",
+  "le.kk01",
+  "le.l02",
+  "le.l03",
+  "le.kk07",
+  "le.kk08",
+  "le.l08",
+  "le.l21"
+ ],
+ "lessons": [
+  {
+   "id": "le.k01",
+   "stage": "st.s0",
+   "content_stage": "p0a",
+   "title_zh": "{ja:あ}行",
+   "can_do_zh": "能讀出本課假名",
+   "dialogue": null
+  },
+  {
+   "id": "le.k02",
+   "stage": "st.s0",
+   "content_stage": "p0a",
+   "title_zh": "{ja:か}行",
+   "can_do_zh": "能讀出本課假名",
+   "dialogue": null
+  },
+  {
+   "id": "le.k03",
+   "stage": "st.s0",
+   "content_stage": "p0a",
+   "title_zh": "{ja:さ}行",
+   "can_do_zh": "能讀出本課假名",
+   "dialogue": null
+  },
+  {
+   "id": "le.k04",
+   "stage": "st.s0",
+   "content_stage": "p0a",
+   "title_zh": "{ja:た}行",
+   "can_do_zh": "能讀出本課假名",
+   "dialogue": null
+  },
+  {
+   "id": "le.k05",
+   "stage": "st.s0",
+   "content_stage": "p0a",
+   "title_zh": "{ja:な}行",
+   "can_do_zh": "能讀出本課假名",
+   "dialogue": null
+  },
+  {
+   "id": "le.k06",
+   "stage": "st.s0",
+   "content_stage": "p0a",
+   "title_zh": "{ja:は}行",
+   "can_do_zh": "能讀出本課假名",
+   "dialogue": null
+  },
+  {
+   "id": "le.k07",
+   "stage": "st.s0",
+   "content_stage": "p0a",
+   "title_zh": "{ja:ま}行",
+   "can_do_zh": "能讀出本課假名",
+   "dialogue": null
+  },
+  {
+   "id": "le.k08",
+   "stage": "st.s0",
+   "content_stage": "p0a",
+   "title_zh": "{ja:や}行",
+   "can_do_zh": "能讀出本課假名",
+   "dialogue": null
+  },
+  {
+   "id": "le.k09",
+   "stage": "st.s0",
+   "content_stage": "p0a",
+   "title_zh": "{ja:ら}行",
+   "can_do_zh": "能讀出本課假名",
+   "dialogue": null
+  },
+  {
+   "id": "le.k10",
+   "stage": "st.s0",
+   "content_stage": "p0a",
+   "title_zh": "平假名總檢",
+   "can_do_zh": "能讀出本課假名",
+   "dialogue": null
+  },
+  {
+   "id": "le.k11",
+   "stage": "st.s0",
+   "content_stage": "p0a",
+   "title_zh": "濁音一",
+   "can_do_zh": "能讀出本課假名",
+   "dialogue": null
+  },
+  {
+   "id": "le.k12",
+   "stage": "st.s0",
+   "content_stage": "p0a",
+   "title_zh": "濁音二",
+   "can_do_zh": "能讀出本課假名",
+   "dialogue": null
+  },
+  {
+   "id": "le.k13",
+   "stage": "st.s0",
+   "content_stage": "p0a",
+   "title_zh": "半濁音",
+   "can_do_zh": "能讀出本課假名",
+   "dialogue": null
+  },
+  {
+   "id": "le.k14",
+   "stage": "st.s0",
+   "content_stage": "p0a",
+   "title_zh": "拗音一",
+   "can_do_zh": "能讀出本課假名",
+   "dialogue": null
+  },
+  {
+   "id": "le.k15",
+   "stage": "st.s0",
+   "content_stage": "p0a",
+   "title_zh": "拗音二",
+   "can_do_zh": "能讀出本課假名",
+   "dialogue": null
+  },
+  {
+   "id": "le.k16",
+   "stage": "st.s0",
+   "content_stage": "p0a",
+   "title_zh": "促音",
+   "can_do_zh": "能讀出本課假名",
+   "dialogue": null
+  },
+  {
+   "id": "le.k17",
+   "stage": "st.s0",
+   "content_stage": "p0a",
+   "title_zh": "長音",
+   "can_do_zh": "能讀出本課假名",
+   "dialogue": null
+  },
+  {
+   "id": "le.k18",
+   "stage": "st.s0",
+   "content_stage": "p0a",
+   "title_zh": "助詞與音值",
+   "can_do_zh": "能讀出本課假名",
+   "dialogue": null
+  },
+  {
+   "id": "le.k19",
+   "stage": "st.s0",
+   "content_stage": "p0a",
+   "title_zh": "音調入門",
+   "can_do_zh": "能讀出本課假名",
+   "dialogue": null
+  },
+  {
+   "id": "le.l01",
+   "stage": "st.s1",
+   "content_stage": "p0a",
+   "title_zh": "初次見面",
+   "can_do_zh": "能說出自己的身分",
+   "dialogue": "di.self_intro"
+  },
+  {
+   "id": "le.kk01",
+   "stage": "st.s0",
+   "content_stage": "p0a",
+   "title_zh": "{ja:ア}行與{ja:カ}行",
+   "can_do_zh": "能讀出片假名",
+   "dialogue": null
+  },
+  {
+   "id": "le.l02",
+   "stage": "st.s1",
+   "content_stage": "p0a",
+   "title_zh": "吃飯喝茶",
+   "can_do_zh": "能說每天吃什麼",
+   "dialogue": "di.meal"
+  },
+  {
+   "id": "le.l03",
+   "stage": "st.s1",
+   "content_stage": "p0a",
+   "title_zh": "每天早上",
+   "can_do_zh": "能說每天早上做的事",
+   "dialogue": null
+  },
+  {
+   "id": "le.kk07",
+   "stage": "st.s0",
+   "content_stage": "p0a",
+   "title_zh": "片假名拗音與長音",
+   "can_do_zh": "能讀出長音",
+   "dialogue": null
+  },
+  {
+   "id": "le.kk08",
+   "stage": "st.s0",
+   "content_stage": "p0a",
+   "title_zh": "擴充拼法",
+   "can_do_zh": "能讀外來語",
+   "dialogue": null
+  },
+  {
+   "id": "le.l08",
+   "stage": "st.s1",
+   "content_stage": "p0",
+   "title_zh": "信與筆記",
+   "can_do_zh": "能看懂同形異義",
+   "dialogue": null
+  },
+  {
+   "id": "le.l21",
+   "stage": "st.s2",
+   "content_stage": "p0",
+   "title_zh": "朋友說話",
+   "can_do_zh": "能聽懂常體",
+   "dialogue": "di.casual_talk"
+  },
+  {
+   "id": "le.l31",
+   "stage": "st.s3",
+   "content_stage": "full",
+   "title_zh": "看與看見",
+   "can_do_zh": "能說看到的東西",
+   "dialogue": null
+  }
+ ]
+}

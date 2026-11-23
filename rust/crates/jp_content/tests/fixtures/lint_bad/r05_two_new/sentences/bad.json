@@ -1,0 +1,6 @@
+{
+  "schema": 1,
+  "items": [
+    {"id": "se.bad.r05", "lesson": "le.l02", "t": "猫|ねこ|@new:貓 犬|いぬ|@new:狗 。", "zh": "錯誤測試。", "style": "neutral"}
+  ]
+}
