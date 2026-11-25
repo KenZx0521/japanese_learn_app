@@ -1,0 +1,8 @@
+# Keep Flutter/Cargokit native builds on the same Rust release as CI and README.
+cargo:
+  debug:
+    toolchain: 1.99.1
+  profile:
+    toolchain: 1.99.1
+  release:
+    toolchain: 1.99.1

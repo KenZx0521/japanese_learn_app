@@ -98,7 +98,7 @@ flutter_rust_bridge_codegen generate
 
 `generate` 首次執行若沒有 cargo-expand，會自動安裝到 `~/.cargo/bin`。CI 需預先安裝。
 
-Linux 上 `flutter build linux` 已實測可建置，產物 bundle 含 `libjp_core.so`，在 xvfb 下啟動 15 秒沒有錯誤。Android 與 iOS 本機無 SDK，尚未驗證（§12）。
+Linux 上 `flutter build linux` 已實測可建置，產物 bundle 含 `libjp_core.so`，在 xvfb 下啟動 15 秒沒有錯誤。Android 三 ABI release APK 已於 2026-11-23 建置驗證；Android 實機啟動與 iOS 建置仍待驗證（§12）。
 
 網路權限：`android/app/src/main/AndroidManifest.xml` 目前沒有 `INTERNET`，只有 debug 與 profile 有（熱重載需要），release 不需調整。
 
@@ -2352,7 +2352,9 @@ await RustLib.init(externalLibrary: ExternalLibrary.open('rust/target/release/li
 cargo fmt --all --check
 cargo clippy --workspace --all-targets -- -D warnings
 cargo llvm-cov -p jp_core --ignore-filename-regex 'frb_generated' --fail-under-lines 80
-flutter_rust_bridge_codegen generate && git diff --exit-code lib/src/rust rust/src/frb_generated.rs
+RUST_LOG=info flutter_rust_bridge_codegen generate
+git diff --exit-code -- lib/src/rust rust/src/frb_generated.rs
+test -z "$(git status --porcelain --untracked-files=all -- lib/src/rust rust/src/frb_generated.rs)"
 cargo build --release && flutter test
 # §1.4 的離線檢查，規則見 reuse-and-verification.md §9.12
 flutter build apk --release
@@ -2373,7 +2375,7 @@ python3 tools/verify/check_offline.py --apk build/app/outputs/flutter-apk/app-re
 
 | 項目 | 風險 | 驗證方式 |
 |---|---|---|
-| Android／iOS 建置 | 本機無 SDK。bundled SQLite 需 NDK clang，rustup target 由 cargokit 處理；`rust_builder` 的 podspec 用 `-force_load` | 有 SDK 的環境優先跑 `flutter build apk` 與 iOS 建置 |
+| Android／iOS 建置 | Android 三 ABI release APK 已於 2026-11-23 建置，bundled SQLite 與 Cargokit 交叉編譯通過；iOS 的 `rust_builder` podspec `-force_load` 尚未驗證 | Android 實機啟動；有 macOS／iOS SDK 後建置 iOS |
 | 手機啟動時間 | 只測過 x86；內容解析預期可接受 | 中階 Android 實機量測 `open` |
 | FSRS 預設參數 | 假設值來自 Anki 使用者，初學者與選擇題可能偏樂觀 | 累積 `review_log` 後評估 |
 

@@ -731,41 +731,13 @@ reason = "飴 為常用漢字外的標準日文用字；curriculum.md 指定 ka.
 
 ### 9.8 CI
 
-目前專案不是 git repo，也還沒有任何 workflow 檔。建立 repo 後，內容與離線檢查分兩個 job；階段門檻在該階段內容就緒後換 `CONTENT_STAGE`。`p0` 內容已就緒（2026-11-10 `content_tool --stage p0` 的 lint、verify 都是 0 錯誤，`content_lint` 測試通過），也是建置預設，所以下例用 `p0`；`full` 就緒後再換：
+實作在 `.github/workflows/ci-cd.yml`，`content` 與 `android_apk` 為獨立 job，建置階段固定 `p0`；
+`full` 內容就緒後才能調整。`.verify-cache` 以 `data.lock.toml` 的 hash 快取，依序執行鎖定資料下載、
+`content_lint`、`p0 lint`、`p0 verify --strict` 與完整夾具的限定規則驗證。APK job 在所有 Rust、Flutter、
+內容檢查通過後，建置通用 release APK，再以同一支 `check_offline.py --require-apk` 驗 L03、L05–L08。
 
-```yaml
-# .github/workflows/content.yml
-on:
-  push: { paths: ["rust/**", "tools/**", "assets/fonts/**", "lib/**", "android/**", "pubspec.*", "docs/TTS_DEVICE_CHECKLIST.md"] }
-  pull_request: { paths: ["rust/**", "tools/**", "assets/fonts/**", "lib/**", "android/**", "pubspec.*", "docs/TTS_DEVICE_CHECKLIST.md"] }
-env: { CONTENT_STAGE: p0 }
-jobs:
-  content:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - run: rustup default 1.99.1
-      - uses: actions/cache@v4
-        with:
-          path: .verify-cache
-          key: verify-${{ hashFiles('tools/verify/data.lock.toml') }}
-      - run: tools/verify/fetch_data.sh
-      - run: cargo test --manifest-path rust/Cargo.toml -p jp_content --test content_lint
-      - run: cargo run --release --manifest-path rust/Cargo.toml -p content_tool -- verify
-      - run: cargo run --release --manifest-path rust/Cargo.toml -p content_tool -- verify --content-root rust/crates/jp_content/tests/fixtures/full --stage full --only J04,Z01,Z02,F01,F03
-  offline:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - run: rustup default 1.99.1
-      - uses: subosito/flutter-action@v2
-        with: { flutter-version: 3.47.9, channel: stable }
-      - run: flutter pub get
-      - run: flutter build apk --release
-      - run: python3 tools/verify/check_offline.py --apk build/app/outputs/flutter-apk/app-release.apk --require-apk
-```
-
-若 repo 為公開，`coverage.md` 不上傳為 artifact（公開 repo 的 artifact 視同散布）。Action 版本請於建立時固定到當時的版本。
+若 repo 為公開，`coverage.md` 不上傳為 artifact（公開 repo 的 artifact 視同散布）。Workflow 的外部 Actions
+固定到不可變 commit；正式 tag 另受 `production` Environment、非 `com.example` application ID 與正式簽章守門。
 
 ### 9.9 工具本身的測試
 
@@ -887,13 +859,13 @@ def main():
 main()
 ```
 
-實測：目前的 repo 與規劃相依 exit 0；main manifest 加 `INTERNET` 回報 L05，只在 XML 註解提到則通過；`jp_core` 加 `reqwest` 命中 9 個 crate；`pubspec.yaml` 加 `http` 命中 L06；`lib/` 出現 `HttpClient` 命中 L08；`flutter_tts` 的 manifest 沒有權限宣告。本環境沒有 Android SDK，L07 尚未實跑；沒有 `aapt` 時印 SKIP，CI 加 `--require-apk` 讓略過變成 exit 2。
+實測：目前的 repo 與規劃相依 exit 0；main manifest 加 `INTERNET` 回報 L05，只在 XML 註解提到則通過；`jp_core` 加 `reqwest` 命中 9 個 crate；`pubspec.yaml` 加 `http` 命中 L06；`lib/` 出現 `HttpClient` 命中 L08；`flutter_tts` 的 manifest 沒有權限宣告。2026-11-23 對三 ABI 通用 release APK 實跑 L07，確認不含 `INTERNET`；沒有 `aapt` 時印 SKIP，CI 加 `--require-apk` 讓略過變成 exit 2。
 
 iOS 沒有對應的權限宣告，靠 L03、L06、L08 把關。
 
 ### 9.13 TTS 實機清單（`docs/TTS_DEVICE_CHECKLIST.md`）
 
-本環境沒有 Android SDK、iOS 工具鏈與音效輸出，實機驗證不是開發前置條件。內容先用保守預設（`curriculum.md` §10.1），清單由 `$CT tts-checklist` 依當前 `CONTENT_STAGE` 產生並 commit，專案擁有者有裝置時再填結果，CI 不要求結果已填。現況：`tts-checklist` 與 T01、T02 都還沒實作，清單是手動維護的；2026-11-10 依 `p0` 內容補上 L08 以後例句的代表性項目，ID 與送出文字以腳本比對過 `rust/content/`；當時一併補上的日劇與歌曲專區、短劇項目已隨專區移除（RULINGS O13）。
+本環境已能建置 Android APK，但仍沒有 Android 實機、iOS 工具鏈與音效輸出；實機驗證不是開發前置條件。內容先用保守預設（`curriculum.md` §10.1），清單由 `$CT tts-checklist` 依當前 `CONTENT_STAGE` 產生並 commit，專案擁有者有裝置時再填結果，CI 不要求結果已填。現況：`tts-checklist` 與 T01、T02 都還沒實作，清單是手動維護的；2026-11-10 依 `p0` 內容補上 L08 以後例句的代表性項目，ID 與送出文字以腳本比對過 `rust/content/`；當時一併補上的日劇與歌曲專區、短劇項目已隨專區移除（RULINGS O13）。
 
 檔案開頭記錄測試裝置與語音引擎（至少 Pixel、一款三星、iPhone 各一），之後每列一項：
 

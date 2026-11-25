@@ -133,8 +133,10 @@
 
 ### Android／iOS 建置與實機驗證（上架前必要）
 
-- [ ] 安裝 Android SDK，`flutter build apk --release`。Rust 交叉編譯與 FRB 載入都還沒在 Android 上跑過。
-- [ ] `python3 tools/verify/check_offline.py --apk build/app/outputs/flutter-apk/app-release.apk --require-apk`（L07 目前因沒有 APK 而略過）。
+- [x] 2026-11-23 以 Android SDK 35／36、NDK 28.2.13676358 建置通用 release APK；
+  Cargokit 以 Rust 1.99.1 交叉編譯 armv7、arm64、x86_64，APK 79 MiB，v2 簽章驗證通過。
+- [x] `python3 tools/verify/check_offline.py --apk build/app/outputs/flutter-apk/app-release.apk --require-apk`：
+  2026-11-23 L03、L05–L08 全部通過，release APK 不含 `INTERNET`。
 - [ ] iOS 建置與簽章，需要 macOS。
 - [ ] 把 `com.example.*` 換成正式的 application id／bundle id（`android:label` 已改為「日文學習」）。
 - [ ] 依 `docs/TTS_DEVICE_CHECKLIST.md` 實機檢查，結果回寫內容。檢查時一併決定裁決 U15 留下的兩項：`ん` 的 `tts_text`（`verify` J04 不允許換成以 ん 開頭的其他文字，實機若念不好只能設 `listen_disabled`，或先調整 J04）、音調入門規則卡的例字（沒有 `listen_disabled` 欄位，語音示範關掉配對後規則卡仍會播）。
@@ -158,11 +160,13 @@
 
 ### 工程項目
 
-- [ ] CI：`flutter-app-testing.md` 列的流程沒有實際的 workflow，所有檢查目前都是手動執行。
+- [x] CI/CD：`.github/workflows/ci-cd.yml` 已接上 Rust／Flutter 覆蓋率、FRB 產生碼同步、
+  Flutter／FFI／golden、內容驗證、APK 簽章與離線檢查，以及 main／tag 的 Linux release、長模擬與整合測試；
+  `vMAJOR.MINOR.PATCH` tag 另要求受保護 Environment 的正式簽章後發布 GitHub Release。
 - [ ] 截圖回歸矩陣：規格列了 T1、K1、K3 等多個畫面，目前 `test/goldens/` 只有設計樣張、文字元件與 K3 規則卡的文字（`k3_rule_card_320.png`）。
 - [ ] `content_tool tts-checklist` 與 T01、T02 檢查（`reuse-and-verification.md` §9.13）未實作，TTS 清單目前手動同步。
 - [ ] `cargo deny check licenses` 未導入（`reuse-and-verification.md` §10）。
-- [ ] `tools/fonts`、`tools/licenses` 的 Python 測試沒有接進任何自動流程。
+- [x] `tools/fonts`、`tools/licenses` 的 Python 測試與 Rust 授權清單同步檢查已接進 CI。
 - [ ] T2 前景跨換日的 `expected_logical_date`（需要 FRB codegen）。
 - [ ] 例句、演練、計畫預設沒有列舉 API，`real_content_p0.rs` 的這三類仍讀載入後的 `ContentStore`（等同 lint R17），其餘類別已改走公開 API。
 - [x] `rust/tests/common/loop_invariants.rs` 已拆出 `budget.rs` 子模組（580＋222 行）。
@@ -217,7 +221,8 @@
 | `p0a` 內容 | `content_tool --stage p0a lint`、`verify`、`verify --strict` | 2026-11-15：lint 0 錯誤 0 警告；verify 29 條規則，0 錯誤 0 警告，`--strict` 結束碼 0 |
 | 內容統計 | `content_tool --stage p0 stats` | 2026-11-16：全部達到 `p0` 目標；高於目標的有單字 812／800、主線例句 1,932／1,140、課程演練 1,082／900 |
 | 夾具 verify | `content_tool verify --content-root rust/crates/jp_content/tests/fixtures/full --stage full --only J04,Z01,Z02,F01,F03`；`verify_cli.rs` 的夾具測試另含 F04 | 2026-11-16：5 條規則，0 錯誤、0 警告，結束碼 0 |
-| 離線檢查 | `python3 tools/verify/check_offline.py` | 2026-11-16：通過；APK 檢查（L07）因沒有 APK 略過 |
+| 離線檢查 | `python3 tools/verify/check_offline.py` | 2026-11-23：靜態檢查與 79 MiB 通用 release APK 的 L07 都通過，APK 不含 `INTERNET` |
+| Android APK | `flutter build apk --release`；`apksigner verify --verbose` | 2026-11-23：armv7、arm64、x86_64 通用 APK 建置成功，APK Signature Scheme v2 通過；尚未在實機啟動 |
 | Linux 建置 | `flutter build linux --release` | 2026-11-16：通過（18.3 秒）。bundle 共 42,972,800 bytes（約 41 MiB）：`lib/` 34,784,509 bytes（`libflutter_linux_gtk.so` 17,256,536、`libjp_core.so` 9,423,464、`libapp.so` 7,947,144、`libdartjni.so` 157,320），`data/` 8,164,451，執行檔 23,840。10 秒啟動冒煙（`xvfb-run -a timeout 10 …/japanese_learn_app`）這次沒有重跑：release 執行檔會開這台機器上真正的 App 資料目錄；2026-11-11 的結果是結束碼 124（撐滿 10 秒） |
 | 整合測試 | `JLA_SHOTS_DIR=… bash integration_test/run_all.sh`（xvfb-run） | 2026-11-16：七個檔案、15 個測試全過（first_run 4、multi_day 1、all_tabs 4、main_lesson 2、after_l21 2、no_voice 1、boot 1），共 13 分 40 秒（各檔 86、110、183、205、114、61、61 秒），截圖 27 張。實際執行的是與 `run_all.sh` 相同的七個指令，另加 `--no-pub`。之後依複核補上 J9「常體對話進 S4 跑完四階段」與 `le.k05` 的課程目標文字，七個檔在最終狀態再各跑一次，15 個測試全過（各檔時間沒有重量） |
 | 整合測試的純規則單元測試 | `flutter --show-test-device test integration_test/support/p0_copy_rules_test.dart -d flutter-tester` | 2026-11-16：35 通過（`ruby_layout_rules_test.dart` 的 13 個已隨檔案於 O13 移除） |
@@ -227,10 +232,10 @@
 
 **沒有驗證的事**
 
-- 第四輪（移除專區）之後沒有重跑的：Linux release 執行檔的 10 秒啟動冒煙（會開這台機器上真正的 App 資料目錄）；`run_all.sh` 沒有整支執行，跑的是相同的七個指令加 `--no-pub`。
+- 2026-11-23 已重跑 Linux release 的 10 秒啟動冒煙（結束碼 124，表示持續執行）；`run_all.sh` 本次沒有整支重跑，仍沿用上表七個旅程各自通過的結果。
 - 真實內容加真實字型的振假名餘量與行首行尾禁則：原本由 J9 在專區畫面上量（`integration_test/support/ruby_layout*.dart`），隨專區移除後整合測試不再量，只剩 `test/core/text/` 的 widget test。
 - 受限日（回鍋、積壓）的 T1：整合測試現在沒有任何旅程讓真實後端進入受限狀態，J3、J5、J7 都是連續學習日。移除前 J9 為了走到專區開放日會推進 7 天，那天後端判定回鍋，T1 在 375 與 320＋2 倍字級各畫過一次（只有每站共用的守門，沒有針對回鍋的斷言），這段隨專區移除。回鍋與積壓的判定、文案只由 Rust 測試（`rust/tests/return_after_break.rs`、`p0_learning_loop_edges.rs`、`jp_plan/tests/`）與 widget test（`test/features/today/today_screen_test.dart`、`today_copy_test.dart`，預設寬度）驗。
-- Android、iOS 的實機建置與執行，一次都沒有跑過（沒有 SDK）。Rust 交叉編譯、FRB 在手機上的載入、手機上的內容載入時間、注音輸入法下的打字題、Android 的非線性字級縮放下振假名的位置都沒有驗證。
+- Android 三 ABI 的 release APK 與 Rust 交叉編譯已驗證，但尚未在 Android 實機啟動，因此 FRB 在手機上的載入、內容載入時間、注音輸入法下的打字題、非線性字級縮放下振假名的位置仍未驗證；iOS 仍未建置。
 - 實機 TTS：任何語音的實際聲音。整合測試用假引擎，開發環境沒有音效輸出。`docs/TTS_DEVICE_CHECKLIST.md` 的結果欄全空。
 - 日語母語者審閱：內容的語意與自然度，`p0a`、`p0` 都還沒有人看過（含第二輪改寫的 26 句例句、第三輪的 `dr.l06.sub.001` 與 11 處拆開的標記）。
 - 台語讀音的母語者抽查：`no.rd.*` 的台羅讀音。

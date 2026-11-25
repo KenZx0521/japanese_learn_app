@@ -4,7 +4,7 @@
 
 拆出的章節：§5 程式結構在 [flutter-app-architecture.md](flutter-app-architecture.md)，§6 TTS 服務在 [flutter-app-tts.md](flutter-app-tts.md)，§8 測試策略在 [flutter-app-testing.md](flutter-app-testing.md)。章節編號沿用，文中的 §5、§6、§8 都指這三份，它們與本文件同屬 flutter-app 規格。
 
-標記：**【實測】** 本機以 Flutter 3.47.9 跑過或讀過原始碼；**【待實機】** 本機沒有 Android SDK、iOS 環境或音效卡，無法驗證。
+標記：**【實測】** 本機以 Flutter 3.47.9 跑過或讀過原始碼；**【待實機】** 需要 Android／iOS 實機或音效輸出才能驗證。
 
 ---
 
@@ -58,7 +58,7 @@ dev_dependencies:
 
 **Android**：`android/app/src/main/AndroidManifest.xml` 的 `<queries>` 內加入 `<intent><action android:name="android.intent.action.TTS_SERVICE"/></intent>`（Android 11+ 查詢 TTS 服務必需，flutter_tts README 明載）。
 
-- flutter_tts `minSdkVersion 24`，與 Flutter 預設相同。模板的 `INTERNET` 權限只在 `src/debug/AndroidManifest.xml`（供熱重載），main 沒有。flutter_tts 的 manifest 是空的。CI 在 Android 建置後由 `check_offline.py` 的 L07 確認 release APK 沒有 `INTERNET`【待實機】。
+- flutter_tts `minSdkVersion 24`，與 Flutter 預設相同。模板的 `INTERNET` 權限只在 `src/debug/AndroidManifest.xml`（供熱重載），main 沒有。flutter_tts 的 manifest 是空的。2026-11-23 以 `check_offline.py` 的 L07 實測 release APK 沒有 `INTERNET`【實測】。
 
 **離線保證（O8）**：release 建置不得有 `INTERNET` 權限，相依樹不得有 HTTP／TLS client。檢查一律用 `python3 tools/verify/check_offline.py`，規則與黑名單見 `reuse-and-verification.md` §9.12（【實測】spike 的 Dart 相依在 `flutter pub deps --no-dev` 下無命中）。`dev_dependencies` 的 `build_runner` 只在開發機執行，不進 release，所以 L06 用 `--no-dev`。列入 CI（§8）；Android 建置後加 `--apk build/app/outputs/flutter-apk/app-release.apk --require-apk`。
 

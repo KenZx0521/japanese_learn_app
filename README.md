@@ -2,7 +2,7 @@
 
 Flutter 前端＋內嵌 Rust 核心（flutter_rust_bridge 2.13.0）。沒有伺服器，也不連網（`docs/design/RULINGS.md` O8）。
 
-預設建置的內容是 `p0`：假名、L01–L30、232 則筆記，以及實戰與常體版對話（數量見 `curriculum.md` §14）。對外只說「本版到 L30」、「涵蓋參考 N5 範圍」（RULINGS O7）。舊的垂直切片 `p0a`（假名與入門七課）仍可用 `CONTENT_STAGE=p0a` 建置。程式只在 Linux 桌面驗證過，Android、iOS 還沒建置。
+預設建置的內容是 `p0`：假名、L01–L30、232 則筆記，以及實戰與常體版對話（數量見 `curriculum.md` §14）。對外只說「本版到 L30」、「涵蓋參考 N5 範圍」（RULINGS O7）。舊的垂直切片 `p0a`（假名與入門七課）仍可用 `CONTENT_STAGE=p0a` 建置。Linux 桌面與 Android release APK 已建置驗證；Android 實機與 iOS 尚未驗證。
 
 | 文件 | 內容 |
 |---|---|
@@ -64,15 +64,44 @@ jp_plan、jp_quiz → jp_srs → { jp_store, jp_content }
 | Flutter | 3.47.9（Dart 3.13.7） | App 建置 |
 | Rust | 1.99.1，含 clippy、rustfmt | 核心建置 |
 | flutter_rust_bridge_codegen | 2.13.0 | `cargo install flutter_rust_bridge_codegen --version 2.13.0 --locked` |
-| cargo-expand | 最新版 | codegen 需要；未安裝時 `generate` 會自動安裝 |
+| cargo-expand | 1.0.127 | codegen 需要；未安裝時 `generate` 會自動安裝 |
 | clang、cmake、ninja、pkg-config、GTK 3 開發套件 | | Linux 桌面建置 |
 | python3 | 3.x | 離線檢查與授權清單腳本，只用標準函式庫 |
 | fonttools | | 只有重建字型子集時需要（`pip install fonttools`） |
 | xvfb | | 無螢幕環境跑整合測試或啟動 Linux 版 |
 | speech-dispatcher、日語模組 | | 在 Linux 上聽語音（選用）；`sudo apt install speech-dispatcher-espeak-ng` |
-| cargo-llvm-cov | | 量測覆蓋率（選用）；`cargo install cargo-llvm-cov`、`rustup component add llvm-tools-preview` |
+| cargo-llvm-cov | 0.9.2 | 量測覆蓋率（選用）；`cargo install cargo-llvm-cov --version 0.9.2 --locked`、`rustup component add llvm-tools-preview` |
 
-Android 與 iOS 需要各自的 SDK。專案只完成設定，從未實際建置過。
+Android release 已在 Linux 使用三個 ABI 實際建置；iOS 仍需要 macOS 與對應 SDK 才能驗證。
+
+## CI/CD
+
+GitHub Actions 流程在 `.github/workflows/ci-cd.yml`，固定使用 Flutter 3.47.9、Rust 1.99.1、
+Java 17、Android SDK 35／36、Build Tools 36.0.0、CMake 3.22.1 與 NDK 28.2.13676358，建置內容固定為 `p0`。
+
+- Pull request：Rust 格式、Clippy、workspace tests 與覆蓋率、FRB 產生碼同步、Dart 格式、Flutter analyze、
+  Flutter／FFI／golden tests 與覆蓋率、內容 lint／verify、工具測試、通用 release APK 建置，以及 APK 離線權限檢查。
+- `main`：除上述檢查外，再跑 Linux release 建置、兩組 release 學習迴路模擬與七個 Linux 端到端旅程。
+- 手動：可從 GitHub Actions 的 **CI/CD** workflow 執行，產生的 APK 與 SHA-256 保留 30 天。
+- `vMAJOR.MINOR.PATCH` tag：所有檢查通過後，以正式 upload keystore 簽章並建立或更新 GitHub Release。
+
+PR、`main` 與手動建置使用每次新產生的暫時 keystore，只供安裝測試，不能拿來做可持續升級的正式發布。
+tag 發布會拒絕暫時簽章，也會在 `applicationId` 仍是 `com.example.*` 時停止。正式發布前先更換
+`android/app/build.gradle.kts` 的 application ID，再到 GitHub 建立受保護的 `production` Environment：限制只允許
+`v*` tag、視需要加入 required reviewers，並把下列值設為該 Environment 的 secrets（不要設為一般 repository secrets）：
+
+| Secret | 內容 |
+|---|---|
+| `ANDROID_KEYSTORE_BASE64` | upload keystore 的 Base64（單行） |
+| `ANDROID_KEYSTORE_PASSWORD` | keystore 密碼 |
+| `ANDROID_KEY_ALIAS` | key alias |
+| `ANDROID_KEY_PASSWORD` | key 密碼 |
+
+Workflow 內所有外部 Actions 都固定到不可變的 commit；更新版本時需連同 commit 與註解中的 major version 一起審查。
+
+本機 release 簽章可使用相同的四個 `ANDROID_KEYSTORE_*` 環境變數，或在忽略版控的
+`android/key.properties` 設定 `storeFile`、`storePassword`、`keyAlias`、`keyPassword`。沒有設定時仍以
+debug key 建置，方便本機 `flutter run --release`；CI 不會發布這種 APK。
 
 ## 常用指令
 
