@@ -25,13 +25,13 @@ void main() {
 
     test('其他階段全標', () {
       expect(jlptLabelOf(JlptLevel.n4, ContentStage.p0), '參考 N4');
-      expect(jlptLabelOf(JlptLevel.beyond, ContentStage.full), 'N4 以外');
+      expect(jlptLabelOf(JlptLevel.beyond, ContentStage.full), '未列入參考詞表');
     });
 
-    test('p0 的三個級別都是單字逐字標示（V3），與範圍宣稱無關', () {
+    test('p0 顯示逐字參考級別，未收錄不推定程度（V3）', () {
       expect(jlptLabelOf(JlptLevel.n5, ContentStage.p0), '參考 N5');
       expect(jlptLabelOf(JlptLevel.n4, ContentStage.p0), '參考 N4');
-      expect(jlptLabelOf(JlptLevel.beyond, ContentStage.p0), 'N4 以外');
+      expect(jlptLabelOf(JlptLevel.beyond, ContentStage.p0), '未列入參考詞表');
     });
   });
 

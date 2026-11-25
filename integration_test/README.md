@@ -94,7 +94,7 @@ cargo test --manifest-path rust/Cargo.toml --test real_content_p0 --test real_co
 - 真實 FFI 不會讓 `pumpAndSettle` 等待，用 `pumpUntil`／`pumpUntilFound`；換頁後用 `pumpPage` 等轉場，否則上一頁的同名文字會被找到。
 - `support/study_bot.dart` 會從畫面上的 `QuestionDto` 找正解並點真實 UI 作答，也記錄每題的 Rust 判定（`answered`）；新的流程按鈕加進 `_advanceLabels`。
 - 測試框架會把溢位與未捕捉例外判為失敗，走得完本身就是檢查。
-- 文案檢查用 `expectNoErrorSlip`（O7：不宣稱 N4、不出現 L31 以後的課（含「第 31～48 課」這類範圍寫法）與「完整版」）。只有 V3 單字詳情頁上、整段就是級別標籤（「參考 N4」「N4 以外」）的文字不算（RULINGS O7 附註）；沒有畫面脈絡的文字（StudyBot 記下的、O4）用 `expectP0CopyOnly`，不豁免。`expectNoErrorSlip` 另斷言畫面上沒有原樣的 `{ja:` 標記（`rawMarkupTexts`；內容的 `*_zh` 欄位要經 MixedText）、課的內部 id（`rawLessonIdTexts`）與舊的略過文案（`retiredSkipTexts`）。
+- 文案檢查用 `expectNoErrorSlip`（O7：不宣稱 N4、不出現 L31 以後的課（含「第 31～48 課」這類範圍寫法）與「完整版」）。只有 V3 單字詳情頁上、整段就是級別標籤（「參考 N4」）的文字不算（RULINGS O7 附註）；`Beyond` 顯示「未列入參考詞表」，不再使用「N4 以外」。沒有畫面脈絡的文字（StudyBot 記下的、O4）用 `expectP0CopyOnly`，不豁免。`expectNoErrorSlip` 另斷言畫面上沒有原樣的 `{ja:` 標記（`rawMarkupTexts`；內容的 `*_zh` 欄位要經 MixedText）、課的內部 id（`rawLessonIdTexts`）與舊的略過文案（`retiredSkipTexts`）。
 - 「略過這一項」只在單項載入失敗時出現，真實資料的旅程走不到，所以這裡只守舊文案不再出現；按鈕本身在 widget test 驗。
 - `tapWidget` 會等目標真的接得到點擊（進場動畫、頁內捲動還在走時，中心點可能落在底部導覽上）。
 

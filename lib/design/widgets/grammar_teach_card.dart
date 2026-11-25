@@ -6,12 +6,13 @@ import '../../core/text/ruby_line.dart';
 import '../../core/tts/tts_engine.dart';
 import '../tokens.dart';
 import 'app_text.dart';
+import 'grammar_formation_table.dart';
 import 'ink_buttons.dart';
 import 'pattern_blocks.dart';
 import 'side_rule_note.dart';
 import 'speak_button.dart';
 
-/// 新文法呈現（§3.10）：標題、公式、意思、說明、比較、陷阱、1–2 句例句。
+/// 新文法呈現（§3.10）：標題、公式、意思、說明、比較、陷阱、完整接續、1–2 句例句。
 class GrammarTeachCard extends StatelessWidget {
   const GrammarTeachCard({
     required this.detail,
@@ -51,6 +52,10 @@ class GrammarTeachCard extends StatelessWidget {
             tone: SideRuleTone.shu,
             child: MixedText(detail.trapZh!),
           ),
+        ],
+        if (detail.formation.isNotEmpty) ...[
+          const SizedBox(height: AppSpace.s4),
+          GrammarFormationTable(rows: detail.formation),
         ],
         for (final example in detail.examples.take(_maxExamples)) ...[
           const SizedBox(height: AppSpace.s4),

@@ -120,7 +120,7 @@ void main() {
       expect(find.text('參考 N4'), findsOneWidget);
     });
 
-    testWidgets('P0 的 Beyond 顯示「N4 以外」', (tester) async {
+    testWidgets('P0 的 Beyond 顯示參考詞表未收錄，不暗示 N4 程度', (tester) async {
       await _pump(
         tester,
         _backend(
@@ -128,7 +128,8 @@ void main() {
           stage: ContentStage.p0,
         ),
       );
-      expect(find.text('N4 以外'), findsOneWidget);
+      expect(find.text('未列入參考詞表'), findsOneWidget);
+      expect(find.textContaining('N4'), findsNothing);
     });
 
     testWidgets('讀不到課程階段時不顯示級別', (tester) async {
@@ -158,7 +159,7 @@ void main() {
       ),
     );
 
-    expect(find.text('朋友間才用'), findsOneWidget);
+    expect(find.text('非正式用語'), findsOneWidget);
     expect(find.text('他動詞'), findsOneWidget);
     expect(find.text('容易錯'), findsOneWidget);
     expect(find.text('活用'), findsOneWidget);

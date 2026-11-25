@@ -281,7 +281,7 @@ today_view(audio) → 從 start（否則第一個 done=false）開始
 
 V2、V3 的單字列是一行一字（細線分隔，不是卡片）：左單字、中間假名、右狀態與播放鈕。
 
-**V3 單字詳情**（`vocab_detail`）：單字、假名、romaji（依 §3.7）、音調線（`accent` 非 None 時）、意思、參考級別（`jlpt`：「參考 N5」、「參考 N4」、`Beyond` 為「N4 以外」；`content_stage = P0a` 時只顯示 N5 的「參考 N5」，N4 與 Beyond 不顯示標籤）、`use_level`（`FriendsOnly`「朋友間才用」、`RecognizeOnly`「聽懂就好」）、`trans`（他動詞／自動詞）、`hook_zh`、`trap_zh`、`pair`（自他成對）、`reading_family`（同字異讀）、`conjugations`（`form` 是 MixedText，用 `MixedText` 顯示）、例句（`RubyLine`＋播放）、`notes`（用 N1 的 `NoteBody`）。頂部右側兩個標記鈕：**已會**、**收藏**，呼叫 `set_vocab_flags(vocab_id, VocabFlagsDto{known, starred})`。已會的字不再排入複習；取消已會即恢復。「已會」按下時的說明：「這個字之後不會出現在複習裡。」
+**V3 單字詳情**（`vocab_detail`）：單字、假名、romaji（依 §3.7）、音調線（`accent` 非 None 時）、意思、參考級別（`jlpt`：「參考 N5」、「參考 N4」、`Beyond` 為「未列入參考詞表」，僅表示參考清單未收錄，不推定程度；`content_stage = P0a` 時只顯示 N5 的「參考 N5」，N4 與 Beyond 不顯示標籤）、`use_level`（`FriendsOnly`「非正式用語」、`RecognizeOnly`「聽懂就好」）、`trans`（他動詞／自動詞）、`hook_zh`、`trap_zh`、`pair`（自他成對）、`reading_family`（同字異讀）、`conjugations`（`form` 是 MixedText，用 `MixedText` 顯示）、例句（`RubyLine`＋播放）、`notes`（用 N1 的 `NoteBody`）。頂部右側兩個標記鈕：**已會**、**收藏**，呼叫 `set_vocab_flags(vocab_id, VocabFlagsDto{known, starred})`。已會的字不再排入複習；取消已會即恢復。「已會」按下時的說明：「這個字之後不會出現在複習裡。」
 
 **V4 字卡**（`session_next` 逐張拉取，Dart 不維護佇列，下一張取決於 Rust 的排程）：
 
@@ -434,7 +434,7 @@ L3 是 T2 執行 `NewContent` 的元件，也是使用者第一次接觸內容�
 | `Rule` | K3 的 `RuleCardView` | §3.3 | 無，後接 `KanaQuiz`（`minimal_pair`） |
 | `Confusable` | `ConfusableView` | `members` 並排大字、`literals`、`diff_zh`，各字可播 | 無，後接 `KanaQuiz`（`kana_confuse`） |
 | `Vocab` | `VocabTeachCard` | 單字、假名、romaji（依 §3.7）、意思、自動播一次、一個例句、`hook_zh`、`trap_zh`、同形異義與字形徽章 | `first_card` 非 None 時按「考一題」出一題，`submit_answer` |
-| `Grammar` | `GrammarTeachCard` | 標題、`pattern`、`meaning_zh`、`explain_zh`、`compare_zh`、`trap_zh`、1–2 句例句 | 同上 |
+| `Grammar` | `GrammarTeachCard` | 標題、`pattern`、`meaning_zh`、`explain_zh`、`compare_zh`、`trap_zh`、完整 `formation` 接續表、1–2 句例句；接續表與 G2 共用，窄版上下排列 | 同上 |
 
 - 頂部細線進度條（已完成步驟／總步驟）。**先教後考**：第一題必定考剛呈現過的內容，不會猜。
 - `first_card` 是 `SessionCardDto`，用 V4 的 `CardRunner` 單張模式，答後展開、評分規則與 §3.4 相同。此卡當場離開 state=0，隔天不會誤判為「沒看完」。

@@ -88,7 +88,7 @@ void _wordLabelExemption() {
     expect(
       shownCopyViolations([
         _shown('參考 N4', inWordDetail: true),
-        _shown('N4 以外', inWordDetail: true),
+        _shown('未列入參考詞表', inWordDetail: true),
         _shown(' 參考 N4 ', inWordDetail: true),
       ]),
       isEmpty,
@@ -98,6 +98,12 @@ void _wordLabelExemption() {
   test('同樣的標籤出現在其他畫面仍算', () {
     expect(shownCopyViolations([_shown('參考 N4'), _shown('N4 以外')]), [
       '參考 N4',
+      'N4 以外',
+    ]);
+  });
+
+  test('舊的 N4 以外標籤在 V3 也不再豁免', () {
+    expect(shownCopyViolations([_shown('N4 以外', inWordDetail: true)]), [
       'N4 以外',
     ]);
   });
@@ -119,6 +125,7 @@ void _wordLabelExemption() {
     expect(jlptWordLabels.every(isJlptWordLabel), isTrue);
     expect(isJlptWordLabel('涵蓋參考 N4 範圍'), isFalse);
     expect(isJlptWordLabel('N4 以外的內容'), isFalse);
+    expect(isJlptWordLabel('N4 以外'), isFalse);
   });
 }
 

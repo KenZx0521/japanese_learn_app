@@ -39,7 +39,7 @@
   {"id": "se.l28.038", "lesson": "le.l28", "t": "一日|ついたち|vo.tsuitachi に|gr.ni_time 送っ|おくっ|vo.okuru+た|gr.ta_form 荷物|にもつ|vo.nimotsu は|gr.wa_topic もう|gr.mou_mada 届き|とどき|vo.todoku+ました|gr.masu_past か|gr.ka_q 。", "zh": "一號寄的包裹已經到了嗎？", "style": "polite", "tts": "kana"},
   {"id": "se.l28.039", "lesson": "le.l28", "t": "いいえ|vo.iie 、 まだ|vo.mada 届い|とどい|vo.todoku+て|gr.te_form いません|gr.mada_te_inai 。", "zh": "不，還沒到。", "style": "polite"},
   {"id": "se.l28.040", "lesson": "le.l28", "t": "出発|しゅっぱつ|vo.shuppatsu の|gr.no_poss 前|まえ|vo.mae に|gr.mae_ni 、 鍵|かぎ|vo.kagi を|gr.wo_obj 隣|となり|vo.tonari の|gr.no_poss 奥さん|おくさん|vo.okusan に|gr.ni_target 渡し|わたし|vo.watasu+ました|gr.masu_past 。", "zh": "出發前，我把鑰匙交給了隔壁的太太。", "style": "polite"},
-  {"id": "se.l28.041", "lesson": "le.l28", "t": "病院|びょういん|vo.byouin で|gr.de_place 保険証|ほけんしょう|vo.hokenshou を|gr.wo_obj 渡し|わたし|vo.watasu+ました|gr.masu_past 。", "zh": "我在醫院把健保卡交了出去。", "style": "polite"},
+  {"id": "se.l28.041", "lesson": "le.l28", "t": "病院|びょういん|vo.byouin で|gr.de_place 保険証|ほけんしょう|vo.hokenshou を|gr.wo_obj 渡し|わたし|vo.watasu+ました|gr.masu_past 。", "zh": "我在醫院把健康保險證件交了出去。", "style": "polite"},
   {"id": "se.l28.042", "lesson": "le.l28", "t": "贈り物|おくりもの|vo.okurimono は|gr.wa_topic 何|なに|vo.nani が|gr.ga_subject いい|vo.ii です|gr.desu か|gr.ka_q 。", "zh": "送禮的話，送什麼好呢？", "style": "polite"},
   {"id": "se.l28.043", "lesson": "le.l28", "t": "きれい|vo.kirei+な|gr.adj_mod 箱|はこ|vo.hako に|gr.ni_arrive 贈り物|おくりもの|vo.okurimono を|gr.wo_obj 入れ|いれ|vo.ireru+ました|gr.masu_past 。", "zh": "我把禮物放進了漂亮的盒子裡。", "style": "polite"},
   {"id": "se.l28.044", "lesson": "le.l28", "t": "結婚|けっこん|vo.kekkon の|gr.no_poss お祝い|おいわい|vo.oiwai は|gr.wa_topic 何|なに|vo.nani に|gr.ni_suru し|vo.suru+ます|gr.masu か|gr.ka_q 。", "zh": "結婚賀禮要送什麼？", "style": "polite"},

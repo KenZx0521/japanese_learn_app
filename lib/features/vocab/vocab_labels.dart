@@ -19,18 +19,19 @@ SrsStateLabel? srsFromQuery(String? value) =>
     value == null ? null : SrsStateLabel.values.asNameMap()[value];
 
 /// §3.4：`P0a` 只標 N5，N4 與 Beyond 不顯示（O7）。
+/// Beyond 代表參考詞表未收錄，不表示比 N4 難。
 String? jlptLabelOf(JlptLevel level, ContentStage stage) {
   if (stage == ContentStage.p0A && level != JlptLevel.n5) return null;
   return switch (level) {
     JlptLevel.n5 => '參考 N5',
     JlptLevel.n4 => '參考 N4',
-    JlptLevel.beyond => 'N4 以外',
+    JlptLevel.beyond => '未列入參考詞表',
   };
 }
 
 String? useLevelLabelOf(UseLevelDto level) => switch (level) {
   UseLevelDto.safe => null,
-  UseLevelDto.friendsOnly => '朋友間才用',
+  UseLevelDto.friendsOnly => '非正式用語',
   UseLevelDto.recognizeOnly => '聽懂就好',
 };
 

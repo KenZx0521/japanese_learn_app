@@ -9,6 +9,7 @@ import '../../core/backend/frb/dto.dart';
 import '../../core/text/mixed_text.dart';
 import '../../design/tokens.dart';
 import '../../design/widgets/app_text.dart';
+import '../../design/widgets/grammar_formation_table.dart';
 import '../../design/widgets/pattern_blocks.dart';
 import '../../design/widgets/ruled_list.dart';
 import '../../design/widgets/side_rule_note.dart';
@@ -45,7 +46,7 @@ class GrammarArticle extends StatelessWidget {
         ],
         if (detail.formation.isNotEmpty) ...[
           _blockGap,
-          _FormationTable(rows: detail.formation),
+          GrammarFormationTable(rows: detail.formation),
         ],
         if (detail.examples.isNotEmpty) ...[
           _blockGap,
@@ -94,58 +95,6 @@ class _Lead extends StatelessWidget {
         const SizedBox(height: AppSpace.s3),
         MixedText(detail.explainZh),
       ],
-    );
-  }
-}
-
-class _FormationTable extends StatelessWidget {
-  const _FormationTable({required this.rows});
-  final List<FormationRowDto> rows;
-
-  @override
-  Widget build(BuildContext context) {
-    final t = AppTokens.of(context);
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: [
-        const EyebrowText('接續'),
-        const SizedBox(height: AppSpace.s2),
-        DecoratedBox(
-          decoration: BoxDecoration(
-            border: Border(top: BorderSide(color: t.line.grid)),
-          ),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [for (final row in rows) _FormationRow(row: row)],
-          ),
-        ),
-      ],
-    );
-  }
-}
-
-class _FormationRow extends StatelessWidget {
-  const _FormationRow({required this.row});
-  final FormationRowDto row;
-
-  @override
-  Widget build(BuildContext context) {
-    final t = AppTokens.of(context);
-    return Container(
-      padding: const EdgeInsets.symmetric(vertical: AppSpace.s3),
-      decoration: BoxDecoration(
-        border: Border(bottom: BorderSide(color: t.line.grid)),
-      ),
-      child: Row(
-        children: [
-          Expanded(child: MixedText(row.from)),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: AppSpace.s3),
-            child: ExcludeSemantics(child: AppText('→', color: t.ink.tertiary)),
-          ),
-          Expanded(child: MixedText(row.to)),
-        ],
-      ),
     );
   }
 }

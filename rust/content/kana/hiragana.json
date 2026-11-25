@@ -108,6 +108,6 @@
     {"id": "ka.hira.pya", "lesson": "le.k15", "script": "hira", "kind": "yoon", "row": "pya", "char": "ぴゃ", "origin_kanji": null, "hint_zh": "{ja:ぴ} 加小字 {ja:ゃ}，一拍念完，不是 {ja:ぴ}、{ja:や} 兩拍", "confusable": [], "example_words": []},
     {"id": "ka.hira.pyu", "lesson": "le.k15", "script": "hira", "kind": "yoon", "row": "pya", "char": "ぴゅ", "origin_kanji": null, "hint_zh": "{ja:ぴ} 加小字 {ja:ゅ}，一拍念完，不是 {ja:ぴ}、{ja:ゆ} 兩拍", "confusable": [], "example_words": []},
     {"id": "ka.hira.pyo", "lesson": "le.k15", "script": "hira", "kind": "yoon", "row": "pya", "char": "ぴょ", "origin_kanji": null, "hint_zh": "{ja:ぴ} 加小字 {ja:ょ}，一拍念完，不是 {ja:ぴ}、{ja:よ} 兩拍", "confusable": [], "example_words": [{"surface": "ぴょんぴょん", "zh": "蹦蹦跳跳"}]},
-    {"id": "ka.hira.sokuon", "lesson": "le.k16", "script": "hira", "kind": "mark", "char": "っ", "rule": "ka.rule.sokuon", "origin_kanji": null, "hint_zh": "小字 {ja:っ}；不發音，停住一拍再接下一個音", "confusable": [], "example_words": [{"surface": "きって", "zh": "郵票"}], "listen_disabled": true}
+    {"id": "ka.hira.sokuon", "lesson": "le.k16", "script": "hira", "kind": "mark", "char": "っ", "rule": "ka.rule.sokuon", "origin_kanji": null, "hint_zh": "小字 {ja:っ}；促音佔一拍，發法隨下一個子音改變", "confusable": [], "example_words": [{"surface": "きって", "zh": "郵票"}], "listen_disabled": true}
   ]
 }

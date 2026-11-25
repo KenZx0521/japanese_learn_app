@@ -4,9 +4,9 @@
 /// p0 主線的最後一課。
 const lastP0Lesson = 30;
 
-/// V3 單字詳情的參考級別標籤（`vocab_labels.dart` 的 `jlptLabelOf`）。
+/// V3 單字詳情的參考級別／收錄狀態標籤（`vocab_labels.dart` 的 `jlptLabelOf`）。
 /// 這是單字逐字的標示，不是這一版的範圍宣稱（RULINGS O7 附註）。
-const jlptWordLabels = {'參考 N5', '參考 N4', 'N4 以外'};
+const jlptWordLabels = {'參考 N5', '參考 N4', '未列入參考詞表'};
 
 /// 畫面上的一段文字；[inWordDetail] 表示它在 V3 單字詳情頁上。
 typedef ShownText = ({String text, bool inWordDetail});

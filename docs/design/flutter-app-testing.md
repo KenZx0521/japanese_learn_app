@@ -20,7 +20,7 @@
 - **操作提示**：題型第一次顯示提示且寫入 `seen_question_hints`，第二次不顯示。
 - **顯示規則**：五種 `RomajiMode` 的行為；`K1` 不呼叫 `display_policy`；游標在 L09 以後且 `ms.kata` 未通過時出現確認列（用夾具的 `PlanViewDto`）。
 - **搜尋與標記**：`search_vocab` 去抖；`set_vocab_flags` 後列表狀態更新；`grammar_list` 帶 `query`。
-- **範圍文案（O7）**：`content_stage = P0a` 時，走訪全部會顯示範圍的畫面（O1、O4、O6、P1、P2、X1 關於、V3），文字不得含「N4」、「看懂日劇」、「聽懂日劇」；V3 用 `jlpt = N4` 與 `jlpt = Beyond` 各一筆 `VocabDetailDto` 夾具，確認不顯示級別標籤；筆記入口不存在。`P0`（預設）寫「本版到 L30」、「參考 N5」，不含「N4」、L31 以後的課號與「完整版」（`test/features/plan/scope_copy_test.dart`）；V3 的「參考 N4」、「N4 以外」是單字的逐字級別標示，不算宣稱。整合測試另在每一站以 `expectP0CopyOnly` 檢查真實畫面（`integration_test/README.md`）。
+- **範圍文案（O7）**：`content_stage = P0a` 時，走訪全部會顯示範圍的畫面（O1、O4、O6、P1、P2、X1 關於、V3），文字不得含「N4」、「看懂日劇」、「聽懂日劇」；V3 用 `jlpt = N4` 與 `jlpt = Beyond` 各一筆 `VocabDetailDto` 夾具，確認不顯示級別標籤；筆記入口不存在。`P0`（預設）寫「本版到 L30」、「參考 N5」，不含「N4」、L31 以後的課號與「完整版」（`test/features/plan/scope_copy_test.dart`）；V3 的「參考 N4」是單字的逐字級別標示，不算宣稱；`Beyond` 顯示「未列入參考詞表」，不推定程度。整合測試另在每一站以 `expectP0CopyOnly` 檢查真實畫面（`integration_test/README.md`）。
 - **語音**：TTS 五種 availability 的畫面（`unknown` 為骨架）；探測完成前 fake backend 收不到 `today_view`（`FakeTtsEngine` 的 `probe()` 用 `Completer` 控制完成時機），探測結果為非 `ready` 時同樣要在完成後才收到；`onResume` 的 `today_view` 在重新探測完成後才呼叫；無聲模式時 `audio_available = false` 傳給所有取題函式；語音不可用時不顯示略過，改以 `audio_available` 排除（§6.6）；中途播放失敗顯示 `VoiceFailedPanel`。
 - **筆記的夾具**（O1）：在 `test/features/notes/` 的測試內建構 `NoteDto` 五種變體，測 N1。Rust 端另有 `content_api.rs` 用 `rust/crates/jp_content/tests/fixtures/full/` 驗證 API，預設 `p0` 的真實筆記由 `real_content_p0.rs` 驗證（`rust-core.md` §11.2）。
 - **已移除功能的反向回歸**（RULINGS O13）：聽說頁沒有專區區塊（`test/features/listen/listen_home_screen_test.dart`）、`/listen/zone/...` 沒有對應路由（`test/app/router_test.dart`）、引導流程沒有學習目標步驟（`test/features/onboarding/onboarding_flow_test.dart`）。
